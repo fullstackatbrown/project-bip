@@ -11,11 +11,11 @@ $blue: #f5f2f0;
 .general-constraint {
     padding-left: 20vw;
     padding-right: 20vw;
-    font-family: "Chai Book";
+    font-family: "Chai Book" !important;
 }
 
 body {
-    
+
 	background-color: $blue;
     overflow: hidden;
 }
