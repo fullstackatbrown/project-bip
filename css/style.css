@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "Chai Book";
+  font-family: "Calm";
   src: url("/fonts/circular_book/circular_book.woff2") format("woff2"), url("/fonts/circular_book/circular_book.woff") format("woff"), url("/fonts/circular_book/circular_book.otf") format("opentype"), url("/fonts/circular_book/circular_book.ttf") format("truetype");
 }
 .general-constraint {
   padding-left: 20vw;
   padding-right: 20vw;
-  font-family: "Chai Book" !important;
+  font-family: "Calm" !important;
 }
 
 body {
