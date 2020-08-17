@@ -1,3 +1,10 @@
+body {
+	background-color: #f5f2f0;
+	margin-left: 100px;
+	margin-right: 100px;
+	overflow: hidden;
+}
+
 .general-constraint {
   padding-left: 20vw;
   padding-right: 20vw;
