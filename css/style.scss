@@ -1,3 +1,5 @@
+$blue: #f5f2f0;
+
 @font-face {
     font-family: "Chai Book";
     src: url("/fonts/circular_book/circular_book.woff2") format("woff2"),
@@ -13,7 +15,8 @@
 }
 
 body {
-	background-color: #f5f2f0;
+    
+	background-color: $blue;
     overflow: hidden;
 }
 
