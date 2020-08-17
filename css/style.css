@@ -1,6 +1,6 @@
 @font-face {
-  font-family: Circular Book;
-  src: url("../fonts/circular_book/circular_book.woff2") format("woff2"), url("../fonts/circular_book/circular_book.woff") format("woff"), url("../fonts/circular_book/circular_book.otf") format("opentype"), url("../fonts/circular_book/circular_book.ttf") format("truetype");
+  font-family: "Circular Book";
+  src: url("/../fonts/circular_book/circular_book.woff2") format("woff2"), url("/../fonts/circular_book/circular_book.woff") format("woff"), url("/../fonts/circular_book/circular_book.otf") format("opentype"), url("/../fonts/circular_book/circular_book.ttf") format("truetype");
 }
 @font-face {
   font-family: "Circular Book Italic";
@@ -33,7 +33,7 @@
 .general-constraint {
   padding-left: 20vw;
   padding-right: 20vw;
-  font-family: Circular Book;
+  font-family: "Circular Book";
 }
 
 body {
