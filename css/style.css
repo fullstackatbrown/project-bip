@@ -1,10 +1,3 @@
-body {
-	background-color: #f5f2f0;
-	margin-left: 100px;
-	margin-right: 100px;
-	overflow: hidden;
-}
-
 .general-constraint {
   padding-left: 20vw;
   padding-right: 20vw;
@@ -14,6 +7,10 @@ body {
 @font-face {
   font-family: "Circular Book";
   src: url("/fonts/circular_book/circular_book.woff2") format("woff2"), url("/fonts/circular_book/circular_book.woff") format("woff"), url("/fonts/circular_book/circular_book.otf") format("opentype"), url("/fonts/circular_book/circular_book.ttf") format("truetype");
+}
+body {
+  background-color: #f5f2f0;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */
