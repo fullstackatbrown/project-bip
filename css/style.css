@@ -6,16 +6,33 @@
 @import url(//db.onlinewebfonts.com/c/33c0ccc21387ad531817bd465d94e67d?family=Circular+Std+Book+Italic);
 @import url(//db.onlinewebfonts.com/c/6c1578f983524180fa64138ee780cadf?family=Circular+Std+Black+Italic);
 @import url(//db.onlinewebfonts.com/c/186d64bc83bd1dc3aa4a4a4db40da5bc?family=Circular+Std+Medium+Italic);
+@import url(//db.onlinewebfonts.com/c/e7cb817c6df59f3ac33e76680938bc0f?family=Platform+Bold);
+@import url(//db.onlinewebfonts.com/c/f58919c8d17a7e8e170c3ba632f93bd3?family=Platform+Medium);
+@import url(//db.onlinewebfonts.com/c/6a9a7b1edc7ff5984996d7e4fe5f6861?family=Platform+Web+Medium);
+@import url(//db.onlinewebfonts.com/c/f24c407a3d7631757d38c3e61520a3fa?family=Platform+Web+Medium);
+@import url(//db.onlinewebfonts.com/c/1f48900b62d277f357bb39ca68a9dd49?family=Platform+Jules+Light);
 body {
   background-color: #f5f2f0;
   overflow: hidden;
 }
 
-.home-main-lightbox-wrapper, #website-wrapper, .nav-custom {
-  width: 60vw;
-  max-width: 1200px;
+#website-wrapper, .nav-custom {
+  width: 1200px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.button-custom, .spotlight-description {
+  font-family: "Circular Std Book";
+  font-size: 1rem;
+  letter-spacing: -0.5px;
+  line-height: 1.3rem;
+}
+
+.spotlight-heading {
+  font-family: "Circular Std Bold";
+  font-size: 2rem;
+  line-height: 2.2rem;
 }
 
 .nav-custom {
@@ -37,16 +54,25 @@ body {
 }
 
 .home-main-lightbox-wrapper {
-  height: 450px;
+  height: 400px;
   background-color: white;
   display: grid;
   grid-template-columns: 7fr 3fr;
   grid-gap: 0px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
+@media (max-width: 1220px) {
+  .nav-custom {
+    width: 98vw;
+  }
+
+  #website-wrapper {
+    width: 98vw;
+  }
+}
 .spotlight-image-wrapper {
-  height: 450px;
+  height: 400px;
   width: 100%;
   overflow: hidden;
 }
@@ -54,12 +80,24 @@ body {
 .spotlight-text-wrapper {
   width: 100%;
   min-width: 390px;
-  background-color: red;
+  background-color: white;
   overflow: hidden;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
 }
 
 .spotlight-image {
   object-fit: fill;
+}
+
+.spotlight-description {
+  margin-top: 35px;
+}
+
+.button-custom {
+  padding: 10px 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
