@@ -24,15 +24,15 @@ body {
 
 .button-custom, .spotlight-description {
   font-family: "Circular Std Book";
-  font-size: 1rem;
+  font-size: 1.1rem;
   letter-spacing: -0.5px;
-  line-height: 1.3rem;
+  line-height: 1.4rem;
 }
 
 .spotlight-heading {
   font-family: "Circular Std Bold";
-  font-size: 2rem;
-  line-height: 2.2rem;
+  font-size: 2.3rem;
+  line-height: 2.5rem;
 }
 
 .nav-custom {
@@ -54,7 +54,7 @@ body {
 }
 
 .home-main-lightbox-wrapper {
-  height: 400px;
+  height: 450px;
   background-color: white;
   display: grid;
   grid-template-columns: 7fr 3fr;
@@ -72,20 +72,26 @@ body {
   }
 }
 .spotlight-image-wrapper {
-  height: 400px;
+  height: 450px;
   width: 100%;
   overflow: hidden;
 }
 
-.spotlight-text-wrapper {
+.spotlight-text-area {
   width: 100%;
   min-width: 390px;
   background-color: white;
   overflow: hidden;
-  padding-top: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spotlight-text-wrapper {
+  margin-top: auto;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: auto;
 }
 
 .spotlight-image {
@@ -93,12 +99,12 @@ body {
 }
 
 .spotlight-description {
-  margin-top: 35px;
+  margin-top: 40px;
 }
 
 .button-custom {
-  padding: 10px 30px;
-  margin-top: 30px;
+  padding: 12px 30px;
+  margin-top: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
