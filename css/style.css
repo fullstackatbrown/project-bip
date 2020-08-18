@@ -1,3 +1,8 @@
+body {
+  background-color: #f5f2f0;
+  overflow: hidden;
+}
+
 @font-face {
   font-family: "Circular Book";
   src: url("/../fonts/circular_book/circular_book.woff2") format("woff2"), url("/../fonts/circular_book/circular_book.woff") format("woff"), url("/../fonts/circular_book/circular_book.otf") format("opentype"), url("/../fonts/circular_book/circular_book.ttf") format("truetype");
@@ -30,15 +35,32 @@
   font-family: "Circular Black Italic";
   src: url("/../fonts/circular_bold_italic/circular_bold_italic.woff2") format("woff2"), url("/../fonts/circular_bold_italic/circular_bold_italic.woff") format("woff"), url("/../fonts/circular_bold_italic/circular_bold_italic.otf") format("opentype"), url("/../fonts/circular_bold_italic/circular_bold_italic.ttf") format("truetype");
 }
-.general-constraint {
+.nav-custom {
   padding-left: 20vw;
   padding-right: 20vw;
-  font-family: "Circular Book";
+  font-family: "Circular Bold";
+  min-height: 70px;
+  background-color: white !important;
 }
 
-body {
-  background-color: #f5f2f0;
-  overflow: hidden;
+.nav-item {
+  padding-left: 15px;
+}
+
+#website-wrapper {
+  padding-left: 20vw;
+  padding-right: 20vw;
+}
+
+.home-main-lightbox-wrapper {
+  width: 100%;
+  height: 400px;
+  background-color: white;
+  display: block;
+  margin-top: 20px;
+  border-style: dotted;
+  border-width: 5px;
+  border-color: red;
 }
 
 /*# sourceMappingURL=style.css.map */
