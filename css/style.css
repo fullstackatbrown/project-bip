@@ -22,7 +22,7 @@ body {
   margin-left: auto;
 }
 
-.spotlight-description {
+.button-custom, .spotlight-description {
   font-family: "Circular Std Book";
   font-size: 1rem;
   letter-spacing: -0.5px;
@@ -94,6 +94,10 @@ body {
 
 .spotlight-description {
   margin-top: 35px;
+}
+
+.button-custom {
+  padding: 10px 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,4 @@
 $background: #f5f2f0;
-$page-padding: 20vw;
 
 body {
     background-color: $background;
@@ -113,3 +112,7 @@ body {
     @extend %normal-text;
 }
 
+.button-custom {
+    @extend %normal-text;
+    padding: 10px 30px;
+}
