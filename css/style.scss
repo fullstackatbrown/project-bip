@@ -6,6 +6,13 @@ body {
     overflow: hidden;
 }
 
+%page-layout {
+    width: 60vw;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 // font import from Online Web Fonts
 @import url(//db.onlinewebfonts.com/c/06d1b1518a180e5a9cca2c23401ec40a?family=Circular+Std+Bold);
 @import url(//db.onlinewebfonts.com/c/2d98f490df6dc039774b101701ce3aba?family=Circular+Std+Book);
@@ -17,11 +24,18 @@ body {
 @import url(//db.onlinewebfonts.com/c/186d64bc83bd1dc3aa4a4a4db40da5bc?family=Circular+Std+Medium+Italic);
 
 .nav-custom {
-    padding-left: $page-padding;
-    padding-right: $page-padding;
     font-family: "Circular Std Bold";
     min-height: 70px;
     background-color: white !important;
+    @extend %page-layout;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.header-wrapper {
+    min-height: 70px;
+    width: 100%;
+    background-color: white;
 }
 
 .nav-item {
@@ -29,18 +43,33 @@ body {
 }
 
 #website-wrapper {
-    padding-left: $page-padding;
-    padding-right: $page-padding;
+    @extend %page-layout;
 }
 
 .home-main-lightbox-wrapper {
-    width: 100%;
-    height: 400px;
+    @extend %page-layout;
+    height: 450px;
     background-color: white;
-    display: block;
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    grid-gap: 0px;
     margin-top: 20px;
-    // testing positions
-    border-style: dotted;
-    border-width: 5px;
-    border-color: red;
 }
+
+.spotlight-image-wrapper {
+    height: 450px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.spotlight-text-wrapper {
+    width: 100%;
+    min-width: 390px;
+    background-color: red;
+    overflow: hidden;
+}
+
+.spotlight-image {
+    object-fit: fill;
+}
+
