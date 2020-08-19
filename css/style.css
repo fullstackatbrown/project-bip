@@ -15,7 +15,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;1,300;1,400;1,500&family=Crimson+Text:ital@0;1&display=swap");
 body {
   background-color: #f5f2f0;
-  overflow: hidden;
 }
 
 .cards-flexbox, #website-wrapper, .nav-custom {
@@ -38,16 +37,16 @@ body {
   letter-spacing: -1.5px;
 }
 
-.text-card {
+.img-card, .text-card {
   height: 450px;
   background-color: white;
   width: 393.33px;
 }
 
-.img-card, .home-main-lightbox-wrapper, .text-card {
+.img-card, .home-main-lightbox-wrapper {
   transition: transform 0.15s;
 }
-.img-card:hover, .home-main-lightbox-wrapper:hover, .text-card:hover {
+.img-card:hover, .home-main-lightbox-wrapper:hover {
   transform: translate(0px, -3px);
   -webkit-box-shadow: 0px 2px 7px 1px rgba(168, 168, 168, 0.23);
   -moz-box-shadow: 0px 2px 7px 1px rgba(168, 168, 168, 0.23);
@@ -81,7 +80,7 @@ body {
   height: 450px;
   background-color: white;
   display: grid;
-  grid-template-columns: 7fr 3fr;
+  grid-template-columns: 6638.9fr 3361.1fr;
   grid-gap: 0px;
   margin-top: 10px;
 }
@@ -104,7 +103,7 @@ body {
     width: 98vw;
   }
 
-  .text-card {
+  .img-card, .text-card {
     width: 32vw;
   }
 }
@@ -141,15 +140,19 @@ body {
 
 .cards-flexbox {
   margin-top: 10px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
 }
 
+.ten-px-right-margin {
+  margin-right: 10px;
+}
+
 .text-card {
   overflow: hidden;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -167,6 +170,12 @@ body {
   font-size: 2rem;
 }
 
+.img-card {
+  height: 450px;
+  background-color: white;
+  overflow: hidden;
+}
+
 .img-card-text-section {
   overflow: hidden;
   display: flex;
@@ -179,20 +188,14 @@ body {
 }
 
 .img-card-image-wrapper {
+  width: 393.33px;
+  height: 200px;
   overflow: hidden;
 }
 
 .img-card-img {
-  height: 300px;
   width: 100%;
-  object-fit: fill;
-}
-
-.img-card {
-  height: 450px;
-  background-color: white;
-  width: 393.33px;
-  grid-template-rows: 7fr 3fr;
+  object-fit: cover;
 }
 
 .link-with-arrow-text {
