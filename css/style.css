@@ -17,13 +17,13 @@ body {
   background-color: #f5f2f0;
 }
 
-.cards-flexbox, #website-wrapper, .nav-custom {
+.below-card-button-space, .cards-flexbox, #website-wrapper, .nav-custom {
   width: 1200px;
   margin-right: auto;
   margin-left: auto;
 }
 
-.img-card-text-title, .card-text-description, .spotlight-description {
+.img-card-text-title, .img-card-text-description, .card-text-description, .spotlight-description {
   font-family: "Circular Std Book";
   font-size: 1.1rem;
   letter-spacing: -0.5px;
@@ -106,6 +106,10 @@ body {
   .img-card, .text-card {
     width: 32vw;
   }
+
+  .below-card-button-space {
+    width: 98vw;
+  }
 }
 .spotlight-image-wrapper {
   height: 450px;
@@ -140,7 +144,7 @@ body {
 
 .cards-flexbox {
   margin-top: 10px;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -158,7 +162,7 @@ body {
 }
 
 .card-text-wrapper {
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 40px;
   margin-left: 40px;
   margin-right: 40px;
@@ -168,6 +172,11 @@ body {
   font-family: "Crimson Text";
   font-style: italic;
   font-size: 2rem;
+}
+
+.img-card-text-description {
+  font-size: 1rem;
+  margin-top: 10%;
 }
 
 .img-card {
@@ -184,7 +193,8 @@ body {
 }
 
 .img-card-text-title {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .img-card-image-wrapper {
@@ -196,6 +206,31 @@ body {
 .img-card-img {
   width: 100%;
   object-fit: cover;
+}
+
+.below-card-button-space {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+a.projects-more-button {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.02rem solid black;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+a.projects-more-button:hover {
+  background-color: lavender;
+  color: black;
 }
 
 .card-link-text, .spotlight-link-text {
