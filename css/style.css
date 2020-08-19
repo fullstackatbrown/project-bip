@@ -35,10 +35,16 @@ body {
   line-height: 2.5rem;
 }
 
-.img-card, .text-card, .home-main-lightbox-wrapper {
+.img-card, .text-card {
+  height: 450px;
+  background-color: white;
+  width: 393.33px;
+}
+
+.home-main-lightbox-wrapper, .img-card, .text-card {
   transition: transform 0.15s;
 }
-.img-card:hover, .text-card:hover, .home-main-lightbox-wrapper:hover {
+.home-main-lightbox-wrapper:hover, .img-card:hover, .text-card:hover {
   transform: translate(0px, -3px);
   -webkit-box-shadow: 0px 2px 7px 1px rgba(168, 168, 168, 0.23);
   -moz-box-shadow: 0px 2px 7px 1px rgba(168, 168, 168, 0.23);
@@ -84,6 +90,10 @@ body {
   .cards-flexbox {
     width: 98vw;
   }
+
+  .img-card, .text-card {
+    width: 32vw;
+  }
 }
 .spotlight-image-wrapper {
   height: 450px;
@@ -122,21 +132,11 @@ body {
 }
 
 .cards-flexbox {
-  background-color: #f5f2f0;
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-}
-
-.img-card, .text-card {
-  height: 450px;
-  background-color: white;
-  display: grid;
-  grid-gap: 0px;
-  width: 30%;
-  min-width: 300px;
 }
 
 .text-card {
