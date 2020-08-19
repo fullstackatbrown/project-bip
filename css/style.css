@@ -35,6 +35,13 @@ body {
   line-height: 2.5rem;
 }
 
+.home-main-lightbox-wrapper {
+  transition: transform 0.15s;
+}
+.home-main-lightbox-wrapper:hover {
+  transform: translate(0px, -3px);
+}
+
 .nav-custom {
   font-family: "Circular Std Bold";
   min-height: 70px;

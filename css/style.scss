@@ -24,6 +24,14 @@ body {
     line-height: 2.5rem;
 }
 
+// card interaction module, need shadow
+%card-interaction {
+    transition: transform 0.15s;
+    &:hover {
+        transform: translate(0px, -3px);
+    }
+}
+
 // font import from Online Web Fonts -> Circular
 @import url(//db.onlinewebfonts.com/c/06d1b1518a180e5a9cca2c23401ec40a?family=Circular+Std+Bold);
 @import url(//db.onlinewebfonts.com/c/2d98f490df6dc039774b101701ce3aba?family=Circular+Std+Book);
@@ -71,6 +79,7 @@ body {
     grid-template-columns: 7fr 3fr;
     grid-gap: 0px;
     margin-top: 10px;
+    @extend %card-interaction;
 }
 
 @media (max-width: 1220px) {
