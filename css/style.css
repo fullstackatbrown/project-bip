@@ -11,6 +11,8 @@
 @import url(//db.onlinewebfonts.com/c/6a9a7b1edc7ff5984996d7e4fe5f6861?family=Platform+Web+Medium);
 @import url(//db.onlinewebfonts.com/c/f24c407a3d7631757d38c3e61520a3fa?family=Platform+Web+Medium);
 @import url(//db.onlinewebfonts.com/c/1f48900b62d277f357bb39ca68a9dd49?family=Platform+Jules+Light);
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;1,300;1,400;1,500&family=Crimson+Text:ital@0;1&display=swap");
 body {
   background-color: #f5f2f0;
   overflow: hidden;
@@ -22,7 +24,7 @@ body {
   margin-left: auto;
 }
 
-.card-text-description, .button-custom, .spotlight-description {
+.card-text-description, .spotlight-description {
   font-family: "Circular Std Book";
   font-size: 1.1rem;
   letter-spacing: -0.5px;
@@ -66,8 +68,13 @@ body {
   background-color: white;
 }
 
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0;
+  margin: 0;
+}
+
 .nav-item {
-  padding-left: 15px;
+  margin-left: 25px;
 }
 
 .home-main-lightbox-wrapper {
@@ -82,6 +89,11 @@ body {
 @media (max-width: 1220px) {
   .nav-custom {
     width: 98vw;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0;
+    margin: 0;
   }
 
   #website-wrapper {
@@ -124,12 +136,7 @@ body {
 }
 
 .spotlight-description {
-  margin-top: 40px;
-}
-
-.button-custom {
-  padding: 12px 30px;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 .cards-flexbox {
@@ -162,6 +169,80 @@ body {
 
 .img-card {
   grid-template-rows: 7fr 3fr;
+}
+
+.custom-button {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.2rem;
+  letter-spacing: -0.5px;
+  margin-top: 60px;
+  color: black;
+  border: none;
+  transition: color 0.1s cubic-bezier(0.16, 0.08, 0.355, 1), background 0.1s cubic-bezier(0.16, 0.08, 0.355, 1);
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+}
+.custom-button:hover {
+  color: #0d0d0d;
+}
+
+.btn-arrow {
+  position: relative;
+  transition: background-color 300ms ease-out;
+}
+.btn-arrow span {
+  display: inline-block;
+  position: relative;
+  transition: all 300ms ease-out;
+  will-change: transform;
+}
+.btn-arrow:hover span {
+  transform: translate3d(0, 0, 0);
+}
+.btn-arrow svg {
+  position: absolute;
+  width: 0.9em;
+  left: 8.7rem;
+  right: 0px;
+  right: 0rem;
+  opacity: 1;
+  top: 43%;
+  transform: translateY(-50%);
+  transition: all 300ms ease-out;
+  will-change: right, opacity;
+}
+.btn-arrow svg * {
+  stroke-width: 2;
+}
+.btn-arrow:hover svg {
+  opacity: 1;
+  left: 9rem;
+}
+
+a {
+  display: inline-block;
+  position: relative;
+}
+a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #26225a;
+  transform-origin: bottom right;
+  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+}
+a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 /*# sourceMappingURL=style.css.map */
