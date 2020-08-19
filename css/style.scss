@@ -52,6 +52,8 @@ body {
 @import url(//db.onlinewebfonts.com/c/f24c407a3d7631757d38c3e61520a3fa?family=Platform+Web+Medium);
 @import url(//db.onlinewebfonts.com/c/1f48900b62d277f357bb39ca68a9dd49?family=Platform+Jules+Light);
 
+
+//navigation bar
 .nav-custom {
     font-family: "Circular Std Bold";
     min-height: 70px;
@@ -71,6 +73,7 @@ body {
     padding-left: 15px;
 }
 
+//spotlight section
 #website-wrapper {
     @extend %page-layout;
 }
@@ -91,7 +94,10 @@ body {
     }
     #website-wrapper {
         width: 98vw;
-    }
+	}
+	.cards-flexbox{
+		width: 98vw;
+	}
 }
 
 .spotlight-image-wrapper {
@@ -134,4 +140,56 @@ body {
     @extend %normal-text;
     padding: 12px 30px;
     margin-top: 60px;
+}
+
+//main page cards
+
+.cards-flexbox{
+	@extend %page-layout;
+    background-color: $background;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-between;
+
+}
+
+%card-layout {
+	@extend %card-interaction;
+	height: 450px;
+    background-color: white;
+    display: grid;
+	grid-gap: 0px;
+	width:30%;
+	min-width: 300px;
+}
+
+.text-card{
+ @extend %card-layout;
+ overflow: hidden;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.card-text-wrapper{
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+.card-text-headline{
+	font-family: 'Times New Roman', Times, serif;
+	font-style:italic;
+	font-size: 30px;
+}
+.card-text-description{
+	@extend %normal-text;
+}
+
+.img-card{
+	@extend %card-layout;
+	grid-template-rows: 7fr 3fr;
 }

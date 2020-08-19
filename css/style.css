@@ -16,13 +16,13 @@ body {
   overflow: hidden;
 }
 
-#website-wrapper, .nav-custom {
+.cards-flexbox, #website-wrapper, .nav-custom {
   width: 1200px;
   margin-right: auto;
   margin-left: auto;
 }
 
-.button-custom, .spotlight-description {
+.card-text-description, .button-custom, .spotlight-description {
   font-family: "Circular Std Book";
   font-size: 1.1rem;
   letter-spacing: -0.5px;
@@ -35,10 +35,10 @@ body {
   line-height: 2.5rem;
 }
 
-.home-main-lightbox-wrapper {
+.img-card, .text-card, .home-main-lightbox-wrapper {
   transition: transform 0.15s;
 }
-.home-main-lightbox-wrapper:hover {
+.img-card:hover, .text-card:hover, .home-main-lightbox-wrapper:hover {
   transform: translate(0px, -3px);
   -webkit-box-shadow: 0px 2px 7px 1px rgba(168, 168, 168, 0.23);
   -moz-box-shadow: 0px 2px 7px 1px rgba(168, 168, 168, 0.23);
@@ -80,6 +80,10 @@ body {
   #website-wrapper {
     width: 98vw;
   }
+
+  .cards-flexbox {
+    width: 98vw;
+  }
 }
 .spotlight-image-wrapper {
   height: 450px;
@@ -115,6 +119,48 @@ body {
 .button-custom {
   padding: 12px 30px;
   margin-top: 60px;
+}
+
+.cards-flexbox {
+  background-color: #f5f2f0;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.img-card, .text-card {
+  height: 450px;
+  background-color: white;
+  display: grid;
+  grid-gap: 0px;
+  width: 30%;
+  min-width: 300px;
+}
+
+.text-card {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-text-wrapper {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.card-text-headline {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 30px;
+}
+
+.img-card {
+  grid-template-rows: 7fr 3fr;
 }
 
 /*# sourceMappingURL=style.css.map */
