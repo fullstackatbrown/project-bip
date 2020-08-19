@@ -198,13 +198,12 @@ body {
   object-fit: cover;
 }
 
-.link-with-arrow-text {
+.card-link-text, .spotlight-link-text {
   font-family: "Crimson Text", serif;
   font-weight: 400;
   font-style: italic;
   font-size: 1.2rem;
   letter-spacing: -0.5px;
-  margin-top: 60px;
   color: black;
   border: none;
   transition: color 0.1s cubic-bezier(0.16, 0.08, 0.355, 1), background 0.1s cubic-bezier(0.16, 0.08, 0.355, 1);
@@ -214,24 +213,24 @@ body {
   text-align: center;
   position: relative;
 }
-.link-with-arrow-text:hover {
+.card-link-text:hover, .spotlight-link-text:hover {
   color: #0d0d0d;
 }
 
-.link-with-arrow-arrow {
+.card-link-arrow, .spotlight-link-arrow {
   position: relative;
   transition: background-color 300ms ease-out;
 }
-.link-with-arrow-arrow span {
+.card-link-arrow span, .spotlight-link-arrow span {
   display: inline-block;
   position: relative;
   transition: all 300ms ease-out;
   will-change: transform;
 }
-.link-with-arrow-arrow:hover span {
+.card-link-arrow:hover span, .spotlight-link-arrow:hover span {
   transform: translate3d(0, 0, 0);
 }
-.link-with-arrow-arrow svg {
+.card-link-arrow svg, .spotlight-link-arrow svg {
   position: absolute;
   width: 0.9em;
   left: 8.7rem;
@@ -243,10 +242,10 @@ body {
   transition: all 300ms ease-out;
   will-change: right, opacity;
 }
-.link-with-arrow-arrow svg * {
+.card-link-arrow svg *, .spotlight-link-arrow svg * {
   stroke-width: 2;
 }
-.link-with-arrow-arrow:hover svg {
+.card-link-arrow:hover svg, .spotlight-link-arrow:hover svg {
   opacity: 1;
   left: 9rem;
 }
@@ -270,6 +269,35 @@ a::after {
 a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.spotlight-link-text {
+  margin-top: 60px;
+}
+
+.card-link-text {
+  margin-top: 0px;
+  font-size: 1.2rem;
+  letter-spacing: -0.5px;
+  color: black;
+}
+.card-link-text:hover {
+  color: #0d0d0d;
+}
+
+.card-link-arrow svg {
+  position: absolute;
+  width: 0.9em;
+  left: 8.7rem;
+  opacity: 1;
+  top: 43%;
+}
+.card-link-arrow svg * {
+  stroke-width: 2;
+}
+.card-link-arrow:hover svg {
+  opacity: 1;
+  left: 9rem;
 }
 
 /*# sourceMappingURL=style.css.map */

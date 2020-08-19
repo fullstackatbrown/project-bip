@@ -228,13 +228,12 @@ body {
 	object-fit: cover;
 }
 
-.link-with-arrow-text {
+%link-with-arrow-text {
     font-family: 'Crimson Text', serif;
     font-weight: 400;
     font-style: italic;
     font-size: 1.2rem;
     letter-spacing: -0.5px;
-    margin-top: 60px;
     color: black;
     border: none;
     transition: color 0.1s cubic-bezier(0.16, 0.08, 0.355, 1), background 0.1s cubic-bezier(0.16, 0.08, 0.355, 1);
@@ -248,7 +247,7 @@ body {
     }
 }
 
-.link-with-arrow-arrow {
+%link-with-arrow-arrow {
     position: relative;
     transition: background-color 300ms ease-out;
     span {
@@ -302,5 +301,42 @@ a {
         transform: scaleX(1);
         transform-origin: bottom left;
       }
-      
+}
+
+.spotlight-link-text {
+    @extend %link-with-arrow-text;
+    margin-top: 60px;
+}
+
+.spotlight-link-arrow {
+    @extend %link-with-arrow-arrow;
+}
+
+.card-link-text {
+    @extend %link-with-arrow-text;
+    margin-top: 0px; // normal margin for text
+    font-size: 1.2rem;
+    letter-spacing: -0.5px;
+    color: black;
+    &:hover {
+        color: lighten(black, 5%); // dont' need to change
+    }
+}
+
+.card-link-arrow {
+    @extend %link-with-arrow-arrow;
+    svg {
+        position: absolute;
+        width: 0.9em; // control the arrow size
+        left: 8.7rem; // control initial x position
+        opacity: 1; // 0 -> hide if not touched
+        top: 43%; // vertical alignment
+        * {
+            stroke-width: 2; // stroke width
+        }
+    }
+    &:hover svg {
+        opacity: 1;
+        left: 9rem; // final x position
+    }
 }
