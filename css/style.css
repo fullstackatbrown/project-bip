@@ -40,6 +40,9 @@ body {
 }
 .home-main-lightbox-wrapper:hover {
   transform: translate(0px, -3px);
+  -webkit-box-shadow: 0px 2px 7px 1px rgba(168, 168, 168, 0.23);
+  -moz-box-shadow: 0px 2px 7px 1px rgba(168, 168, 168, 0.23);
+  box-shadow: 0px 2px 7px 1px rgba(168, 168, 168, 0.23);
 }
 
 .nav-custom {
