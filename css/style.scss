@@ -200,7 +200,7 @@ body {
     grid-template-rows: 7fr 3fr;
 }
 
-.custom-button {
+.link-with-arrow-text {
     font-family: 'Crimson Text', serif;
     font-weight: 400;
     font-style: italic;
@@ -220,7 +220,7 @@ body {
     }
 }
 
-.btn-arrow {
+.link-with-arrow-arrow {
     position: relative;
     transition: background-color 300ms ease-out;
     span {

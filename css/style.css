@@ -171,7 +171,7 @@ body {
   grid-template-rows: 7fr 3fr;
 }
 
-.custom-button {
+.link-with-arrow-text {
   font-family: "Crimson Text", serif;
   font-weight: 400;
   font-style: italic;
@@ -187,24 +187,24 @@ body {
   text-align: center;
   position: relative;
 }
-.custom-button:hover {
+.link-with-arrow-text:hover {
   color: #0d0d0d;
 }
 
-.btn-arrow {
+.link-with-arrow-arrow {
   position: relative;
   transition: background-color 300ms ease-out;
 }
-.btn-arrow span {
+.link-with-arrow-arrow span {
   display: inline-block;
   position: relative;
   transition: all 300ms ease-out;
   will-change: transform;
 }
-.btn-arrow:hover span {
+.link-with-arrow-arrow:hover span {
   transform: translate3d(0, 0, 0);
 }
-.btn-arrow svg {
+.link-with-arrow-arrow svg {
   position: absolute;
   width: 0.9em;
   left: 8.7rem;
@@ -216,10 +216,10 @@ body {
   transition: all 300ms ease-out;
   will-change: right, opacity;
 }
-.btn-arrow svg * {
+.link-with-arrow-arrow svg * {
   stroke-width: 2;
 }
-.btn-arrow:hover svg {
+.link-with-arrow-arrow:hover svg {
   opacity: 1;
   left: 9rem;
 }
