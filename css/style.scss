@@ -123,7 +123,8 @@ body {
 	}
 	.below-card-button-space {
         width: 98vw;
-    }
+	}
+
 }
 
 .spotlight-image-wrapper {
@@ -162,9 +163,46 @@ body {
     @extend %normal-text;
 }
 
+.line-for-projects-space{
+	margin-top:40px;
+	margin-bottom:0;
+	@extend %page-layout;
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.line-text-wrapper{
+	display:inline-block;
+	width: 10%;
+}
+
+.line-text{
+    font-family: "Circular Std Book";
+    font-size: 1rem;
+	color:grey;
+}
+
+hr.light-hr{
+	border-top: 0.2px solid lightgrey;
+	width: 90%;
+	margin:0;
+}
+
+.thick-white-line-space{
+	margin-top:20px;
+	margin-bottom:20px; //temporary
+	display:flex;
+}
+
+hr.thick-white{
+	border-top: 8px solid white;
+	width: 100%;
+}
+
 .cards-flexbox {
     @extend %page-layout;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 30px; // temporary
     display: flex;
     flex-direction: row;
@@ -192,6 +230,14 @@ body {
     font-family: "Crimson Text";
     font-style: italic;
     font-size: 2rem; 
+}
+
+.card-text-subtitle {
+	margin-top:2.3rem;
+    font-family: "Circular Std Black";
+    font-size: 1.2rem;
+    letter-spacing: -0.5px;
+    line-height: 1.4rem;
 }
 
 .card-text-description {
@@ -233,7 +279,8 @@ body {
 .img-card-text-description {
 	@extend %normal-text;
 	font-size: 1rem;
-	margin-top:10px;
+	margin-top:1rem;
+	margin-bottom:5rem;
 }
 
 .image-card-link-wrapper {
@@ -253,6 +300,7 @@ body {
 .projects-more-button{
 	padding: 10px 20px;
 	border: 1px solid black;
+	background-color: transparent;
 	border-radius: 3px;
     box-sizing: border-box;
     text-transform: uppercase;
