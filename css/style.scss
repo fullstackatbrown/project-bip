@@ -126,7 +126,6 @@ body {
     }
 }
 
-
 .spotlight-image-wrapper {
     height: 450px;
     width: 100%;
@@ -166,7 +165,7 @@ body {
 .cards-flexbox {
     @extend %page-layout;
     margin-top: 10px;
-    margin-bottom: 20px; // temporary
+    margin-bottom: 30px; // temporary
     display: flex;
     flex-direction: row;
 	align-items: flex-start;
@@ -185,10 +184,8 @@ body {
 }
 
 .card-text-wrapper {
-    margin-top: 30px;
-    margin-bottom: 40px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 25px;
+    height: 230px;
 }
 
 .card-text-headline {
@@ -201,31 +198,14 @@ body {
     @extend %normal-text;
 }
 
-.img-card-text-description {
-	@extend %normal-text;
-	font-size: 1rem;
-	margin-top:10%;
-}
-
+// Card type: image
 .img-card {
     @extend %card-layout;
 	@extend %card-interaction;
-    height: 450px;
+    height: 500px;
     background-color: white;
     overflow: hidden;
-}
-
-.img-card-text-section{
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.img-card-text-title {
-	@extend %normal-text;
-	font-size: 1.5rem;
-	margin-bottom:1rem;
+    position: relative;
 }
 
 .img-card-image-wrapper {
@@ -239,37 +219,56 @@ body {
 	object-fit: cover;
 }
 
+.img-card-item-type {
+    @extend %normal-text;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.img-card-text-title {
+    @extend %normal-text;
+    font-family: "Circular Std Bold";
+}
+
+.img-card-text-description {
+	@extend %normal-text;
+	font-size: 1rem;
+	margin-top:10px;
+}
+
+.image-card-link-wrapper {
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+}
+
 .below-card-button-space{
 	@extend %page-layout;
 	display:flex;
-	margin-bottom: 20px; //temporary
+	margin-bottom: 30px; //temporary
 	align-items: flex-end;
 	justify-content: flex-end;
 }
-a.projects-more-button{
-	display:inline-block;
-	padding:0.35em 1.2em;
-	border:0.02rem solid black;
-	margin:0 0.3em 0.3em 0;
-	border-radius:0.2em;
-	box-sizing: border-box;
-	text-decoration:none;
-	color:black;
-	text-align:center;
-	transition: all 0.2s;
 
-	}
-
-a.projects-more-button:hover{
-	background-color:lavender;
+.projects-more-button{
+	padding: 10px 20px;
+	border: 1px solid black;
+	border-radius: 3px;
+    box-sizing: border-box;
+    text-transform: uppercase;
 	color:black;
-	}
+	text-align: center;
+    transition: all 0.2s;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    font-family: "Circular Std Bold";
+}
+
+.projects-more-button:hover{
+	background-color:black;
+	color:white;
+}
 	
-
-
-
-
-
 %link-with-arrow-text {
     font-family: 'Crimson Text', serif;
     font-weight: 400;
@@ -318,7 +317,7 @@ a.projects-more-button:hover{
     }
     &:hover svg {
         opacity: 1;
-        left: 9rem;
+        left: 9.2rem;
     }
 }
 
@@ -370,7 +369,7 @@ a {
     svg {
         position: absolute;
         width: 0.9em; // control the arrow size
-        left: 8.7rem; // control initial x position
+        left: 5.5rem; // control initial x position
         opacity: 1; // 0 -> hide if not touched
         top: 43%; // vertical alignment
         * {
@@ -379,6 +378,6 @@ a {
     }
     &:hover svg {
         opacity: 1;
-        left: 9rem; // final x position
+        left: 6rem; // final x position + 0.5rem
     }
 }

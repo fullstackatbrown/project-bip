@@ -23,7 +23,7 @@ body {
   margin-left: auto;
 }
 
-.img-card-text-title, .img-card-text-description, .card-text-description, .spotlight-description {
+.img-card-text-description, .img-card-text-title, .img-card-item-type, .card-text-description, .spotlight-description {
   font-family: "Circular Std Book";
   font-size: 1.1rem;
   letter-spacing: -0.5px;
@@ -144,7 +144,7 @@ body {
 
 .cards-flexbox {
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -162,10 +162,8 @@ body {
 }
 
 .card-text-wrapper {
-  margin-top: 30px;
-  margin-bottom: 40px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin: 25px;
+  height: 230px;
 }
 
 .card-text-headline {
@@ -174,27 +172,11 @@ body {
   font-size: 2rem;
 }
 
-.img-card-text-description {
-  font-size: 1rem;
-  margin-top: 10%;
-}
-
 .img-card {
-  height: 450px;
+  height: 500px;
   background-color: white;
   overflow: hidden;
-}
-
-.img-card-text-section {
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.img-card-text-title {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  position: relative;
 }
 
 .img-card-image-wrapper {
@@ -208,29 +190,50 @@ body {
   object-fit: cover;
 }
 
+.img-card-item-type {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.img-card-text-title {
+  font-family: "Circular Std Bold";
+}
+
+.img-card-text-description {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.image-card-link-wrapper {
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+}
+
 .below-card-button-space {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   align-items: flex-end;
   justify-content: flex-end;
 }
 
-a.projects-more-button {
-  display: inline-block;
-  padding: 0.35em 1.2em;
-  border: 0.02rem solid black;
-  margin: 0 0.3em 0.3em 0;
-  border-radius: 0.2em;
+.projects-more-button {
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 3px;
   box-sizing: border-box;
-  text-decoration: none;
+  text-transform: uppercase;
   color: black;
   text-align: center;
   transition: all 0.2s;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  font-family: "Circular Std Bold";
 }
 
-a.projects-more-button:hover {
-  background-color: lavender;
-  color: black;
+.projects-more-button:hover {
+  background-color: black;
+  color: white;
 }
 
 .card-link-text, .spotlight-link-text {
@@ -282,7 +285,7 @@ a.projects-more-button:hover {
 }
 .card-link-arrow:hover svg, .spotlight-link-arrow:hover svg {
   opacity: 1;
-  left: 9rem;
+  left: 9.2rem;
 }
 
 a {
@@ -323,7 +326,7 @@ a:hover::after {
 .card-link-arrow svg {
   position: absolute;
   width: 0.9em;
-  left: 8.7rem;
+  left: 5.5rem;
   opacity: 1;
   top: 43%;
 }
@@ -332,7 +335,7 @@ a:hover::after {
 }
 .card-link-arrow:hover svg {
   opacity: 1;
-  left: 9rem;
+  left: 6rem;
 }
 
 /*# sourceMappingURL=style.css.map */
