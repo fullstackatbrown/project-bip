@@ -132,6 +132,7 @@ a {
 }
 
 @media (max-width: 1220px) {
+	
     .nav-custom {
         width: 98vw;
     }
@@ -141,7 +142,12 @@ a {
     }
     #website-wrapper {
         width: 98vw;
-    }
+	}
+	
+	.home-main-lightbox-wrapper{
+		width: 98vw;
+	}
+	
     .cards-flexbox {
         width: 98vw;
     }
@@ -150,6 +156,16 @@ a {
 	}
 	.below-card-button-space {
         width: 98vw;
+	}
+	.timeline-flexbox {
+		width: 98vw;
+	}
+
+	hr.timeline-hr {
+		border:none;
+		border-left: 2px solid black;
+		height: 100%;
+		width: 1px;       
 	}
 }
 
@@ -223,6 +239,11 @@ hr.light-hr{
 
 hr.thick-white{
 	border-top: 8px solid white;
+	width: 100%;
+}
+
+hr.timeline-hr{
+	border-top: 2px solid black;
 	width: 100%;
 }
 
@@ -345,6 +366,16 @@ hr.thick-white{
 .projects-more-button:hover{
 	background-color:black;
 	color:white;
+}
+
+.timeline-flexbox {
+    @extend %page-layout;
+    margin-top: 20px;
+    margin-bottom: 30px; // temporary
+    display: flex;
+    flex-direction: column;
+	align-items: flex-start;
+    justify-content: flex-start;
 }
 	
 %link-with-arrow-text {

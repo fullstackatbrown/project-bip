@@ -21,7 +21,7 @@ hr {
   margin: 0;
 }
 
-.cards-flexbox, #website-wrapper, .nav-custom {
+.timeline-flexbox, .cards-flexbox, #website-wrapper, .nav-custom {
   width: 1200px;
   margin-right: auto;
   margin-left: auto;
@@ -124,6 +124,10 @@ a:hover::after {
     width: 98vw;
   }
 
+  .home-main-lightbox-wrapper {
+    width: 98vw;
+  }
+
   .cards-flexbox {
     width: 98vw;
   }
@@ -134,6 +138,17 @@ a:hover::after {
 
   .below-card-button-space {
     width: 98vw;
+  }
+
+  .timeline-flexbox {
+    width: 98vw;
+  }
+
+  hr.timeline-hr {
+    border: none;
+    border-left: 2px solid black;
+    height: 100%;
+    width: 1px;
   }
 }
 .spotlight-image-wrapper {
@@ -201,6 +216,11 @@ hr.light-hr {
 
 hr.thick-white {
   border-top: 8px solid white;
+  width: 100%;
+}
+
+hr.timeline-hr {
+  border-top: 2px solid black;
   width: 100%;
 }
 
@@ -314,6 +334,15 @@ hr.thick-white {
 .projects-more-button:hover {
   background-color: black;
   color: white;
+}
+
+.timeline-flexbox {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .card-link-text, .spotlight-link-text {
