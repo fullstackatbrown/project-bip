@@ -27,7 +27,7 @@ hr {
   margin-left: auto;
 }
 
-.img-card-text-description, .img-card-text-title, .img-card-item-type, .card-text-description, .spotlight-description {
+.img-card-text-description, .img-card-text-title, .img-card-item-type, .text-card-text-description, .text-card-text-subtitle, .spotlight-description {
   font-family: "Circular Std Book";
   font-size: 1.1rem;
   letter-spacing: -0.5px;
@@ -223,23 +223,28 @@ hr.thick-white {
   align-items: center;
 }
 
-.card-text-wrapper {
+.text-card-text-wrapper {
   margin: 25px;
-  height: 230px;
+  height: 400px;
 }
 
-.card-text-headline {
+.text-card-section-wrapper {
+  margin-top: 15px;
+}
+
+.text-card-text-headline {
   font-family: "Crimson Text";
   font-style: italic;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
-.card-text-subtitle {
-  margin-top: 2.3rem;
-  font-family: "Circular Std Black";
-  font-size: 1.2rem;
-  letter-spacing: -0.5px;
-  line-height: 1.4rem;
+.text-card-text-subtitle {
+  font-family: "Circular Std Bold";
+}
+
+.text-card-text-description {
+  font-size: 1rem;
+  margin-top: 6px;
 }
 
 .img-card {
@@ -247,6 +252,11 @@ hr.thick-white {
   background-color: white;
   overflow: hidden;
   position: relative;
+}
+
+.img-card-text-wrapper {
+  margin: 25px;
+  height: 230px;
 }
 
 .img-card-image-wrapper {
@@ -272,7 +282,6 @@ hr.thick-white {
 .img-card-text-description {
   font-size: 1rem;
   margin-top: 1rem;
-  margin-bottom: 5rem;
 }
 
 .image-card-link-wrapper {

@@ -247,27 +247,29 @@ hr.thick-white{
     align-items: center;
 }
 
-.card-text-wrapper {
+.text-card-text-wrapper {
     margin: 25px;
-    height: 230px;
+    height: 400px; // need to adjust
 }
 
-.card-text-headline {
+.text-card-section-wrapper {
+    margin-top: 15px;
+}
+.text-card-text-headline {
     font-family: "Crimson Text";
     font-style: italic;
-    font-size: 2rem; 
+    font-size: 1.2rem; 
 }
 
-.card-text-subtitle {
-	margin-top:2.3rem;
-    font-family: "Circular Std Black";
-    font-size: 1.2rem;
-    letter-spacing: -0.5px;
-    line-height: 1.4rem;
-}
-
-.card-text-description {
+.text-card-text-subtitle {
     @extend %normal-text;
+    font-family: "Circular Std Bold";
+}
+
+.text-card-text-description {
+	@extend %normal-text;
+	font-size: 1rem;
+	margin-top: 6px;
 }
 
 // Card type: image
@@ -278,6 +280,11 @@ hr.thick-white{
     background-color: white;
     overflow: hidden;
     position: relative;
+}
+
+.img-card-text-wrapper {
+    margin: 25px;
+    height: 230px;
 }
 
 .img-card-image-wrapper {
@@ -305,8 +312,7 @@ hr.thick-white{
 .img-card-text-description {
 	@extend %normal-text;
 	font-size: 1rem;
-	margin-top:1rem;
-	margin-bottom:5rem;
+	margin-top: 1rem;
 }
 
 .image-card-link-wrapper {
