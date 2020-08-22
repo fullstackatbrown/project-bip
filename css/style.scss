@@ -6,6 +6,10 @@ body {
     background-color: $background;
 }
 
+hr {
+    margin: 0;
+}
+
 %page-layout {
     width: 1200px;
     margin-right: auto;
@@ -41,6 +45,29 @@ body {
         -moz-box-shadow: 0px 2px 7px 1px rgba(168, 168, 168, 0.23);
         box-shadow: 0px 2px 7px 1px rgba(168, 168, 168, 0.23);
     }
+}
+
+a {
+    display: inline-block;
+    position: relative;
+      
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: $light-purple;
+        transform-origin: bottom right;
+        transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+      }
+      
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
 }
 
 // font import from Online Web Fonts -> Circular
@@ -124,7 +151,6 @@ body {
 	.below-card-button-space {
         width: 98vw;
 	}
-
 }
 
 .spotlight-image-wrapper {
@@ -164,17 +190,18 @@ body {
 }
 
 .line-for-projects-space{
-	margin-top:40px;
-	margin-bottom:0;
-	@extend %page-layout;
-	display:flex;
+	margin-top: 20px;
+	margin-bottom: 0;
+	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
 
 .line-text-wrapper{
-	display:inline-block;
-	width: 10%;
+    display: inline-block;
+    flex: none;
+    margin-right: 20px;
+    width: 120px;
 }
 
 .line-text{
@@ -184,15 +211,14 @@ body {
 }
 
 hr.light-hr{
-	border-top: 0.2px solid lightgrey;
-	width: 90%;
-	margin:0;
+    display: inline-block;
+    border-top: 2px solid lightgrey;
+    width: 90%;
 }
 
 .thick-white-line-space{
-	margin-top:20px;
-	margin-bottom:20px; //temporary
-	display:flex;
+	margin-top: 40px;
+	margin-bottom: 20px; //temporary
 }
 
 hr.thick-white{
@@ -290,9 +316,7 @@ hr.thick-white{
 }
 
 .below-card-button-space{
-	@extend %page-layout;
-	display:flex;
-	margin-bottom: 30px; //temporary
+	display: flex;
 	align-items: flex-end;
 	justify-content: flex-end;
 }
@@ -367,29 +391,6 @@ hr.thick-white{
         opacity: 1;
         left: 9.2rem;
     }
-}
-
-a {
-    display: inline-block;
-    position: relative;
-      
-      &::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        transform: scaleX(0);
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: $light-purple;
-        transform-origin: bottom right;
-        transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
-      }
-      
-      &:hover::after {
-        transform: scaleX(1);
-        transform-origin: bottom left;
-      }
 }
 
 .spotlight-link-text {

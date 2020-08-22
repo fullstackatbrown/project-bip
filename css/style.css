@@ -17,7 +17,11 @@ body {
   background-color: #f5f2f0;
 }
 
-.below-card-button-space, .cards-flexbox, .line-for-projects-space, #website-wrapper, .nav-custom {
+hr {
+  margin: 0;
+}
+
+.cards-flexbox, #website-wrapper, .nav-custom {
   width: 1200px;
   margin-right: auto;
   margin-left: auto;
@@ -51,6 +55,27 @@ body {
   -webkit-box-shadow: 0px 2px 7px 1px rgba(168, 168, 168, 0.23);
   -moz-box-shadow: 0px 2px 7px 1px rgba(168, 168, 168, 0.23);
   box-shadow: 0px 2px 7px 1px rgba(168, 168, 168, 0.23);
+}
+
+a {
+  display: inline-block;
+  position: relative;
+}
+a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #9958a6;
+  transform-origin: bottom right;
+  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+}
+a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .nav-custom {
@@ -143,7 +168,7 @@ body {
 }
 
 .line-for-projects-space {
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 0;
   display: flex;
   align-items: center;
@@ -152,7 +177,9 @@ body {
 
 .line-text-wrapper {
   display: inline-block;
-  width: 10%;
+  flex: none;
+  margin-right: 20px;
+  width: 120px;
 }
 
 .line-text {
@@ -162,15 +189,14 @@ body {
 }
 
 hr.light-hr {
-  border-top: 0.2px solid lightgrey;
+  display: inline-block;
+  border-top: 2px solid lightgrey;
   width: 90%;
-  margin: 0;
 }
 
 .thick-white-line-space {
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 20px;
-  display: flex;
 }
 
 hr.thick-white {
@@ -257,7 +283,6 @@ hr.thick-white {
 
 .below-card-button-space {
   display: flex;
-  margin-bottom: 30px;
   align-items: flex-end;
   justify-content: flex-end;
 }
@@ -332,27 +357,6 @@ hr.thick-white {
 .card-link-arrow:hover svg, .spotlight-link-arrow:hover svg {
   opacity: 1;
   left: 9.2rem;
-}
-
-a {
-  display: inline-block;
-  position: relative;
-}
-a::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #9958a6;
-  transform-origin: bottom right;
-  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
-}
-a:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
 }
 
 .spotlight-link-text {
