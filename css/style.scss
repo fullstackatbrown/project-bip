@@ -242,11 +242,16 @@ hr.thick-white{
 	width: 100%;
 }
 
+hr.first-timeline-hr{
+	border-top: 2px solid black;
+	width: 16%;
+}
+
 hr.timeline-hr{
 	border-top: 2px solid black;
-	width: 95%;
+	width: 21%;
 }
-.point {
+.timeline-arrow {
 	width: 0;
 	height: 0;
 	border-top: 6px solid transparent;
@@ -254,6 +259,17 @@ hr.timeline-hr{
 	border-left: 25px solid black;
 	float: right;
   }
+
+  .timeline-point {
+    min-width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border-radius: 100%;
+    border: 2px black solid;
+    position: relative;
+	left: 1px;
+	z-index: 100;
+}
 
 .cards-flexbox {
     @extend %page-layout;
@@ -392,6 +408,8 @@ hr.timeline-hr{
 	grid-gap: 0px;
 	align-items: center;
 }
+
+
 	
 %link-with-arrow-text {
     font-family: 'Crimson Text', serif;
