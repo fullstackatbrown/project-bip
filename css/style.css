@@ -27,7 +27,7 @@ hr {
   margin-left: auto;
 }
 
-.img-card-text-description, .img-card-text-title, .img-card-item-type, .text-card-text-description, .text-card-text-subtitle, .spotlight-description {
+.timeline-description, .img-card-text-description, .img-card-text-title, .img-card-item-type, .text-card-text-description, .text-card-text-subtitle, .spotlight-description {
   font-family: "Circular Std Book";
   font-size: 1.1rem;
   letter-spacing: -0.5px;
@@ -142,18 +142,26 @@ a:hover::after {
 
   .timeline-flexbox {
     width: 98vw;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: flex-start;
+    overflow: scroll;
   }
 
   .timeline-box {
-    align-items: center;
     transform: rotate(90deg);
   }
 
-  .timeline-flexbox {
-    flex-direction: row;
-    justify-content: flex-start;
-    align-content: flex-start;
-    overflow: scroll;
+  .timeline-flexbox .timeline-top-flex {
+    flex-direction: column;
+    height: 90%;
+  }
+
+  .timeline-flexbox .timeline-bottom-flex {
+    margin-top: 10%;
+    flex-direction: column;
+    height: 90%;
+    align-items: flex-start;
   }
 }
 .spotlight-image-wrapper {
@@ -281,6 +289,7 @@ hr.timeline-hr {
 
 .text-card-section-wrapper {
   margin-top: 15px;
+  overflow: hidden;
 }
 
 .text-card-text-headline {
@@ -369,7 +378,7 @@ hr.timeline-hr {
 
 .timeline-flexbox {
   height: 500px;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
@@ -380,8 +389,47 @@ hr.timeline-hr {
 .timeline-box {
   display: flex;
   width: 100%;
-  grid-gap: 0px;
   align-items: center;
+}
+
+.timeline-top-flex {
+  height: 300px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.timeline-bottom-flex {
+  margin-left: 20%;
+  height: 300px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.timeline-item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.timeline-title {
+  font-family: "Crimson Text";
+  font-size: 1.3rem;
+}
+
+.timeline-description {
+  font-size: 1rem;
+  margin-top: 6px;
+  margin-left: 20px;
 }
 
 .card-link-text, .spotlight-link-text {

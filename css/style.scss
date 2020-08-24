@@ -155,20 +155,32 @@ a {
         width: 32vw;
 	}
 	.below-card-button-space {
-        width: 98vw;
-	}
-	.timeline-flexbox {
 		width: 98vw;
 	}
-	.timeline-box{
-		align-items: center;
-		transform: rotate(90deg);
-	}
+
 	.timeline-flexbox {
+		width: 98vw;
 		flex-direction: row;
-		justify-content: flex-start;
+		justify-content: space-around;
 		align-content: flex-start;
 		overflow: scroll;
+	}
+
+	.timeline-box{
+		transform: rotate(90deg);
+	}
+
+	.timeline-flexbox .timeline-top-flex{
+		flex-direction: column;
+		height:90%;
+
+	}
+
+	.timeline-flexbox .timeline-bottom-flex {
+		margin-top:10%;
+		flex-direction: column;
+		height:90%;
+		align-items: flex-start;
 	}
 
 }
@@ -303,7 +315,9 @@ hr.timeline-hr{
 }
 
 .text-card-section-wrapper {
-    margin-top: 15px;
+	margin-top: 15px;
+	overflow: hidden;
+
 }
 .text-card-text-headline {
     font-family: "Crimson Text";
@@ -400,7 +414,7 @@ hr.timeline-hr{
 .timeline-flexbox {
 	@extend %page-layout;
 	height: 500px;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 30px; // temporary
     display: flex;
     flex-direction: column;
@@ -411,10 +425,47 @@ hr.timeline-hr{
 .timeline-box{
 	display: flex;
 	width:100%;
-	grid-gap: 0px;
 	align-items: center;
 }
 
+.timeline-top-flex{
+	height: 300px;
+	width:90%;
+    display: flex;
+    flex-direction: row;
+	align-items: flex-end;
+    justify-content: space-around;
+}
+.timeline-bottom-flex{
+	margin-left:20%;
+	height: 300px;
+	width:90%;
+    display: flex;
+    flex-direction: row;
+	align-items: flex-start;
+    justify-content: space-around;
+}
+
+.timeline-item{
+	margin-top:10px;
+	margin-bottom:10px;
+	width:25%;
+    display: flex;
+    flex-direction: column;
+	align-items: flex-start;
+    justify-content: flex-start;
+}
+.timeline-title {
+	font-family: "Crimson Text";
+	font-size: 1.3rem;
+}
+
+.timeline-description {
+	@extend %normal-text;
+	font-size: 1rem;
+	margin-top: 6px;
+	margin-left:20px;
+}
 
 	
 %link-with-arrow-text {
