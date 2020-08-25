@@ -386,62 +386,6 @@ hr.timeline-hr {
   color: white;
 }
 
-.timeline-flexbox {
-  height: 500px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-.timeline-box {
-  display: flex;
-  width: 100%;
-  align-items: center;
-}
-
-.timeline-top-flex {
-  height: 300px;
-  width: 90%;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: space-around;
-}
-
-.timeline-bottom-flex {
-  margin-left: 23%;
-  height: 300px;
-  width: 88%;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-around;
-}
-
-.timeline-item {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-
-.timeline-title {
-  font-family: "Crimson Text";
-  font-size: 1.3rem;
-}
-
-.timeline-description {
-  font-size: 1rem;
-  margin-top: 6px;
-  margin-left: 20px;
-}
-
 .card-link-text, .spotlight-link-text {
   font-family: "Crimson Text", serif;
   font-weight: 400;
@@ -521,6 +465,62 @@ hr.timeline-hr {
 .card-link-arrow:hover svg {
   opacity: 1;
   left: 6rem;
+}
+
+.timeline-flexbox {
+  height: 500px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.timeline-box {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.timeline-top-flex {
+  height: 300px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.timeline-bottom-flex {
+  margin-left: 23%;
+  height: 300px;
+  width: 88%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.timeline-item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.timeline-title {
+  font-family: "Crimson Text";
+  font-size: 1.3rem;
+}
+
+.timeline-description {
+  font-size: 1rem;
+  margin-top: 6px;
+  margin-left: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
