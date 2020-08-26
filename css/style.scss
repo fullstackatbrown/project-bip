@@ -482,8 +482,8 @@ hr.thick-white {
 
 // TIMELINE
 #timeline-box {
-    margin-top: 400px;
-    margin-bottom: 400px;
+    margin-top: 300px;
+    margin-bottom: 300px;
     position: relative;
 }
 
@@ -527,10 +527,25 @@ hr.thick-white {
     font-style: italic;
     line-height: 1.7rem;
     letter-spacing: -0.3px;
-    width: 400px;
+    width: 380px;
     margin-bottom: 9px;
     opacity: 0.4;
     transition-duration: 0.2s;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 2.5px 2.5px 0;
+    display: inline-block;
+    padding: 5px;
+    position: absolute;
+    left: 99%;
+    top: -5.5px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
 }
 
 @keyframes fadeIn {
@@ -547,66 +562,72 @@ hr.thick-white {
 // for timeline node 1
 #timeline-p1 {
     @extend %timeline-item;
-    left: 0%;
+    left: 5%;
 }
 
 #timeline-textbox-1 {
     top: -155px;
+    left: 5%;
 }
 
 #timeline-description-1 {
     @extend %timeline-description;
 }
 
-.timeline-opacity-1 {
+.timeline-opacity {
     opacity: 1 !important;
 }
 
-// for timeline node 2, NOT DONE, DON'T TOUCH
-.timeline-p2 {
-    left: 33%;
+// for timeline node 2
+#timeline-p2 {
+    @extend %timeline-item;
+    left: 40%;
 }
 
-.timeline-p3 {
-    left: 58%;
+#timeline-textbox-2 {
+    top: 35px;
+    left: 8.1%;
 }
 
-.timeline-p4 {
-    left: 91.7%;
-}
-
-.timeline-t2 {
-    top: 70px;
-    left: 7.8%;
+#timeline-description-2 {
+    @extend %timeline-description;
+    float: right;
     text-align: right;
 }
 
-.timeline-t3 {
-    top: -170px;
-    left: 60.5%;
+// for timeline node 3
+#timeline-p3 {
+    @extend %timeline-item;
+    left: 55%;
 }
 
-.timeline-t4 {
-    top: 70px;
-    left: 58.3%;
+#timeline-textbox-3 {
+    top: -155px;
+    left: 55%;
+}
+
+#timeline-description-3 {
+    @extend %timeline-description;
+}
+
+// for timeline node 4
+#timeline-p4 {
+    @extend %timeline-item;
+    left: 93%;
+}
+
+#timeline-textbox-4 {
+    top: 35px;
+    left: 61.1%;
+}
+
+#timeline-description-4 {
+    @extend %timeline-description;
+    float: right;
     text-align: right;
 }
 
+// media query for mobile
 @media (max-width: 1220px) {
 
-}
-
-.arrow {
-    border: solid black;
-    border-width: 0 2.5px 2.5px 0;
-    display: inline-block;
-    padding: 5px;
-    position: absolute;
-    left: 99%;
-    top: -5.5px;
-}
-
-.right {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
 }

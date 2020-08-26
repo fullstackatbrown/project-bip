@@ -434,8 +434,8 @@ hr.thick-white {
 }
 
 #timeline-box {
-  margin-top: 400px;
-  margin-bottom: 400px;
+  margin-top: 300px;
+  margin-bottom: 300px;
   position: relative;
 }
 
@@ -445,7 +445,7 @@ hr.thick-white {
   background-color: #21252d;
 }
 
-#timeline-p1 {
+#timeline-p4, #timeline-p3, #timeline-p2, #timeline-p1 {
   z-index: 0;
   width: 20px;
   height: 20px;
@@ -457,7 +457,7 @@ hr.thick-white {
   transition-duration: 0.2s;
   top: -9px;
 }
-#timeline-p1:hover {
+#timeline-p4:hover, #timeline-p3:hover, #timeline-p2:hover, #timeline-p1:hover {
   background-color: #21252d;
 }
 
@@ -472,67 +472,16 @@ hr.thick-white {
   margin-bottom: 9px;
 }
 
-#timeline-description-1 {
+#timeline-description-4, #timeline-description-3, #timeline-description-2, #timeline-description-1 {
   font-family: "Crimson Text";
   font-size: 1.4rem;
   font-style: italic;
   line-height: 1.7rem;
   letter-spacing: -0.3px;
-  width: 400px;
+  width: 380px;
   margin-bottom: 9px;
   opacity: 0.4;
   transition-duration: 0.2s;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -20%, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-#timeline-p1 {
-  left: 0%;
-}
-
-#timeline-textbox-1 {
-  top: -155px;
-}
-
-.timeline-opacity-1 {
-  opacity: 1 !important;
-}
-
-.timeline-p2 {
-  left: 33%;
-}
-
-.timeline-p3 {
-  left: 58%;
-}
-
-.timeline-p4 {
-  left: 91.7%;
-}
-
-.timeline-t2 {
-  top: 70px;
-  left: 7.8%;
-  text-align: right;
-}
-
-.timeline-t3 {
-  top: -170px;
-  left: 60.5%;
-}
-
-.timeline-t4 {
-  top: 70px;
-  left: 58.3%;
-  text-align: right;
 }
 
 .arrow {
@@ -548,6 +497,66 @@ hr.thick-white {
 .right {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+#timeline-p1 {
+  left: 5%;
+}
+
+#timeline-textbox-1 {
+  top: -155px;
+  left: 5%;
+}
+
+.timeline-opacity {
+  opacity: 1 !important;
+}
+
+#timeline-p2 {
+  left: 40%;
+}
+
+#timeline-textbox-2 {
+  top: 35px;
+  left: 8.1%;
+}
+
+#timeline-description-2 {
+  float: right;
+  text-align: right;
+}
+
+#timeline-p3 {
+  left: 55%;
+}
+
+#timeline-textbox-3 {
+  top: -155px;
+  left: 55%;
+}
+
+#timeline-p4 {
+  left: 93%;
+}
+
+#timeline-textbox-4 {
+  top: 35px;
+  left: 61.1%;
+}
+
+#timeline-description-4 {
+  float: right;
+  text-align: right;
 }
 
 /*# sourceMappingURL=style.css.map */
