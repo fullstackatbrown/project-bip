@@ -480,6 +480,7 @@ hr.thick-white {
     }
 }
 
+// TIMELINE
 #timeline-box {
     margin-top: 400px;
     margin-bottom: 400px;
@@ -509,19 +510,9 @@ hr.thick-white {
     }
 }
 
-// for timeline points
-#timeline-p1 {
-    @extend %timeline-item;
-    left: 0%;
-}
-
 .timeline-floating-text {
     position: absolute;
     width: 400px;
-}
-
-#timeline-textbox-1 {
-    top: -155px;
 }
 
 .timeline-title {
@@ -539,6 +530,28 @@ hr.thick-white {
     width: 400px;
     margin-bottom: 9px;
     opacity: 0.4;
+    transition-duration: 0.2s;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+// for timeline node 1
+#timeline-p1 {
+    @extend %timeline-item;
+    left: 0%;
+}
+
+#timeline-textbox-1 {
+    top: -155px;
 }
 
 #timeline-description-1 {
@@ -549,6 +562,7 @@ hr.thick-white {
     opacity: 1 !important;
 }
 
+// for timeline node 2, NOT DONE, DON'T TOUCH
 .timeline-p2 {
     left: 33%;
 }
@@ -576,17 +590,6 @@ hr.thick-white {
     top: 70px;
     left: 58.3%;
     text-align: right;
-}
-
-@keyframes fadeIn {
-	from {
-		opacity: 0;
-		transform: translate3d(0, -20%, 0);
-	}
-	to {
-		opacity: 1;
-		transform: translate3d(0, 0, 0);
-	}
 }
 
 @media (max-width: 1220px) {
