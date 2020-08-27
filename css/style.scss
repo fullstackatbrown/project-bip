@@ -192,6 +192,10 @@ a {
         flex-direction: column;
         height: 100%;
         align-items: flex-start;
+	}
+	
+	.footer-flex {
+        width: 98vw;
     }
 }
 
@@ -488,9 +492,9 @@ hr.thick-white {
 }
 
 #timeline {
-    height: 1.5px;
+    height: 0px;
     width: 100%;
-    background-color: $black-font;
+	background-color: $black-font;
 }
 
 %timeline-item {
@@ -500,7 +504,7 @@ hr.thick-white {
     position: absolute;
     margin-left: -0.1px;
     background-color: $background;
-    border: 2px solid $black-font;
+    border: 1px solid $black-font;
     border-radius: 50%;
     transition-duration: 0.2s;
     top: -9px;
@@ -512,12 +516,12 @@ hr.thick-white {
 
 .timeline-floating-text {
     position: absolute;
-    width: 400px;
+	width: 350px;
 }
 
 .timeline-title {
     font-family: "Circular Std Bold";
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 9px;
 }
 
@@ -527,7 +531,7 @@ hr.thick-white {
     font-style: italic;
     line-height: 1.7rem;
     letter-spacing: -0.3px;
-    width: 380px;
+    width: 350px;
     margin-bottom: 9px;
     opacity: 0.5;
     transition-duration: 0.2s;
@@ -535,12 +539,12 @@ hr.thick-white {
 
 .arrow {
     border: solid black;
-    border-width: 0 2.5px 2.5px 0;
+    border-width: 0 1px 1px 0;
     display: inline-block;
     padding: 5px;
     position: absolute;
-    left: 99%;
-    top: -5.5px;
+    left: 98.9%;
+    top: -5.05px;
 }
 
 .right {
@@ -581,53 +585,104 @@ hr.thick-white {
 // for timeline node 2
 #timeline-p2 {
     @extend %timeline-item;
-    left: 40%;
+    left: 25%;
 }
 
 #timeline-textbox-2 {
     top: 35px;
-    left: 8.1%;
+    left: 25%;
 }
 
 #timeline-description-2 {
     @extend %timeline-description;
-    float: right;
-    text-align: right;
+    float: left;
+    text-align: left;
 }
 
 // for timeline node 3
 #timeline-p3 {
     @extend %timeline-item;
-    left: 55%;
+    left: 45%;
 }
 
 #timeline-textbox-3 {
     top: -155px;
-    left: 55%;
+    left: 45%;
 }
 
 #timeline-description-3 {
-    @extend %timeline-description;
+	@extend %timeline-description;
+	float: left;
+    text-align: left;
 }
 
 // for timeline node 4
 #timeline-p4 {
     @extend %timeline-item;
-    left: 93%;
+    left: 65%;
 }
 
 #timeline-textbox-4 {
     top: 35px;
-    left: 61.1%;
+    left: 65%;
 }
 
 #timeline-description-4 {
     @extend %timeline-description;
-    float: right;
-    text-align: right;
+    float: left;
+    text-align: left;
 }
 
 // media query for mobile
 @media (max-width: 1220px) {
 
+}
+
+.footer {
+	height: 280px;
+	width: 100vw;
+    background-color: white;
+    display: grid;
+    grid-gap: 0px;
+	margin: 10px;
+	justify-content: center;
+}
+
+.footer-flex {
+	height: 200px;
+	width: 80vw;
+	display: flex;
+	justify-content: flex-end;
+	margin:20px;
+	flex-direction: row;
+}
+
+.footer-subspace{
+	margin:2rem;
+	width: 15vw;
+}
+
+ul.footer-ul {
+	width:auto;
+	list-style-type: none;
+}
+
+a.footer-headpage{
+	@extend %normal-text;
+	font-family: "Circular Std Bold";
+	color:black;
+	font-display: none;
+	text-transform: uppercase;
+	text-decoration: none;
+	cursor:pointer;
+	margin-bottom: 0.7rem;
+}
+
+a.footer-page{
+	@extend %normal-text;
+	color:black;
+	font-display: none;
+	text-decoration: none;
+	cursor:pointer;
+	margin-bottom: 0.7rem;
 }
