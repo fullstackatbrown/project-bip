@@ -58,12 +58,15 @@ function init() {
             // timeline section header
             if (bottom_of_window > bottom_of_object) {
                 $("#timeline-section-header").addClass("animate__fadeInUp");
+            }
+            // timeline section description
+            if (bottom_of_window > bottom_of_object + 72) {
+                $("#timeline-section-description").addClass("animate__fadeInUp");
                 $("#timeline").addClass("animate__fadeInUp");
                 setTimeout(function(){ $("#arrow-for-timeline").animate({'opacity':'1'}, 400); }, 525);
-                
             }
             // timeline animation
-            if (bottom_of_window > (bottom_of_object + 205)) {
+            if (bottom_of_window > (bottom_of_object + 277)) {
                 $("#timeline-textbox-1").addClass("animate__fadeInUp");
                 $("#timeline-p1").animate({'opacity':'1'}, 30);
                 setTimeout(function(){ $("#timeline-p2").animate({'opacity':'1'}, 30); }, 150);

@@ -504,16 +504,38 @@ hr.thick-white {
 
 #timeline-section-header {
   font-family: "Platform Medium";
-  font-size: 3.5rem;
-  line-height: 4rem;
+  font-size: 3.2rem;
+  line-height: 3.7rem;
   margin-top: 100px;
   z-index: 1000;
+  opacity: 0;
+  display: block;
+}
+
+#timeline-header-text {
+  width: max-content;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#timeline-section-description {
+  margin-top: 25px;
+  font-family: "Crimson Text";
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.5px;
   opacity: 0;
 }
 
 #timeline-box {
   margin-top: 220px;
-  margin-bottom: 260px;
+  margin-bottom: 265px;
   position: relative;
 }
 
@@ -635,7 +657,7 @@ hr.thick-white {
 
 #timeline-icon-2 {
   width: 55px;
-  top: 40px;
+  top: 42px;
   left: 21.4%;
 }
 
