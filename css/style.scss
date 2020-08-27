@@ -101,7 +101,7 @@ a {
 
     70% {
         transform: scale(1);
-        box-shadow: 0 0 0 6px rgba(0, 0, 0, 0);
+        box-shadow: 0 0 0 7px rgba(0, 0, 0, 0);
     }
 
     100% {
@@ -603,7 +603,7 @@ hr.thick-white {
     font-size: 1.4rem;
     font-style: italic;
     line-height: 1.7rem;
-    letter-spacing: -0.3px;
+    letter-spacing: -0.2px;
     margin-bottom: 9px;
     opacity: 0.5;
     transition-duration: 0.2s;
@@ -655,9 +655,9 @@ hr.thick-white {
 
 #timeline-icon-2 {
     @extend %timeline-icon;
-    width: 50px;
+    width: 55px;
     top: 40px;
-    left: 22%;
+    left: 21.3%;
 }
 
 // for timeline node 3
@@ -677,6 +677,13 @@ hr.thick-white {
     text-align: left;
 }
 
+#timeline-icon-3 {
+    @extend %timeline-icon;
+    width: 55px;
+    top: -90px;
+    left: 42.5%;
+}
+
 // for timeline node 4
 #timeline-p4 {
     @extend %timeline-item;
@@ -692,6 +699,13 @@ hr.thick-white {
     @extend %timeline-description;
     float: left;
     text-align: left;
+}
+
+#timeline-icon-4 {
+    @extend %timeline-icon;
+    width: 40px;
+    top: 40px;
+    left: 65.5%;
 }
 
 // media query for mobile

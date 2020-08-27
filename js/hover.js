@@ -27,17 +27,25 @@ function init() {
 
     $("#timeline-p3").on('mouseenter', function () {
         $("#timeline-description-3").addClass("timeline-text-full-opacity");
+        $("#timeline-icon-3").removeClass("animate__fadeOutRight");
+        $("#timeline-icon-3").addClass("animate__fadeInRight");
     });
 
     $("#timeline-p3").on('mouseleave', function () {
         $("#timeline-description-3").removeClass("timeline-text-full-opacity");
+        $("#timeline-icon-3").removeClass("animate__fadeInRight");
+        $("#timeline-icon-3").addClass("animate__fadeOutRight");
     });
 
     $("#timeline-p4").on('mouseenter', function () {
         $("#timeline-description-4").addClass("timeline-text-full-opacity");
+        $("#timeline-icon-4").removeClass("animate__fadeOutRight");
+        $("#timeline-icon-4").addClass("animate__fadeInRight");
     });
 
     $("#timeline-p4").on('mouseleave', function () {
         $("#timeline-description-4").removeClass("timeline-text-full-opacity");
+        $("#timeline-icon-4").removeClass("animate__fadeInRight");
+        $("#timeline-icon-4").addClass("animate__fadeOutRight");
     });
 }
