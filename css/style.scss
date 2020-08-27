@@ -71,6 +71,32 @@ a {
     }
 }
 
+.underline-animation {
+    z-index: -1;
+    display: inline-block;
+    position: relative;
+
+    &::after {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 4px;
+        bottom: 0;
+        left: 0;
+        background-color: $light-purple;
+        transform-origin: bottom right;
+        transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+    }
+
+    &:hover::after {
+        z-index: -1;
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+}
+
 // font import from Online Web Fonts -> Circular
 @import url(//db.onlinewebfonts.com/c/06d1b1518a180e5a9cca2c23401ec40a?family=Circular+Std+Bold);
 @import url(//db.onlinewebfonts.com/c/2d98f490df6dc039774b101701ce3aba?family=Circular+Std+Book);
@@ -526,9 +552,17 @@ hr.thick-white {
 }
 
 // TIMELINE
+.timeline-section-header {
+    font-family: "Platform Medium";
+    font-size: 3.5rem;
+    line-height: 4rem;
+    margin-top: 80px;
+    z-index: 1000;
+}
+
 #timeline-box {
-    margin-top: 300px;
-    margin-bottom: 300px;
+    margin-top: 220px;
+    margin-bottom: 260px;
     position: relative;
 }
 
@@ -680,7 +714,7 @@ hr.thick-white {
 #timeline-icon-3 {
     @extend %timeline-icon;
     width: 55px;
-    top: -90px;
+    top: -95px;
     left: 42.5%;
 }
 
