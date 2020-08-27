@@ -65,10 +65,10 @@ function init() {
             // timeline animation
             if (bottom_of_window > (bottom_of_object + 205)) {
                 $("#timeline-textbox-1").addClass("animate__fadeInUp");
-                $("#timeline-p1").animate({'opacity':'1'}, 150);
-                setTimeout(function(){ $("#timeline-p2").animate({'opacity':'1'}, 150); }, 150);
-                setTimeout(function(){ $("#timeline-p3").animate({'opacity':'1'}, 150); }, 325);
-                setTimeout(function(){ $("#timeline-p4").animate({'opacity':'1'}, 150); }, 500);
+                $("#timeline-p1").animate({'opacity':'1'}, 30);
+                setTimeout(function(){ $("#timeline-p2").animate({'opacity':'1'}, 30); }, 150);
+                setTimeout(function(){ $("#timeline-p3").animate({'opacity':'1'}, 30); }, 325);
+                setTimeout(function(){ $("#timeline-p4").animate({'opacity':'1'}, 30); }, 500);
                 setTimeout(function(){ $("#timeline-textbox-2").addClass("animate__fadeInUp"); }, 175);
                 setTimeout(function(){ $("#timeline-textbox-3").addClass("animate__fadeInUp"); }, 350);
                 setTimeout(function(){ $("#timeline-textbox-4").addClass("animate__fadeInUp"); }, 525);

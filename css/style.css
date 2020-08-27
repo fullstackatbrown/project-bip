@@ -547,7 +547,7 @@ hr.thick-white {
   position: absolute;
   margin-left: -0.1px;
   background-color: #f5f2f0;
-  border: 1.5px solid #21252d;
+  border: 2px solid #21252d;
   border-radius: 50%;
   transition-duration: 0.2s;
   top: -8px;
