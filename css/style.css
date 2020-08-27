@@ -25,6 +25,8 @@ hr {
   width: 1200px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 a.footer-page, a.footer-headpage, .img-card-text-description, .img-card-text-title, .img-card-item-type, .text-card-text-description, .text-card-text-subtitle, .spotlight-description {
@@ -133,6 +135,16 @@ a:hover::after {
   to {
     opacity: 0;
     transform: translate3d(30%, 0, 0);
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 30%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 }
 .nav-custom {
@@ -290,11 +302,6 @@ hr.light-hr {
   width: 90%;
 }
 
-.thick-white-line-space {
-  margin-top: 40px;
-  margin-bottom: 20px;
-}
-
 hr.thick-white {
   border-top: 8px solid white;
   width: 100%;
@@ -391,6 +398,7 @@ hr.thick-white {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
+  margin-bottom: 40px;
 }
 
 .projects-more-button {
@@ -494,12 +502,13 @@ hr.thick-white {
   left: 6rem;
 }
 
-.timeline-section-header {
+#timeline-section-header {
   font-family: "Platform Medium";
   font-size: 3.5rem;
   line-height: 4rem;
-  margin-top: 80px;
+  margin-top: 100px;
   z-index: 1000;
+  opacity: 0;
 }
 
 #timeline-box {
@@ -512,6 +521,7 @@ hr.thick-white {
   height: 1px;
   width: 100%;
   background-color: #21252d;
+  opacity: 0;
 }
 
 .arrow {
@@ -522,6 +532,7 @@ hr.thick-white {
   position: absolute;
   left: 99%;
   top: -5.05px;
+  opacity: 0;
 }
 
 .right {
@@ -542,19 +553,22 @@ hr.thick-white {
   top: -8px;
   transform: scale(1);
   animation: pulse-black 2s infinite;
+  opacity: 0;
 }
 #timeline-p4:hover, #timeline-p3:hover, #timeline-p2:hover, #timeline-p1:hover {
   background-color: #21252d;
 }
 
+.animate__animated.animate__fadeInUp {
+  --animate-duration: 0.5s;
+}
+
 .animate__animated.animate__fadeInRight {
-  --animate-duration: 0.3s;
-  opacity: 1;
+  --animate-duration: 0.2s;
 }
 
 .animate__animated.animate__fadeOutRight {
-  --animate-duration: 0.3s;
-  opacity: 1;
+  --animate-duration: 0.2s;
 }
 
 #timeline-icon-4, #timeline-icon-3, #timeline-icon-2, #timeline-icon-1 {
@@ -565,6 +579,7 @@ hr.thick-white {
 .timeline-floating-text {
   position: absolute;
   width: 340px;
+  opacity: 0;
 }
 
 .timeline-title {
@@ -639,9 +654,9 @@ hr.thick-white {
 }
 
 #timeline-icon-3 {
-  width: 55px;
-  top: -95px;
-  left: 42.5%;
+  width: 45px;
+  top: -92px;
+  left: 43.5%;
 }
 
 #timeline-p4 {

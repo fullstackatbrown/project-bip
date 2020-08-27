@@ -48,4 +48,31 @@ function init() {
         $("#timeline-icon-4").removeClass("animate__fadeInRight");
         $("#timeline-icon-4").addClass("animate__fadeOutRight");
     });
+
+    // Scrolling Fade In Animations
+    $(window).scroll(function () {
+        /* Check the location of each desired element */
+        $('#timeline-section-header').each(function (i) {
+            var bottom_of_object = $('#timeline-section-header').position().top + 100 + $('#timeline-section-header').outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            // timeline section header
+            if (bottom_of_window > bottom_of_object) {
+                $("#timeline-section-header").addClass("animate__fadeInUp");
+                $("#timeline").addClass("animate__fadeInUp");
+                setTimeout(function(){ $("#arrow-for-timeline").animate({'opacity':'1'}, 400); }, 525);
+                
+            }
+            // timeline animation
+            if (bottom_of_window > (bottom_of_object + 205)) {
+                $("#timeline-textbox-1").addClass("animate__fadeInUp");
+                $("#timeline-p1").animate({'opacity':'1'}, 150);
+                setTimeout(function(){ $("#timeline-p2").animate({'opacity':'1'}, 150); }, 150);
+                setTimeout(function(){ $("#timeline-p3").animate({'opacity':'1'}, 150); }, 325);
+                setTimeout(function(){ $("#timeline-p4").animate({'opacity':'1'}, 150); }, 500);
+                setTimeout(function(){ $("#timeline-textbox-2").addClass("animate__fadeInUp"); }, 175);
+                setTimeout(function(){ $("#timeline-textbox-3").addClass("animate__fadeInUp"); }, 350);
+                setTimeout(function(){ $("#timeline-textbox-4").addClass("animate__fadeInUp"); }, 525);
+            }
+        });
+    });
 }
