@@ -807,18 +807,18 @@ hr.thick-white {
 
 .join-button-flex-area {
   min-width: 40px;
-  margin-top: 40px;
-  width: 30%;
+  margin-top: 30px;
+  width: 20vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .join-button-style {
   min-width: 40px;
-  margin-right: 12px;
   margin-top: 20px;
   padding: 10px 20px;
   border: 1px solid black;
@@ -839,7 +839,6 @@ hr.thick-white {
 }
 
 #footer-white-background {
-  margin-top: 130px;
   width: 100%;
   background-color: white;
   padding-top: 70px;
