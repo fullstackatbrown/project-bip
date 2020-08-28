@@ -701,6 +701,11 @@ hr.thick-white {
   left: 64.8%;
 }
 
+@media (max-width: 1200px) {
+  #timeline-desktop {
+    display: none;
+  }
+}
 #footer-white-background {
   margin-top: 130px;
   width: 100%;
@@ -778,6 +783,79 @@ a.footer-page {
   text-decoration: none;
   cursor: pointer;
   margin-bottom: 0.7rem;
+}
+
+@media (max-width: 1200px) {
+  #footer-white-background {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  #footer-white-background-mobile {
+    display: none;
+  }
+}
+#footer-white-background-mobile {
+  margin-top: 130px;
+  width: 100%;
+  background-color: white;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.mobile-footer-logo-area {
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mobile-footer-logo {
+  display: inline-block;
+  width: 8vh;
+  vertical-align: middle;
+}
+
+.mobile-footer-slogan {
+  display: inline-block;
+  font-family: "Circular Std Bold";
+  font-size: 1em;
+  line-height: 1.3em;
+  width: 60vw;
+  max-width: 250px;
+  vertical-align: middle;
+  margin-left: 20px;
+  color: #26225a;
+}
+
+.mobile-footer-link-area {
+  margin-top: 5vh;
+  width: 90vw;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 0.9em;
+  line-height: 1.3em;
+}
+
+.mobile-footer-page {
+  margin-right: 10px;
+  margin-left: 10px;
+  color: black;
+  font-display: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Circular Std Book";
+}
+
+.mobile-footer-copyright {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 5vh;
+  font-family: "Circular Std Book";
+  font-size: 0.9em;
+  letter-spacing: -0.3px;
 }
 
 /*# sourceMappingURL=style.css.map */
