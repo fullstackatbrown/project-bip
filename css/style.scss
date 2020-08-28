@@ -840,9 +840,102 @@ hr.thick-white {
     transition: all 0.2s;
     font-size: 0.8rem;
     letter-spacing: 1px;
-    font-family: "Circular Std Bold";
+	font-family: "Circular Std Bold";
+	
+	&:hover{
+		background-color: transparent;
+		color: $black-font;
+	}
 }
 
+//find out more
+
+
+#partner-logo-grid-pos{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.partner-logo-grid{
+	margin-top: 30px;
+	display: grid;
+    grid-gap: 20px;
+	grid-template-columns: 60px 60px 10px 120px;
+	justify-items: center;
+	align-items: center;
+}
+
+.partner-logo img{
+	object-fit: cover;
+	width: 100%;
+	filter: gray; 
+	-webkit-filter: grayscale(1); 
+	-webkit-transition: all .2s ease-in-out;  
+
+	&:hover{
+		filter: none;
+		-webkit-filter: grayscale(0);
+		-webkit-transform: scale(1.01);
+	}
+}
+
+
+.join-text-area{
+
+}
+
+#join-section-header{
+margin-top: 100px;
+z-index: 1000;
+}
+
+#join-header-text {
+width: max-content;
+text-align: center;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.join-title{
+	@extend %h1-heading;
+}
+.join-subtext{
+    margin-top: 20px;
+	@extend %normal-text;
+}
+.join-button-flex-area{
+	min-width: 40px;
+	margin-top:40px;
+	width: 30%;
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.join-button-style {
+	min-width: 40px;
+	margin-right: 12px;
+    padding: 10px 20px;
+    border: 1px solid black;
+    background-color: transparent;
+    border-radius: 3px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    transition: all 0.2s;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    font-family: "Circular Std Bold";
+
+	&:hover {
+    background-color: black;
+	color: white;
+	}
+}
 
 
 // FOOTER: desktop
