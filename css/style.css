@@ -759,7 +759,10 @@ hr.thick-white {
   color: #21252d;
 }
 
-#partner-logo-grid-pos {
+.partner-logo-wrapper {
+  margin-top: 80px;
+  width: max-content;
+  display: block;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -784,11 +787,10 @@ hr.thick-white {
 .partner-logo img:hover {
   filter: none;
   -webkit-filter: grayscale(0);
-  -webkit-transform: scale(1.01);
 }
 
 #join-section-header {
-  margin-top: 100px;
+  margin-top: 20px;
   z-index: 1000;
 }
 
