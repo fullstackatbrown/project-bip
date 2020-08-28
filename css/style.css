@@ -769,9 +769,9 @@ hr.thick-white {
   margin-top: 30px;
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: 60px 60px 10px 120px;
+  grid-template-columns: 60px 60px 2px 120px;
   justify-items: center;
-  align-items: center;
+  align-items: baseline;
 }
 
 .partner-logo img {
@@ -793,7 +793,6 @@ hr.thick-white {
 }
 
 #join-header-text {
-  width: max-content;
   text-align: center;
   display: block;
   margin-left: auto;
@@ -818,6 +817,7 @@ hr.thick-white {
 .join-button-style {
   min-width: 40px;
   margin-right: 12px;
+  margin-top: 20px;
   padding: 10px 20px;
   border: 1px solid black;
   background-color: transparent;
