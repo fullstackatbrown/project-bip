@@ -29,7 +29,7 @@ hr {
   margin-bottom: 0;
 }
 
-a.footer-page, a.footer-headpage, .img-card-text-description, .img-card-text-title, .img-card-item-type, .text-card-text-description, .text-card-text-subtitle, .spotlight-description {
+a.footer-page, .footer-headpage, .img-card-text-description, .img-card-text-title, .img-card-item-type, .text-card-text-description, .text-card-text-subtitle, .spotlight-description {
   font-family: "Circular Std Book";
   font-size: 1.1rem;
   letter-spacing: -0.5px;
@@ -701,43 +701,75 @@ hr.thick-white {
   left: 64.8%;
 }
 
+#footer-white-background {
+  margin-top: 130px;
+  width: 100%;
+  background-color: white;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
 .footer {
-  height: 280px;
-  width: 100vw;
   background-color: white;
   display: grid;
   grid-gap: 0px;
-  justify-content: center;
-  margin-top: 10px;
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.footer-logo-area {
+  width: 100%;
+}
+
+.footer-logo {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  vertical-align: middle;
+}
+
+.footer-slogan {
+  display: inline-block;
+  font-family: "Circular Std Bold";
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  width: 350px;
+  vertical-align: middle;
+  margin-left: 20px;
+  color: #26225a;
+}
+
+.footer-copyright {
+  margin-top: 20px;
+  font-family: "Circular Std Book";
+  font-size: 1.05rem;
+  letter-spacing: -0.5px;
 }
 
 .footer-flex {
-  height: 200px;
-  width: 80vw;
+  width: 100%;
   display: flex;
-  justify-content: flex-end;
-  margin: 20px;
+  justify-content: space-between;
   flex-direction: row;
 }
 
 .footer-subspace {
-  margin: 2rem;
-  width: 15vw;
+  width: max-content;
+  height: max-content;
 }
 
 ul.footer-ul {
-  width: auto;
   list-style-type: none;
+  padding: 0;
 }
 
-a.footer-headpage {
+.footer-headpage {
   font-family: "Circular Std Bold";
   color: black;
   font-display: none;
   text-transform: uppercase;
   text-decoration: none;
-  cursor: pointer;
   margin-bottom: 0.7rem;
+  letter-spacing: 0;
 }
 
 a.footer-page {
