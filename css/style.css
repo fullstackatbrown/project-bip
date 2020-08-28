@@ -29,14 +29,14 @@ hr {
   margin-bottom: 0;
 }
 
-a.footer-page, .footer-headpage, .img-card-text-description, .img-card-text-title, .img-card-item-type, .text-card-text-description, .text-card-text-subtitle, .spotlight-description {
+a.footer-page, .footer-headpage, .about-text-description, .img-card-text-description, .img-card-text-title, .img-card-item-type, .text-card-text-description, .text-card-text-subtitle, .spotlight-description {
   font-family: "Circular Std Book";
   font-size: 1.1rem;
   letter-spacing: -0.5px;
   line-height: 1.4rem;
 }
 
-.spotlight-heading {
+.about-text-title, .spotlight-heading {
   font-family: "Circular Std Bold";
   font-size: 2.2rem;
   line-height: 2.4rem;
@@ -706,6 +706,55 @@ hr.thick-white {
     display: none;
   }
 }
+.about-us-grid {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  grid-area: "about-us-text" "about-us-img";
+  column-gap: 4%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.about-left {
+  justify-self: center;
+}
+
+.about-right {
+  justify-self: center;
+  background-color: black;
+}
+
+.about-text-wrapper {
+  justify-self: center;
+}
+
+.about-text-title {
+  margin-top: 50px;
+}
+
+.about-text-description {
+  margin-top: 20px;
+}
+
+.above-about-button-space {
+  margin-top: 50px;
+}
+
+.meet-our-team-button {
+  padding: 10px 20px;
+  border: 1px solid black;
+  background-color: black;
+  border-radius: 3px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  transition: all 0.2s;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  font-family: "Circular Std Bold";
+}
+
 #footer-white-background {
   margin-top: 130px;
   width: 100%;
