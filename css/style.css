@@ -16,7 +16,7 @@ hr {
   margin-bottom: 0;
 }
 
-a.footer-page, .footer-headpage, .join-subtext, .about-text-description, .img-card-text-description, .img-card-text-title, .img-card-item-type, .text-card-text-description, .text-card-text-subtitle, .spotlight-description {
+a.footer-page, .footer-headpage, .join-text, .about-text-description, .img-card-text-description, .img-card-text-title, .img-card-item-type, .text-card-text-description, .text-card-text-subtitle, .spotlight-description {
   font-family: "Circular Std Book";
   font-size: 1.1rem;
   letter-spacing: -0.5px;
@@ -808,7 +808,7 @@ hr.thick-white {
 }
 
 .partner-logo-wrapper {
-  margin-top: 80px;
+  margin-top: 100px;
   width: max-content;
   display: block;
   text-align: center;
@@ -817,10 +817,11 @@ hr.thick-white {
 }
 
 .partner-logo-grid {
-  margin-top: 30px;
   display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 60px 60px 2px 120px;
+  grid-row-gap: 25px;
+  grid-column-gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(30px, 140px));
+  max-width: 60vw;
   justify-items: center;
   align-items: baseline;
 }
@@ -830,7 +831,7 @@ hr.thick-white {
   width: 100%;
   filter: #ebe9e9;
   -webkit-filter: grayscale(1);
-  -webkit-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
 }
 .partner-logo img:hover {
   filter: none;
@@ -838,10 +839,17 @@ hr.thick-white {
 }
 
 #join-section-header {
-  margin-top: 20px;
+  margin-top: 40px;
   z-index: 1000;
 }
 
+@media (max-width: 500px) {
+  #join-section-header {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 #join-header-text {
   text-align: center;
   display: block;
@@ -849,25 +857,27 @@ hr.thick-white {
   margin-right: auto;
 }
 
-.join-subtext {
+.join-text {
   margin-top: 20px;
 }
 
 .join-button-flex-area {
-  min-width: 40px;
-  margin-top: 30px;
-  width: 20vw;
+  min-width: 200px;
+  margin-top: 25px;
+  width: minmax(27vw, 400px);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
 }
 
-.join-button-style {
+.join-button {
   min-width: 40px;
-  margin-top: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 15px;
   padding: 10px 20px;
   border: 1px solid black;
   background-color: transparent;
@@ -881,7 +891,7 @@ hr.thick-white {
   letter-spacing: 1px;
   font-family: "Circular Std Bold";
 }
-.join-button-style:hover {
+.join-button:hover {
   background-color: black;
   color: white;
 }
