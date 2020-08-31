@@ -100,21 +100,97 @@ a {
 }
 
 // font import from Online Web Fonts -> Circular
-@import url(//db.onlinewebfonts.com/c/06d1b1518a180e5a9cca2c23401ec40a?family=Circular+Std+Bold);
-@import url(//db.onlinewebfonts.com/c/2d98f490df6dc039774b101701ce3aba?family=Circular+Std+Book);
-@import url(//db.onlinewebfonts.com/c/2b344f641cb4ebd77656f35154457c2d?family=Circular+Std+Black);
-@import url(//db.onlinewebfonts.com/c/280483fe8ab9beaf3337681ec871bff0?family=Circular+Std+Medium);
-@import url(//db.onlinewebfonts.com/c/00e35865e84eebb1b97e22ebffa948df?family=Circular+Std+Bold+Italic);
-@import url(//db.onlinewebfonts.com/c/33c0ccc21387ad531817bd465d94e67d?family=Circular+Std+Book+Italic);
-@import url(//db.onlinewebfonts.com/c/6c1578f983524180fa64138ee780cadf?family=Circular+Std+Black+Italic);
-@import url(//db.onlinewebfonts.com/c/186d64bc83bd1dc3aa4a4a4db40da5bc?family=Circular+Std+Medium+Italic);
+@font-face {
+    font-family: "Circular Std Book";
+    src: url("/../fonts/circular_book/circular_book.woff2") format("woff2"),
+        url("/../fonts/circular_book/circular_book.woff") format("woff"),
+        url("/../fonts/circular_book/circular_book.otf") format("opentype"),
+        url("/../fonts/circular_book/circular_book.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Circular Std Book Italic";
+    src: url("/../fonts/circular_book_italic/circular_book_italic.woff2") format("woff2"),
+        url("/../fonts/circular_book_italic/circular_book_italic.woff") format("woff"),
+        url("/../fonts/circular_book_italic/circular_book_italic.otf") format("opentype"),
+        url("/../fonts/circular_book_italic/circular_book_italic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Circular Std Medium";
+    src: url("/../fonts/circular_medium/circular_medium.woff2") format("woff2"),
+        url("/../fonts/circular_medium/circular_medium.woff") format("woff"),
+        url("/../fonts/circular_medium/circular_medium.otf") format("opentype"),
+        url("/../fonts/circular_medium/circular_medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Circular Std Medium Italic";
+    src: url("/../fonts/circular_medium_italic/circular_medium_italic.woff2") format("woff2"),
+        url("/../fonts/circular_medium_italic/circular_medium_italic.woff") format("woff"),
+        url("/../fonts/circular_medium_italic/circular_medium_italic.otf") format("opentype"),
+        url("/../fonts/circular_medium_italic/circular_medium_italic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Circular Std Black";
+    src: url("/../fonts/circular_black/circular_black.woff2") format("woff2"),
+        url("/../fonts/circular_black/circular_black.woff") format("woff"),
+        url("/../fonts/circular_black/circular_black.otf") format("opentype"),
+        url("/../fonts/circular_black/circular_black.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Circular Std Black Italic";
+    src: url("/../fonts/circular_black_italic/circular_black_italic.woff2") format("woff2"),
+        url("/../fonts/circular_black_italic/circular_black_italic.woff") format("woff"),
+        url("/../fonts/circular_black_italic/circular_black_italic.otf") format("opentype"),
+        url("/../fonts/circular_black_italic/circular_black_italic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Circular Std Bold";
+    src: url("/../fonts/circular_bold/circular_bold.woff2") format("woff2"),
+        url("/../fonts/circular_bold/circular_bold.woff") format("woff"),
+        url("/../fonts/circular_bold/circular_bold.otf") format("opentype"),
+        url("/../fonts/circular_bold/circular_bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Circular Std Black Italic";
+    src: url("/../fonts/circular_bold_italic/circular_bold_italic.woff2") format("woff2"),
+        url("/../fonts/circular_bold_italic/circular_bold_italic.woff") format("woff"),
+        url("/../fonts/circular_bold_italic/circular_bold_italic.otf") format("opentype"),
+        url("/../fonts/circular_bold_italic/circular_bold_italic.ttf") format("truetype");
+}
 
 // font import from Online Web Fonts -> Platform
-@import url(//db.onlinewebfonts.com/c/e7cb817c6df59f3ac33e76680938bc0f?family=Platform+Bold);
-@import url(//db.onlinewebfonts.com/c/f58919c8d17a7e8e170c3ba632f93bd3?family=Platform+Medium);
-@import url(//db.onlinewebfonts.com/c/6a9a7b1edc7ff5984996d7e4fe5f6861?family=Platform+Web+Medium);
-@import url(//db.onlinewebfonts.com/c/f24c407a3d7631757d38c3e61520a3fa?family=Platform+Web+Medium);
-@import url(//db.onlinewebfonts.com/c/1f48900b62d277f357bb39ca68a9dd49?family=Platform+Jules+Light);
+@font-face {
+    font-family: "Platform Regular";
+    src: url("/../fonts/platform_regular/platform_regular.eot");
+    src: url("/../fonts/platform_regular/platform_regular.eot?#iefix") format("embedded-opentype"),
+        url("/../fonts/platform_regular/platform_regular.woff2") format("woff2"),
+        url("/../fonts/platform_regular/platform_regular.woff") format("woff"),
+        url("/../fonts/platform_regular/platform_regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Platform Medium";
+    src: url("/../fonts/platform_medium/platform_medium.eot");
+    src: url("/../fonts/platform_medium/platform_medium.eot?#iefix") format("embedded-opentype"),
+        url("/../fonts/platform_medium/platform_medium.woff2") format("woff2"),
+        url("/../fonts/platform_medium/platform_medium.woff") format("woff"),
+        url("/../fonts/platform_medium/platform_medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Platform Bold";
+    src: url("/../fonts/platform_bold/platform_bold.eot");
+    src: url("/../fonts/platform_bold/platform_bold.eot?#iefix") format("embedded-opentype"),
+        url("/../fonts/platform_bold/platform_bold.woff2") format("woff2"),
+        url("/../fonts/platform_bold/platform_bold.woff") format("woff"),
+        url("/../fonts/platform_bold/platform_bold.ttf") format("truetype");
+}
 
 // font import from Google Font -> Crimson Pro
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;1,300;1,400;1,500&display=swap");
@@ -812,14 +888,15 @@ hr.thick-white {
 
 .about-img {
     width: 90%;
+    border-radius: 3px;
 }
 
-// media query for mobile
 @media (max-width: 656px) {
     .about-img {
         width: 96%;
         margin-left: 2vw;
         margin-right: 2vw;
+        border-radius: 3px;
     }
 
     .about-text-wrapper {
@@ -827,7 +904,6 @@ hr.thick-white {
         margin-right: 2vw;
     }
 }
-
 
 .about-text-title {
     @extend %h1-heading;
@@ -854,80 +930,80 @@ hr.thick-white {
     transition: all 0.2s;
     font-size: 0.8rem;
     letter-spacing: 1px;
-	font-family: "Circular Std Bold";
-	
-	&:hover{
-		background-color: $black-font;
-		color: $background;
-	}
+    font-family: "Circular Std Bold";
+
+    &:hover {
+        background-color: $black-font;
+        color: $background;
+    }
 }
 
 //find out more
-.partner-logo-wrapper{
-	margin-top: 80px;
-	width: max-content;
-	display:block;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
+.partner-logo-wrapper {
+    margin-top: 80px;
+    width: max-content;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.partner-logo-grid{
-	margin-top: 30px;
-	display: grid;
+.partner-logo-grid {
+    margin-top: 30px;
+    display: grid;
     grid-gap: 20px;
-	grid-template-columns: 60px 60px 2px 120px;
-	justify-items: center;
-	align-items: baseline;
+    grid-template-columns: 60px 60px 2px 120px;
+    justify-items: center;
+    align-items: baseline;
 }
 
-.partner-logo img{
-	object-fit: cover;
-	width: 100%;
-	filter: rgb(235, 233, 233); 
-	-webkit-filter: grayscale(1); 
-	-webkit-transition: all .2s ease-in-out;  
+.partner-logo img {
+    object-fit: cover;
+    width: 100%;
+    filter: rgb(235, 233, 233);
+    -webkit-filter: grayscale(1);
+    -webkit-transition: all 0.2s ease-in-out;
 
-	&:hover{
-		filter: none;
-		-webkit-filter: grayscale(0);
-	}
+    &:hover {
+        filter: none;
+        -webkit-filter: grayscale(0);
+    }
 }
 
-#join-section-header{
-margin-top: 20px;
-z-index: 1000;
+#join-section-header {
+    margin-top: 20px;
+    z-index: 1000;
 }
 
 #join-header-text {
-text-align: center;
-display: block;
-margin-left: auto;
-margin-right: auto;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.join-title{
-	@extend %h1-heading;
+.join-title {
+    @extend %h1-heading;
 }
-.join-subtext{
+.join-subtext {
     margin-top: 20px;
-	@extend %normal-text;
+    @extend %normal-text;
 }
-.join-button-flex-area{
-	min-width: 40px;
-	margin-top:30px;
-	width: 20vw;
-	display:flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-between;
-	margin-bottom:40px;
+.join-button-flex-area {
+    min-width: 40px;
+    margin-top: 30px;
+    width: 20vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 .join-button-style {
-	min-width: 40px;
-	margin-top:20px;
+    min-width: 40px;
+    margin-top: 20px;
     padding: 10px 20px;
     border: 1px solid black;
     background-color: transparent;
@@ -941,12 +1017,11 @@ margin-right: auto;
     letter-spacing: 1px;
     font-family: "Circular Std Bold";
 
-	&:hover {
-    background-color: black;
-	color: white;
-	}
+    &:hover {
+        background-color: black;
+        color: white;
+    }
 }
-
 
 // FOOTER: desktop
 #footer-white-background {
