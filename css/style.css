@@ -735,8 +735,13 @@ hr.thick-white {
 @media (max-width: 656px) {
   .about-img {
     width: 100%;
-    margin-left: 1vw;
-    margin-right: 1vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+
+  .about-text-wrapper {
+    margin-left: 2vw;
+    margin-right: 2vw;
   }
 }
 .about-text-description {
