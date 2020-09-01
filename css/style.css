@@ -585,7 +585,7 @@ hr.thick-white {
   left: 6rem;
 }
 
-@media (max-width: 939px) {
+@media (max-width: 938px) {
   .text-card {
     display: none;
   }
