@@ -99,6 +99,58 @@ a {
     }
 }
 
+%link-with-arrow-text {
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.2rem;
+    letter-spacing: -0.5px;
+    color: black;
+    border: none;
+    transition: color 0.1s cubic-bezier(0.16, 0.08, 0.355, 1), background 0.1s cubic-bezier(0.16, 0.08, 0.355, 1);
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    &:hover {
+        color: lighten(black, 5%);
+    }
+}
+
+%link-with-arrow-arrow {
+    position: relative;
+    transition: background-color 300ms ease-out;
+    span {
+        display: inline-block;
+        position: relative;
+        transition: all 300ms ease-out;
+        will-change: transform;
+    }
+    &:hover span {
+        transform: translate3d(0, 0, 0);
+    }
+    svg {
+        position: absolute;
+        width: 0.9em;
+        left: 8.7rem;
+        right: 0px;
+        right: 0rem;
+        opacity: 1;
+        top: 43%;
+        transform: translateY(-50%);
+        transition: all 300ms ease-out;
+        will-change: right, opacity;
+        * {
+            stroke-width: 2;
+        }
+    }
+    &:hover svg {
+        opacity: 1;
+        left: 9.2rem;
+    }
+}
+
 // font import from Online Web Fonts -> Circular
 @font-face {
     font-family: "Circular Std Book";
@@ -303,10 +355,6 @@ a {
         width: 98vw;
     }
 
-    .home-main-lightbox-wrapper {
-        width: 98vw;
-    }
-
     .cards-flexbox {
         width: 98vw;
     }
@@ -390,6 +438,75 @@ a {
 .spotlight-description {
     margin-top: 50px;
     @extend %normal-text;
+}
+
+.spotlight-link-text {
+    @extend %link-with-arrow-text;
+    margin-top: 60px;
+}
+
+.spotlight-link-arrow {
+    @extend %link-with-arrow-arrow;
+}
+
+.mobile-spotlight-link-text {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .home-main-lightbox-wrapper {
+        background-color: white;
+        display: block;
+        margin-top: 10px;
+        height: max-content;
+        @extend %card-interaction;
+    }
+
+    .spotlight-image-wrapper {
+        width: 98vw;
+        height: 30vh;
+        overflow: hidden;
+    }
+
+    .spotlight-text-area {
+        width: 98vw;
+        min-width: 0px;
+        height: max-content;
+        background-color: white;
+        display: block;
+    }
+
+    .spotlight-text-wrapper {
+        padding: 30px 20px;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        height: max-content;
+        width: 90vw;
+    }
+
+    .spotlight-description {
+        margin-top: 3vh;
+        @extend %normal-text;
+    }
+
+    .spotlight-link-text span {
+        display: none;
+    }
+
+    .spotlight-link-arrow {
+        display: none;
+    }
+
+    .mobile-spotlight-link-text {
+        margin-top: 3vh;
+        font-family: "Crimson Text", serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 1.2rem;
+        letter-spacing: -0.5px;
+        color: black;
+    }
 }
 
 .line-for-projects-space {
@@ -545,67 +662,6 @@ hr.thick-white {
 .projects-more-button:hover {
     background-color: black;
     color: white;
-}
-
-%link-with-arrow-text {
-    font-family: "Crimson Text", serif;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 1.2rem;
-    letter-spacing: -0.5px;
-    color: black;
-    border: none;
-    transition: color 0.1s cubic-bezier(0.16, 0.08, 0.355, 1), background 0.1s cubic-bezier(0.16, 0.08, 0.355, 1);
-    display: inline-block;
-    cursor: pointer;
-    vertical-align: middle;
-    text-align: center;
-    position: relative;
-    &:hover {
-        color: lighten(black, 5%);
-    }
-}
-
-%link-with-arrow-arrow {
-    position: relative;
-    transition: background-color 300ms ease-out;
-    span {
-        display: inline-block;
-        position: relative;
-        transition: all 300ms ease-out;
-        will-change: transform;
-    }
-    &:hover span {
-        transform: translate3d(0, 0, 0);
-    }
-    svg {
-        position: absolute;
-        width: 0.9em;
-        left: 8.7rem;
-        right: 0px;
-        right: 0rem;
-        opacity: 1;
-        top: 43%;
-        transform: translateY(-50%);
-        transition: all 300ms ease-out;
-        will-change: right, opacity;
-        * {
-            stroke-width: 2;
-        }
-    }
-    &:hover svg {
-        opacity: 1;
-        left: 9.2rem;
-    }
-}
-
-.spotlight-link-text {
-    @extend %link-with-arrow-text;
-    margin-top: 60px;
-}
-
-.spotlight-link-arrow {
-    @extend %link-with-arrow-arrow;
 }
 
 .card-link-text {

@@ -91,6 +91,58 @@ a:hover::after {
   transform-origin: bottom left;
 }
 
+.card-link-text, .spotlight-link-text {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.2rem;
+  letter-spacing: -0.5px;
+  color: black;
+  border: none;
+  transition: color 0.1s cubic-bezier(0.16, 0.08, 0.355, 1), background 0.1s cubic-bezier(0.16, 0.08, 0.355, 1);
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+}
+.card-link-text:hover, .spotlight-link-text:hover {
+  color: #0d0d0d;
+}
+
+.card-link-arrow, .spotlight-link-arrow {
+  position: relative;
+  transition: background-color 300ms ease-out;
+}
+.card-link-arrow span, .spotlight-link-arrow span {
+  display: inline-block;
+  position: relative;
+  transition: all 300ms ease-out;
+  will-change: transform;
+}
+.card-link-arrow:hover span, .spotlight-link-arrow:hover span {
+  transform: translate3d(0, 0, 0);
+}
+.card-link-arrow svg, .spotlight-link-arrow svg {
+  position: absolute;
+  width: 0.9em;
+  left: 8.7rem;
+  right: 0px;
+  right: 0rem;
+  opacity: 1;
+  top: 43%;
+  transform: translateY(-50%);
+  transition: all 300ms ease-out;
+  will-change: right, opacity;
+}
+.card-link-arrow svg *, .spotlight-link-arrow svg * {
+  stroke-width: 2;
+}
+.card-link-arrow:hover svg, .spotlight-link-arrow:hover svg {
+  opacity: 1;
+  left: 9.2rem;
+}
+
 @font-face {
   font-family: "Circular Std Book";
   src: url("/../fonts/circular_book/circular_book.woff2") format("woff2"), url("/../fonts/circular_book/circular_book.woff") format("woff"), url("/../fonts/circular_book/circular_book.otf") format("opentype"), url("/../fonts/circular_book/circular_book.ttf") format("truetype");
@@ -227,10 +279,6 @@ a:hover::after {
     width: 98vw;
   }
 
-  .home-main-lightbox-wrapper {
-    width: 98vw;
-  }
-
   .cards-flexbox {
     width: 98vw;
   }
@@ -309,6 +357,67 @@ a:hover::after {
   margin-top: 50px;
 }
 
+.spotlight-link-text {
+  margin-top: 60px;
+}
+
+.mobile-spotlight-link-text {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .home-main-lightbox-wrapper {
+    background-color: white;
+    display: block;
+    margin-top: 10px;
+    height: max-content;
+  }
+
+  .spotlight-image-wrapper {
+    width: 98vw;
+    height: 30vh;
+    overflow: hidden;
+  }
+
+  .spotlight-text-area {
+    width: 98vw;
+    min-width: 0px;
+    height: max-content;
+    background-color: white;
+    display: block;
+  }
+
+  .spotlight-text-wrapper {
+    padding: 30px 20px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: max-content;
+    width: 90vw;
+  }
+
+  .spotlight-description {
+    margin-top: 3vh;
+  }
+
+  .spotlight-link-text span {
+    display: none;
+  }
+
+  .spotlight-link-arrow {
+    display: none;
+  }
+
+  .mobile-spotlight-link-text {
+    margin-top: 3vh;
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.2rem;
+    letter-spacing: -0.5px;
+    color: black;
+  }
+}
 .line-for-projects-space {
   margin-top: 20px;
   margin-bottom: 0;
@@ -453,62 +562,6 @@ hr.thick-white {
 .projects-more-button:hover {
   background-color: black;
   color: white;
-}
-
-.card-link-text, .spotlight-link-text {
-  font-family: "Crimson Text", serif;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 1.2rem;
-  letter-spacing: -0.5px;
-  color: black;
-  border: none;
-  transition: color 0.1s cubic-bezier(0.16, 0.08, 0.355, 1), background 0.1s cubic-bezier(0.16, 0.08, 0.355, 1);
-  display: inline-block;
-  cursor: pointer;
-  vertical-align: middle;
-  text-align: center;
-  position: relative;
-}
-.card-link-text:hover, .spotlight-link-text:hover {
-  color: #0d0d0d;
-}
-
-.card-link-arrow, .spotlight-link-arrow {
-  position: relative;
-  transition: background-color 300ms ease-out;
-}
-.card-link-arrow span, .spotlight-link-arrow span {
-  display: inline-block;
-  position: relative;
-  transition: all 300ms ease-out;
-  will-change: transform;
-}
-.card-link-arrow:hover span, .spotlight-link-arrow:hover span {
-  transform: translate3d(0, 0, 0);
-}
-.card-link-arrow svg, .spotlight-link-arrow svg {
-  position: absolute;
-  width: 0.9em;
-  left: 8.7rem;
-  right: 0px;
-  right: 0rem;
-  opacity: 1;
-  top: 43%;
-  transform: translateY(-50%);
-  transition: all 300ms ease-out;
-  will-change: right, opacity;
-}
-.card-link-arrow svg *, .spotlight-link-arrow svg * {
-  stroke-width: 2;
-}
-.card-link-arrow:hover svg, .spotlight-link-arrow:hover svg {
-  opacity: 1;
-  left: 9.2rem;
-}
-
-.spotlight-link-text {
-  margin-top: 60px;
 }
 
 .card-link-text {
