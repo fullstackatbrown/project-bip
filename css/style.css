@@ -8,7 +8,7 @@ hr {
   margin: 0;
 }
 
-.cards-flexbox, .website-wrapper, .nav-custom {
+.cards-grid, .website-wrapper, .nav-custom {
   width: 1200px;
   margin-right: auto;
   margin-left: auto;
@@ -31,9 +31,9 @@ a.footer-page, .footer-headpage, .join-text, .about-text-description, .img-card-
 }
 
 .img-card, .text-card {
-  height: 450px;
+  min-height: 500px;
   background-color: white;
-  width: 393.33px;
+  height: max-content;
 }
 
 .img-card, .home-main-lightbox-wrapper {
@@ -279,12 +279,8 @@ a:hover::after {
     width: 98vw;
   }
 
-  .cards-flexbox {
+  .cards-grid {
     width: 98vw;
-  }
-
-  .img-card, .text-card {
-    width: 32vw;
   }
 
   .below-card-button-space {
@@ -451,13 +447,14 @@ hr.thick-white {
   width: 100%;
 }
 
-.cards-flexbox {
+.cards-grid {
   margin-top: 20px;
   margin-bottom: 30px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  column-gap: 10px;
+  row-gap: 20px;
 }
 
 .ten-px-right-margin {
@@ -472,7 +469,6 @@ hr.thick-white {
 
 .text-card-text-wrapper {
   margin: 25px;
-  height: 400px;
 }
 
 .text-card-section-wrapper {
@@ -496,7 +492,6 @@ hr.thick-white {
 }
 
 .img-card {
-  height: 500px;
   background-color: white;
   overflow: hidden;
   position: relative;
@@ -590,6 +585,16 @@ hr.thick-white {
   left: 6rem;
 }
 
+@media (max-width: 939px) {
+  .text-card {
+    display: none;
+  }
+}
+@media (max-width: 622px) {
+  .text-card {
+    display: block;
+  }
+}
 #timeline-section-header {
   font-family: "Platform Medium";
   font-size: 3.2rem;

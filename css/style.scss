@@ -34,9 +34,9 @@ hr {
 }
 
 %card-layout {
-    height: 450px;
+    min-height: 500px;
     background-color: white;
-    width: 393.33px;
+    height: max-content;
 }
 
 // card interaction module, need shadow
@@ -355,12 +355,8 @@ a {
         width: 98vw;
     }
 
-    .cards-flexbox {
+    .cards-grid {
         width: 98vw;
-    }
-
-    %card-layout {
-        width: 32vw;
     }
 
     .below-card-button-space {
@@ -542,14 +538,15 @@ hr.thick-white {
     width: 100%;
 }
 
-.cards-flexbox {
+.cards-grid {
     @extend %page-layout;
     margin-top: 20px;
     margin-bottom: 30px; // temporary
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
+    display: grid;
+	width: 100%;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	column-gap: 10px;
+	row-gap: 20px;
 }
 
 .ten-px-right-margin {
@@ -565,7 +562,6 @@ hr.thick-white {
 
 .text-card-text-wrapper {
     margin: 25px;
-    height: 400px; // need to adjust
 }
 
 .text-card-section-wrapper {
@@ -593,7 +589,6 @@ hr.thick-white {
 .img-card {
     @extend %card-layout;
     @extend %card-interaction;
-    height: 500px;
     background-color: white;
     overflow: hidden;
     position: relative;
@@ -691,6 +686,19 @@ hr.thick-white {
     &:hover svg {
         opacity: 1;
         left: 6rem; // final x position + 0.5rem
+    }
+}
+
+@media (max-width: 939px) {
+    .text-card {
+        display: none;
+    }
+}
+
+
+@media (max-width: 622px) {
+    .text-card {
+        display: block;
     }
 }
 
