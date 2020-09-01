@@ -1015,9 +1015,9 @@ hr.thick-white {
 
 .partner-logo-grid {
     display: grid;
-    grid-row-gap: 25px;
+    grid-row-gap: 20px;
     grid-column-gap: 50px;
-    grid-template-columns: repeat(auto-fit, minmax(30px, 140px));
+    grid-template-columns: repeat(auto-fit, minmax(25px, 130px));
     max-width: 60vw;
     justify-items: center;
     align-items: baseline;
