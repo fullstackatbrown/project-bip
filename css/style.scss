@@ -951,6 +951,14 @@ hr.thick-white {
     letter-spacing: -0.5px;
 }
 
+mobile-timeline-big-grid{
+	display: grid;
+	column-gap: 1vh;
+    margin-top: 100px;
+    margin-bottom: 100px;
+	grid-template-columns: 80% 20%;
+}
+
 .mobile-timeline-grid{
     display: grid;
 	row-gap: 2vh;
