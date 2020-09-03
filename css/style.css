@@ -856,12 +856,12 @@ hr.thick-white {
   grid-template-columns: 20% 60%;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   #timeline-desktop {
     display: none;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
   #timeline-mobile {
     display: none;
   }
