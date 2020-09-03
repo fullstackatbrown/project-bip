@@ -796,16 +796,16 @@ hr.thick-white {
 
 #timeline-mobile {
   margin-left: 20px;
-  margin-top: 20px;
+  margin-top: 10px;
   width: 100%;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .timeline-section-header {
   font-family: "Platform Medium";
-  font-size: 3.2rem;
-  line-height: 3.7rem;
+  font-size: 3.8rem;
+  line-height: 3.3rem;
   margin-top: 100px;
   z-index: 1000;
   display: block;
@@ -816,7 +816,7 @@ hr.thick-white {
 }
 
 #mobile-timeline-section-description {
-  margin-top: 15px;
+  margin-top: 20px;
   font-family: "Crimson Text";
   width: 80%;
   font-size: 1.4rem;
