@@ -932,10 +932,28 @@ hr.thick-white {
 .timeline-section-header {
     font-family: "Platform Medium";
     font-size: 3.8rem;
-    line-height: 3.3rem;
+	line-height: 3.3rem;
     margin-top: 100px;
     z-index: 1000;
     display: block;
+}
+
+.timeline-mobile-purpose{
+	display: inline-block;
+	text-align: right;
+
+}
+.timeline-mobile-text {
+	width: max-content;
+	font-family: "Crimson Text";
+	font-style: italic;
+    font-size: 4.5rem;
+	opacity: 50%;
+	transform: rotate(90deg);  
+	-webkit-transform: rotate(90deg);
+  	-moz-transform: rotate(90deg);
+  	-ms-transform: rotate(90deg);
+	  -o-transform: rotate(90deg);
 }
 
 #mobile-timeline-header-text {
@@ -951,12 +969,9 @@ hr.thick-white {
     letter-spacing: -0.5px;
 }
 
-mobile-timeline-big-grid{
+.mobile-timeline-big-grid{
 	display: grid;
-	column-gap: 1vh;
-    margin-top: 100px;
-    margin-bottom: 100px;
-	grid-template-columns: 80% 20%;
+	grid-template-columns: 70% 30%;
 }
 
 .mobile-timeline-grid{
