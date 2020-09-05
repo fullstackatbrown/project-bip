@@ -16,14 +16,14 @@ hr {
   margin-bottom: 0;
 }
 
-a.footer-page, .footer-headpage, .join-text, .about-text-description, .img-card-text-description, .img-card-text-title, .img-card-item-type, .text-card-text-description, .text-card-text-subtitle, .spotlight-description {
+.story-text, a.footer-page, .footer-headpage, .join-text, .about-text-description, .img-card-text-description, .img-card-text-title, .img-card-item-type, .text-card-text-description, .text-card-text-subtitle, .spotlight-description {
   font-family: "Circular Std Book";
   font-size: 1.1rem;
   letter-spacing: -0.5px;
   line-height: 1.4rem;
 }
 
-.join-title, .about-text-title, .spotlight-heading {
+.story-title, .join-title, .about-text-title, .spotlight-heading {
   font-family: "Circular Std Bold";
   font-size: 2.2rem;
   line-height: 2.4rem;
@@ -1180,6 +1180,28 @@ a.mobile-footer-page {
   font-family: "Circular Std Book";
   font-size: 0.9em;
   letter-spacing: -0.3px;
+}
+
+#story-section-header {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-left: 20px;
+  z-index: 1000;
+  width: 50%;
+}
+
+@media (max-width: 500px) {
+  #story-section-header {
+    width: 40%;
+  }
+}
+#story-header-text {
+  text-align: left;
+  display: block;
+}
+
+.story-text {
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

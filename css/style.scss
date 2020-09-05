@@ -1347,3 +1347,32 @@ a.mobile-footer-page {
     font-size: 0.9em;
     letter-spacing: -0.3px;
 }
+
+//about us 
+#story-section-header {
+	margin-top: 80px;
+	margin-bottom: 80px;
+	margin-left:20px;
+	z-index: 1000;
+	width:50%;
+}
+
+@media (max-width: 500px) {
+    #story-section-header {
+        width: 40%;
+    }
+}
+
+#story-header-text {
+    text-align: left;
+    display: block;
+}
+
+.story-title {
+    @extend %h1-heading;
+}
+
+.story-text {
+    margin-top: 20px;
+    @extend %normal-text;
+}
