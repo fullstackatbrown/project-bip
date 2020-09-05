@@ -934,25 +934,16 @@ hr.thick-white {
 }
 
 #timeline-mobile {
-    margin-left: 20px;
-    margin-top: 10px; //temp
-    width: 100%;
-    padding-top: 10px; // temp
-    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto; //temp
+    margin-top: 100px; 
+    width: 90%;
 }
 
 .timeline-section-header {
     font-family: "Platform Medium";
     font-size: 3.8rem;
     line-height: 3.3rem;
-    margin-top: 100px;
-    z-index: 1000;
-    display: block;
-}
-
-.timeline-mobile-purpose {
-    display: inline-block;
-    text-align: right;
 }
 
 .timeline-mobile-text {
@@ -973,26 +964,45 @@ hr.thick-white {
 }
 
 #mobile-timeline-section-description {
-    margin-top: 20px;
+    margin-top: 30px;
     font-family: "Crimson Text";
-    width: 80%;
+    max-width: 80%;
+    min-width: 300px;
     font-size: 1.4rem;
     line-height: 1.65rem;
     letter-spacing: -0.5px;
 }
 
-.mobile-timeline-big-grid {
-    display: grid;
-    grid-template-columns: 70% 30%;
+.mobile-timeline-title {
+    font-family: "Circular Std Bold";
+    font-size: min(13vw, 4rem);
+    margin-top: -2vh;
+}
+
+@media (max-width: 500px) {
+    .mobile-timeline-title {
+        margin-top: -3.5vw;
+    }
+}
+
+.mobile-timeline-description {
+    font-family: "Crimson Text";
+    font-size: 1.4rem;
+    font-style: italic;
+    line-height: 1.7rem;
+    letter-spacing: -0.2px;
+    opacity: 0.7;
 }
 
 .mobile-timeline-grid {
     display: grid;
     row-gap: 2vh;
-    column-gap: 1vh;
-    margin-top: 100px;
+    column-gap: 10px;
+    margin-top: 70px;
     margin-bottom: 100px;
-    grid-template-columns: 20% 60%;
+    grid-template-columns: 2fr 8fr;
+    width: 100%;
+    max-width: 800px;
 }
 
 // media query for mobile
