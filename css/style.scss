@@ -42,6 +42,7 @@ hr {
 // card interaction module, need shadow
 %card-interaction {
     transition: transform 0.15s;
+
     &:hover {
         transform: translate(0px, -3px);
         -webkit-box-shadow: 0px 2px 7px 1px rgba(168, 168, 168, 0.23);
@@ -113,6 +114,7 @@ a {
     vertical-align: middle;
     text-align: center;
     position: relative;
+
     &:hover {
         color: lighten(black, 5%);
     }
@@ -121,15 +123,18 @@ a {
 %link-with-arrow-arrow {
     position: relative;
     transition: background-color 300ms ease-out;
+
     span {
         display: inline-block;
         position: relative;
         transition: all 300ms ease-out;
         will-change: transform;
     }
+
     &:hover span {
         transform: translate3d(0, 0, 0);
     }
+
     svg {
         position: absolute;
         width: 0.9em;
@@ -141,10 +146,12 @@ a {
         transform: translateY(-50%);
         transition: all 300ms ease-out;
         will-change: right, opacity;
+
         * {
             stroke-width: 2;
         }
     }
+
     &:hover svg {
         opacity: 1;
         left: 9.2rem;
@@ -543,10 +550,10 @@ hr.thick-white {
     margin-top: 20px;
     margin-bottom: 30px; // temporary
     display: grid;
-	width: 100%;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	column-gap: 10px;
-	row-gap: 20px;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 10px;
+    row-gap: 20px;
 }
 
 .ten-px-right-margin {
@@ -568,6 +575,7 @@ hr.thick-white {
     margin-top: 15px;
     overflow: hidden;
 }
+
 .text-card-text-headline {
     font-family: "Crimson Text";
     font-style: italic;
@@ -666,6 +674,7 @@ hr.thick-white {
     font-size: 1.2rem;
     letter-spacing: -0.5px;
     color: black;
+
     &:hover {
         color: lighten(black, 5%); // dont' need to change
     }
@@ -673,16 +682,19 @@ hr.thick-white {
 
 .card-link-arrow {
     @extend %link-with-arrow-arrow;
+
     svg {
         position: absolute;
         width: 0.9em; // control the arrow size
         left: 5.5rem; // control initial x position
         opacity: 1; // 0 -> hide if not touched
         top: 43%; // vertical alignment
+
         * {
             stroke-width: 2; // stroke width
         }
     }
+
     &:hover svg {
         opacity: 1;
         left: 6rem; // final x position + 0.5rem
@@ -694,7 +706,6 @@ hr.thick-white {
         display: none;
     }
 }
-
 
 @media (max-width: 622px) {
     .text-card {
@@ -777,6 +788,7 @@ hr.thick-white {
     transform: scale(1);
     animation: pulse-black 2s infinite;
     opacity: 0;
+
     &:hover {
         background-color: $black-font;
     }
@@ -920,40 +932,40 @@ hr.thick-white {
     top: 40px;
     left: 64.8%;
 }
-#timeline-mobile{
-	margin-left:20px;
-	margin-top: 10px; //temp
-	width: 100%;
-    padding-top: 10px; // temp
-	padding-bottom: 10px;
 
+#timeline-mobile {
+    margin-left: 20px;
+    margin-top: 10px; //temp
+    width: 100%;
+    padding-top: 10px; // temp
+    padding-bottom: 10px;
 }
 
 .timeline-section-header {
     font-family: "Platform Medium";
     font-size: 3.8rem;
-	line-height: 3.3rem;
+    line-height: 3.3rem;
     margin-top: 100px;
     z-index: 1000;
     display: block;
 }
 
-.timeline-mobile-purpose{
-	display: inline-block;
-	text-align: right;
-
+.timeline-mobile-purpose {
+    display: inline-block;
+    text-align: right;
 }
+
 .timeline-mobile-text {
-	width: max-content;
-	font-family: "Crimson Text";
-	font-style: italic;
+    width: max-content;
+    font-family: "Crimson Text";
+    font-style: italic;
     font-size: 4.5rem;
-	opacity: 50%;
-	transform: rotate(90deg);  
-	-webkit-transform: rotate(90deg);
-  	-moz-transform: rotate(90deg);
-  	-ms-transform: rotate(90deg);
-	  -o-transform: rotate(90deg);
+    opacity: 50%;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
 }
 
 #mobile-timeline-header-text {
@@ -969,26 +981,25 @@ hr.thick-white {
     letter-spacing: -0.5px;
 }
 
-.mobile-timeline-big-grid{
-	display: grid;
-	grid-template-columns: 70% 30%;
+.mobile-timeline-big-grid {
+    display: grid;
+    grid-template-columns: 70% 30%;
 }
 
-.mobile-timeline-grid{
+.mobile-timeline-grid {
     display: grid;
-	row-gap: 2vh;
-	column-gap: 1vh;
+    row-gap: 2vh;
+    column-gap: 1vh;
     margin-top: 100px;
     margin-bottom: 100px;
-	grid-template-columns: 20% 60%;
-
+    grid-template-columns: 20% 60%;
 }
 
 // media query for mobile
 @media (max-width: 1200px) {
     #timeline-desktop {
         display: none;
-	}
+    }
 }
 
 @media (min-width: 1200px) {
