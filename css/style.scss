@@ -1376,3 +1376,12 @@ a.mobile-footer-page {
     margin-top: 20px;
     @extend %normal-text;
 }
+
+
+//Bio Cards
+.profile-pic {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
