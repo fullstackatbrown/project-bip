@@ -16,7 +16,7 @@ hr {
   margin-bottom: 0;
 }
 
-.story-text, a.footer-page, .footer-headpage, .join-text, .about-text-description, .img-card-text-description, .img-card-text-title, .img-card-item-type, .text-card-text-description, .text-card-text-subtitle, .spotlight-description {
+.story-text, a.footer-page, .footer-headpage, .join-text, .img-card-text-description, .img-card-text-title, .img-card-item-type, .text-card-text-description, .text-card-text-subtitle, .spotlight-description {
   font-family: "Circular Std Book";
   font-size: 1.1rem;
   letter-spacing: -0.5px;
@@ -860,7 +860,7 @@ hr.thick-white {
   column-gap: 10px;
   margin-top: 70px;
   margin-bottom: 100px;
-  grid-template-columns: 2fr 8fr;
+  grid-template-columns: 1.5fr 8.5fr;
   width: 100%;
   max-width: 800px;
 }
@@ -917,6 +917,10 @@ hr.thick-white {
 }
 .about-text-description {
   margin-top: 25px;
+  font-family: "Crimson Text";
+  font-size: 1.3rem;
+  line-height: 1.55rem;
+  letter-spacing: -0.5px;
 }
 
 .above-about-button-space {

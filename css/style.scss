@@ -1000,7 +1000,7 @@ hr.thick-white {
     column-gap: 10px;
     margin-top: 70px;
     margin-bottom: 100px;
-    grid-template-columns: 2fr 8fr;
+    grid-template-columns: 1.5fr 8.5fr;
     width: 100%;
     max-width: 800px;
 }
@@ -1066,7 +1066,10 @@ hr.thick-white {
 
 .about-text-description {
     margin-top: 25px;
-    @extend %normal-text;
+    font-family: "Crimson Text";
+    font-size: 1.3rem;
+    line-height: 1.55rem;
+    letter-spacing: -0.5px;
 }
 
 .above-about-button-space {
