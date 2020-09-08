@@ -1,4 +1,4 @@
-$background: #f5f2f0;
+$background: #f9f4fb;
 $purple: #26225a;
 $light-purple: #9958a6;
 $black-font: #21252d;
@@ -33,8 +33,28 @@ hr {
     letter-spacing: -1.5px;
 }
 
+%section-header {
+    font-family: "Platform Medium";
+    font-size: 3.2rem;
+    line-height: 3.7rem;
+    display: block;
+}
+
+%section-description-serif {
+    font-family: "Crimson Text";
+    font-size: 1.4rem;
+    line-height: 1.65rem;
+    letter-spacing: -0.5px;
+}
+
 %card-layout {
     min-height: 500px;
+    background-color: white;
+    height: max-content;
+}
+
+%bio-card-layout {
+    min-height: 400px;
     background-color: white;
     height: max-content;
 }
@@ -158,6 +178,10 @@ a {
     }
 }
 
+.full-width-white-background {
+    width: 100%;
+    background-color: white;
+}
 // font import from Online Web Fonts -> Circular
 @font-face {
     font-family: "Circular Std Book";
@@ -715,13 +739,11 @@ hr.thick-white {
 
 // TIMELINE
 #timeline-section-header {
-    font-family: "Platform Medium";
-    font-size: 3.2rem;
-    line-height: 3.7rem;
     margin-top: 100px;
     z-index: 1000;
     opacity: 0;
     display: block;
+    @extend %section-header;
 }
 
 #timeline-header-text {
@@ -936,7 +958,7 @@ hr.thick-white {
 #timeline-mobile {
     margin-left: auto;
     margin-right: auto; //temp
-    margin-top: 100px; 
+    margin-top: 100px;
     width: 90%;
 }
 
@@ -1000,7 +1022,7 @@ hr.thick-white {
     column-gap: 10px;
     margin-top: 70px;
     margin-bottom: 100px;
-    grid-template-columns: 2fr 8fr;
+    grid-template-columns: 1.5fr 8.5fr;
     width: 100%;
     max-width: 800px;
 }
@@ -1066,7 +1088,10 @@ hr.thick-white {
 
 .about-text-description {
     margin-top: 25px;
-    @extend %normal-text;
+    font-family: "Crimson Text";
+    font-size: 1.3rem;
+    line-height: 1.55rem;
+    letter-spacing: -0.5px;
 }
 
 .above-about-button-space {
@@ -1348,40 +1373,160 @@ a.mobile-footer-page {
     letter-spacing: -0.3px;
 }
 
-//about us 
+//about us
 #story-section-header {
-	margin-top: 80px;
-	margin-bottom: 80px;
-	margin-left:20px;
-	z-index: 1000;
-	width:50%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 60%;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1200px) {
     #story-section-header {
-        width: 40%;
+        width: 90%;
+        margin-left: max(4vw, 20px);
     }
 }
 
-#story-header-text {
+.story-header-text {
     text-align: left;
     display: block;
 }
 
 .story-title {
-    @extend %h1-heading;
+    @extend %section-header;
 }
 
 .story-text {
-    margin-top: 20px;
-    @extend %normal-text;
+    margin-top: 25px;
+    @extend %section-description-serif;
+}
+
+.about-us-mission-grid {
+    display: grid;
+    column-gap: 5vh;
+    row-gap: 5vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.about-us-mission-text {
+    font-family: "Platform Medium";
+    font-size: 2.5rem;
+    line-height: 2.9rem;
+    display: block;
+    width: 100%;
+}
+
+.about-us-mission-right {
+    text-align: right;
+    align-self: center;
+}
+
+.about-us-mission-heading {
+    @extend %section-header;
+}
+
+.about-us-mission-description {
+    @extend %section-description-serif;
+    margin-top: 10px;
+    max-width: 400px;
+    float: right;
+}
+
+@media (max-width: 1200px) {
+    .about-us-mission-grid {
+        width: 90%;
+        margin-left: max(4vw, 20px);
+    }
+}
+
+@media (max-width: 729px) {
+    .about-us-mission-right {
+        text-align: left;
+        align-self: center;
+    }
+
+    .about-us-mission-description {
+        float: left;
+    }
 }
 
 
 //Bio Cards
+.team-bio-heading {
+    @extend %section-header;
+    margin-top: 100px;
+    margin-bottom: 25px;
+}
+
+.bio-cards-grid-first {
+    @extend %page-layout;
+    margin-top: 20px;
+    margin-bottom: 30px; // temporary
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    column-gap: 10px;
+    row-gap: 20px;
+}
+
+.bio-cards-grid-rest {
+    @extend %page-layout;
+    margin-top: 20px;
+    margin-bottom: 150px; // temporary
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    column-gap: 10px;
+    row-gap: 20px;
+}
+
+
+.bio-card {
+    @extend %bio-card-layout;
+    @extend %card-interaction;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
+}
+
+.bio-card-wrapper {
+    text-align: center;
+}
+
+.profile-pic-wrapper {
+    margin: auto;
+}
+
 .profile-pic {
-    width: 300px;
-    height: 300px;
+    width: 60%;
+    height: 30%;
     object-fit: cover;
     border-radius: 50%;
+    margin: 25px;
+}
+
+.bio-card-subtitle {
+    font-family: Circular Std Book;
+    color: purple;
+    font-size: 1.2rem;
+    margin-bottom: -.3rem;
+}
+
+.bio-card-name {
+    font-family: Circular Std Book;
+    font-size: 1.8rem;
+    margin-bottom: .2rem;
+}
+
+.bio-card-description {
+    @extend %section-description-serif;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.bio-icon {
+    height: 25px;
 }

@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;1,300;1,400;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;1,300;1,400;1,500&family=Crimson+Text:ital@0;1&display=swap");
 body {
-  background-color: #f5f2f0;
+  background-color: #f9f4fb;
 }
 
 hr {
   margin: 0;
 }
 
-.cards-grid, .website-wrapper, .nav-custom {
+.bio-cards-grid-rest, .bio-cards-grid-first, .cards-grid, .website-wrapper, .nav-custom {
   width: 1200px;
   margin-right: auto;
   margin-left: auto;
@@ -16,18 +16,32 @@ hr {
   margin-bottom: 0;
 }
 
-.story-text, a.footer-page, .footer-headpage, .join-text, .about-text-description, .img-card-text-description, .img-card-text-title, .img-card-item-type, .text-card-text-description, .text-card-text-subtitle, .spotlight-description {
+a.footer-page, .footer-headpage, .join-text, .img-card-text-description, .img-card-text-title, .img-card-item-type, .text-card-text-description, .text-card-text-subtitle, .spotlight-description {
   font-family: "Circular Std Book";
   font-size: 1.1rem;
   letter-spacing: -0.5px;
   line-height: 1.4rem;
 }
 
-.story-title, .join-title, .about-text-title, .spotlight-heading {
+.join-title, .about-text-title, .spotlight-heading {
   font-family: "Circular Std Bold";
   font-size: 2.2rem;
   line-height: 2.4rem;
   letter-spacing: -1.5px;
+}
+
+.team-bio-heading, .about-us-mission-heading, .story-title, #timeline-section-header {
+  font-family: "Platform Medium";
+  font-size: 3.2rem;
+  line-height: 3.7rem;
+  display: block;
+}
+
+.bio-card-description, .about-us-mission-description, .story-text {
+  font-family: "Crimson Text";
+  font-size: 1.4rem;
+  line-height: 1.65rem;
+  letter-spacing: -0.5px;
 }
 
 .img-card, .text-card {
@@ -36,10 +50,16 @@ hr {
   height: max-content;
 }
 
-.img-card, .home-main-lightbox-wrapper {
+.bio-card {
+  min-height: 400px;
+  background-color: white;
+  height: max-content;
+}
+
+.bio-card, .img-card, .home-main-lightbox-wrapper {
   transition: transform 0.15s;
 }
-.img-card:hover, .home-main-lightbox-wrapper:hover {
+.bio-card:hover, .img-card:hover, .home-main-lightbox-wrapper:hover {
   transform: translate(0px, -3px);
   -webkit-box-shadow: 0px 2px 7px 1px rgba(168, 168, 168, 0.23);
   -moz-box-shadow: 0px 2px 7px 1px rgba(168, 168, 168, 0.23);
@@ -141,6 +161,11 @@ a:hover::after {
 .card-link-arrow:hover svg, .spotlight-link-arrow:hover svg {
   opacity: 1;
   left: 9.2rem;
+}
+
+.full-width-white-background {
+  width: 100%;
+  background-color: white;
 }
 
 @font-face {
@@ -596,9 +621,6 @@ hr.thick-white {
   }
 }
 #timeline-section-header {
-  font-family: "Platform Medium";
-  font-size: 3.2rem;
-  line-height: 3.7rem;
   margin-top: 100px;
   z-index: 1000;
   opacity: 0;
@@ -661,7 +683,7 @@ hr.thick-white {
   height: 18px;
   position: absolute;
   margin-left: -0.1px;
-  background-color: #f5f2f0;
+  background-color: #f9f4fb;
   border: 2px solid #21252d;
   border-radius: 50%;
   transition-duration: 0.2s;
@@ -860,7 +882,7 @@ hr.thick-white {
   column-gap: 10px;
   margin-top: 70px;
   margin-bottom: 100px;
-  grid-template-columns: 2fr 8fr;
+  grid-template-columns: 1.5fr 8.5fr;
   width: 100%;
   max-width: 800px;
 }
@@ -917,6 +939,10 @@ hr.thick-white {
 }
 .about-text-description {
   margin-top: 25px;
+  font-family: "Crimson Text";
+  font-size: 1.3rem;
+  line-height: 1.55rem;
+  letter-spacing: -0.5px;
 }
 
 .above-about-button-space {
@@ -926,7 +952,7 @@ hr.thick-white {
 .meet-our-team-button {
   padding: 10px 20px;
   border: 1px solid #21252d;
-  background-color: #f5f2f0;
+  background-color: #f9f4fb;
   border-radius: 3px;
   box-sizing: border-box;
   text-transform: uppercase;
@@ -939,7 +965,7 @@ hr.thick-white {
 }
 .meet-our-team-button:hover {
   background-color: #21252d;
-  color: #f5f2f0;
+  color: #f9f4fb;
 }
 
 .partner-logo-wrapper {
@@ -1183,32 +1209,138 @@ a.mobile-footer-page {
 }
 
 #story-section-header {
-  margin-top: 80px;
-  margin-bottom: 80px;
-  margin-left: 20px;
-  z-index: 1000;
-  width: 50%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 60%;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1200px) {
   #story-section-header {
-    width: 40%;
+    width: 90%;
+    margin-left: max(4vw, 20px);
   }
 }
-#story-header-text {
+.story-header-text {
   text-align: left;
   display: block;
 }
 
 .story-text {
+  margin-top: 25px;
+}
+
+.about-us-mission-grid {
+  display: grid;
+  column-gap: 5vh;
+  row-gap: 5vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.about-us-mission-text {
+  font-family: "Platform Medium";
+  font-size: 2.5rem;
+  line-height: 2.9rem;
+  display: block;
+  width: 100%;
+}
+
+.about-us-mission-right {
+  text-align: right;
+  align-self: center;
+}
+
+.about-us-mission-description {
+  margin-top: 10px;
+  max-width: 400px;
+  float: right;
+}
+
+@media (max-width: 1200px) {
+  .about-us-mission-grid {
+    width: 90%;
+    margin-left: max(4vw, 20px);
+  }
+}
+@media (max-width: 729px) {
+  .about-us-mission-right {
+    text-align: left;
+    align-self: center;
+  }
+
+  .about-us-mission-description {
+    float: left;
+  }
+}
+.team-bio-heading {
+  margin-top: 100px;
+  margin-bottom: 25px;
+}
+
+.bio-cards-grid-first {
   margin-top: 20px;
+  margin-bottom: 30px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  column-gap: 10px;
+  row-gap: 20px;
+}
+
+.bio-cards-grid-rest {
+  margin-top: 20px;
+  margin-bottom: 150px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  column-gap: 10px;
+  row-gap: 20px;
+}
+
+.bio-card {
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+  padding: 10px;
+}
+
+.bio-card-wrapper {
+  text-align: center;
+}
+
+.profile-pic-wrapper {
+  margin: auto;
 }
 
 .profile-pic {
-  width: 300px;
-  height: 300px;
+  width: 60%;
+  height: 30%;
   object-fit: cover;
   border-radius: 50%;
+  margin: 25px;
+}
+
+.bio-card-subtitle {
+  font-family: Circular Std Book;
+  color: purple;
+  font-size: 1.2rem;
+  margin-bottom: -0.3rem;
+}
+
+.bio-card-name {
+  font-family: Circular Std Book;
+  font-size: 1.8rem;
+  margin-bottom: 0.2rem;
+}
+
+.bio-card-description {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.bio-icon {
+  height: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
