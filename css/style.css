@@ -1281,6 +1281,12 @@ a.mobile-footer-page {
   margin-bottom: 50px;
 }
 
+@media (max-width: 1200px) {
+  .team-bio-heading {
+    width: 90%;
+    margin-left: max(4vw, 20px);
+  }
+}
 .bio-cards-grid-rest, .bio-cards-grid-first {
   display: grid;
   width: 100%;
