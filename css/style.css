@@ -16,18 +16,32 @@ hr {
   margin-bottom: 0;
 }
 
-.story-text, a.footer-page, .footer-headpage, .join-text, .img-card-text-description, .img-card-text-title, .img-card-item-type, .text-card-text-description, .text-card-text-subtitle, .spotlight-description {
+a.footer-page, .footer-headpage, .join-text, .img-card-text-description, .img-card-text-title, .img-card-item-type, .text-card-text-description, .text-card-text-subtitle, .spotlight-description {
   font-family: "Circular Std Book";
   font-size: 1.1rem;
   letter-spacing: -0.5px;
   line-height: 1.4rem;
 }
 
-.story-title, .join-title, .about-text-title, .spotlight-heading {
+.join-title, .about-text-title, .spotlight-heading {
   font-family: "Circular Std Bold";
   font-size: 2.2rem;
   line-height: 2.4rem;
   letter-spacing: -1.5px;
+}
+
+.about-us-mission-heading, .story-title, #timeline-section-header {
+  font-family: "Platform Medium";
+  font-size: 3.2rem;
+  line-height: 3.7rem;
+  display: block;
+}
+
+.about-us-mission-description, .story-text {
+  font-family: "Crimson Text";
+  font-size: 1.4rem;
+  line-height: 1.65rem;
+  letter-spacing: -0.5px;
 }
 
 .img-card, .text-card {
@@ -141,6 +155,11 @@ a:hover::after {
 .card-link-arrow:hover svg, .spotlight-link-arrow:hover svg {
   opacity: 1;
   left: 9.2rem;
+}
+
+.full-width-white-background {
+  width: 100%;
+  background-color: white;
 }
 
 @font-face {
@@ -596,9 +615,6 @@ hr.thick-white {
   }
 }
 #timeline-section-header {
-  font-family: "Platform Medium";
-  font-size: 3.2rem;
-  line-height: 3.7rem;
   margin-top: 100px;
   z-index: 1000;
   opacity: 0;
@@ -1187,25 +1203,69 @@ a.mobile-footer-page {
 }
 
 #story-section-header {
-  margin-top: 80px;
-  margin-bottom: 80px;
-  margin-left: 20px;
-  z-index: 1000;
-  width: 50%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 60%;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1200px) {
   #story-section-header {
-    width: 40%;
+    width: 90%;
+    margin-left: max(4vw, 20px);
   }
 }
-#story-header-text {
+.story-header-text {
   text-align: left;
   display: block;
 }
 
 .story-text {
+  margin-top: 25px;
+}
+
+.about-us-mission-grid {
+  display: grid;
+  column-gap: 5vh;
+  row-gap: 5vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.about-us-mission-text {
+  font-family: "Platform Medium";
+  font-size: 2.5rem;
+  line-height: 2.9rem;
+  display: block;
+  width: 100%;
+}
+
+.about-us-mission-right {
+  text-align: right;
+  align-self: center;
+}
+
+.about-us-mission-description {
   margin-top: 20px;
+  max-width: 400px;
+  float: right;
+}
+
+@media (max-width: 1200px) {
+  .about-us-mission-grid {
+    width: 90%;
+    margin-left: max(4vw, 20px);
+  }
+}
+@media (max-width: 729px) {
+  .about-us-mission-right {
+    text-align: left;
+    align-self: center;
+  }
+
+  .about-us-mission-description {
+    float: left;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
