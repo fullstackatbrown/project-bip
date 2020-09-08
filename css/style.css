@@ -8,7 +8,7 @@ hr {
   margin: 0;
 }
 
-.bio-cards-grid-rest, .bio-cards-grid-first, .cards-grid, .website-wrapper, .nav-custom {
+.cards-grid, .website-wrapper, .nav-custom {
   width: 1200px;
   margin-right: auto;
   margin-left: auto;
@@ -51,7 +51,6 @@ a.footer-page, .footer-headpage, .join-text, .img-card-text-description, .img-ca
 }
 
 .bio-card {
-  min-height: 400px;
   background-color: white;
   height: max-content;
 }
@@ -1273,29 +1272,30 @@ a.mobile-footer-page {
     float: left;
   }
 }
-.team-bio-heading {
+.team-bio-wrapper {
   margin-top: 100px;
-  margin-bottom: 25px;
+  margin-bottom: 100px;
+}
+
+.team-bio-heading {
+  margin-bottom: 50px;
+}
+
+.bio-cards-grid-rest, .bio-cards-grid-first {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  column-gap: 10px;
+  row-gap: 10px;
 }
 
 .bio-cards-grid-first {
   margin-top: 20px;
   margin-bottom: 30px;
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  column-gap: 10px;
-  row-gap: 20px;
 }
 
 .bio-cards-grid-rest {
   margin-top: 20px;
-  margin-bottom: 150px;
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  column-gap: 10px;
-  row-gap: 20px;
 }
 
 .bio-card {
@@ -1314,33 +1314,34 @@ a.mobile-footer-page {
 }
 
 .profile-pic {
-  width: 60%;
-  height: 30%;
+  width: 50%;
   object-fit: cover;
   border-radius: 50%;
-  margin: 25px;
+  margin: 10px;
+  margin-bottom: 20px;
 }
 
 .bio-card-subtitle {
-  font-family: Circular Std Book;
+  font-family: "Circular Std Book";
   color: purple;
-  font-size: 1.2rem;
-  margin-bottom: -0.3rem;
+  font-size: 0.8rem;
 }
 
 .bio-card-name {
-  font-family: Circular Std Book;
-  font-size: 1.8rem;
-  margin-bottom: 0.2rem;
+  font-family: "Circular Std Bold";
+  font-size: 1rem;
+  margin-bottom: 0rem;
 }
 
 .bio-card-description {
   font-style: italic;
-  margin-bottom: 1rem;
+  font-size: 1rem;
+  margin-bottom: 15px;
 }
 
 .bio-icon {
-  height: 25px;
+  height: 20px;
+  margin-bottom: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
