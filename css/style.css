@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;1,300;1,400;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;1,300;1,400;1,500&family=Crimson+Text:ital@0;1&display=swap");
 body {
-  background-color: #f5f2f0;
+  background-color: #f9f4fb;
 }
 
 hr {
@@ -661,7 +661,7 @@ hr.thick-white {
   height: 18px;
   position: absolute;
   margin-left: -0.1px;
-  background-color: #f5f2f0;
+  background-color: #f9f4fb;
   border: 2px solid #21252d;
   border-radius: 50%;
   transition-duration: 0.2s;
@@ -926,7 +926,7 @@ hr.thick-white {
 .meet-our-team-button {
   padding: 10px 20px;
   border: 1px solid #21252d;
-  background-color: #f5f2f0;
+  background-color: #f9f4fb;
   border-radius: 3px;
   box-sizing: border-box;
   text-transform: uppercase;
@@ -939,7 +939,7 @@ hr.thick-white {
 }
 .meet-our-team-button:hover {
   background-color: #21252d;
-  color: #f5f2f0;
+  color: #f9f4fb;
 }
 
 .partner-logo-wrapper {
