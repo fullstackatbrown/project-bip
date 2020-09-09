@@ -44,7 +44,7 @@ hr {
   display: block;
 }
 
-.bio-card-description, .about-us-mission-description, .story-text {
+#construction-time-text, .bio-card-description, .about-us-mission-description, .story-text {
   font-family: "Crimson Text";
   font-size: 1.4rem;
   line-height: 1.65rem;
@@ -1396,9 +1396,10 @@ a.mobile-footer-page {
 
 .construction-white-space {
   margin-top: 50px;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background-color: plum;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: white;
+  height: 60px;
 }
 
 @media (max-width: 1200px) {
@@ -1407,7 +1408,7 @@ a.mobile-footer-page {
     margin-left: max(4vw, 20px);
   }
 }
-#construction-time-text {
+.construction-time-space {
   width: max-content;
   text-align: center;
   display: block;
