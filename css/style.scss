@@ -40,6 +40,13 @@ hr {
     display: block;
 }
 
+%section-subheader {
+    font-family: "Platform Medium";
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+    display: block;
+}
+
 %section-description-serif {
     font-family: "Crimson Text";
     font-size: 1.4rem;
@@ -569,7 +576,6 @@ hr.thick-white {
 }
 
 .cards-grid {
-    @extend %page-layout;
     margin-top: 20px;
     margin-bottom: 30px; // temporary
     display: grid;
@@ -1395,6 +1401,10 @@ a.mobile-footer-page {
     @extend %section-header;
 }
 
+.story-subtitle {
+    @extend %section-subheader;
+}
+
 .story-text {
     margin-top: 25px;
     @extend %section-description-serif;
@@ -1452,9 +1462,6 @@ a.mobile-footer-page {
 }
 
 //Bio Cards
-// <div class="contact-icon-wrapper">
-// <img class="bio-icon" src="img/about/linkedin.png">
-// </div>
 .team-bio-wrapper {
     margin-top: 100px;
     margin-bottom: 100px;
@@ -1538,4 +1545,23 @@ a.mobile-footer-page {
 .bio-icon {
     height: 20px;
     margin-bottom: 15px;
+}
+
+//PROJECT OVERVIEW
+.projects-grid {
+    margin-top: 20px;
+    margin-bottom: 100px; // temporary
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 10px;
+    row-gap: 15px;
+}
+
+@media (max-width: 1200px) {
+    .projects-grid {
+        width: 91.5%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
