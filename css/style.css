@@ -8,7 +8,7 @@ hr {
   margin: 0;
 }
 
-.cards-grid, .website-wrapper, .nav-custom {
+.website-wrapper, .nav-custom {
   width: 1200px;
   margin-right: auto;
   margin-left: auto;
@@ -1342,6 +1342,24 @@ a.mobile-footer-page {
 .bio-icon {
   height: 20px;
   margin-bottom: 15px;
+}
+
+.projects-grid {
+  margin-top: 20px;
+  margin-bottom: 100px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  column-gap: 10px;
+  row-gap: 20px;
+}
+
+@media (max-width: 1200px) {
+  .projects-grid {
+    width: 91.5%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

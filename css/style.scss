@@ -569,7 +569,6 @@ hr.thick-white {
 }
 
 .cards-grid {
-    @extend %page-layout;
     margin-top: 20px;
     margin-bottom: 30px; // temporary
     display: grid;
@@ -1452,9 +1451,6 @@ a.mobile-footer-page {
 }
 
 //Bio Cards
-// <div class="contact-icon-wrapper">
-// <img class="bio-icon" src="img/about/linkedin.png">
-// </div>
 .team-bio-wrapper {
     margin-top: 100px;
     margin-bottom: 100px;
@@ -1531,4 +1527,23 @@ a.mobile-footer-page {
 .bio-icon {
     height: 20px;
     margin-bottom: 15px;
+}
+
+//PROJECT OVERVIEW
+.projects-grid {
+    margin-top: 20px;
+    margin-bottom: 100px; // temporary
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 10px;
+    row-gap: 20px;
+}
+
+@media (max-width: 1200px) {
+    .projects-grid {
+        width: 91.5%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
