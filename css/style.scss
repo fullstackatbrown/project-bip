@@ -40,6 +40,13 @@ hr {
     display: block;
 }
 
+%section-subheader {
+    font-family: "Platform Medium";
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+    display: block;
+}
+
 %section-description-serif {
     font-family: "Crimson Text";
     font-size: 1.4rem;
@@ -1394,6 +1401,10 @@ a.mobile-footer-page {
     @extend %section-header;
 }
 
+.story-subtitle {
+    @extend %section-subheader;
+}
+
 .story-text {
     margin-top: 25px;
     @extend %section-description-serif;
@@ -1537,7 +1548,7 @@ a.mobile-footer-page {
     width: 100%;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     column-gap: 10px;
-    row-gap: 20px;
+    row-gap: 15px;
 }
 
 @media (max-width: 1200px) {
