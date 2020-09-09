@@ -1565,3 +1565,48 @@ a.mobile-footer-page {
         margin-right: auto;
     }
 }
+
+.construction-section-header {
+    margin-top: 100px;
+    z-index: 1000;
+    display: block;
+	@extend %section-header;
+	margin-bottom: 50px;
+}
+
+.construction-header-text {
+    width: max-content;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.construction-subsection-text {
+	margin-top: 10px;
+	@extend %normal-text;
+	font-size: 20px;
+}
+
+.construction-white-space{
+	margin-top: 50px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-color: plum;
+}
+
+
+@media (max-width: 1200px) {
+    .construction-white-space {
+        width: 90%;
+        margin-left: max(4vw, 20px);
+    }
+}
+
+#construction-time-text {
+    width: max-content;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
