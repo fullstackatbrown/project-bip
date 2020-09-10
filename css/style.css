@@ -1429,11 +1429,12 @@ a.mobile-footer-page {
 }
 
 .students-section-header {
+  padding-top: 50px;
   padding-bottom: 100px;
 }
 
 .students-title {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .students-body {
