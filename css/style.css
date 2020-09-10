@@ -1433,6 +1433,12 @@ a.mobile-footer-page {
   padding-bottom: 100px;
 }
 
+@media (max-width: 1200px) {
+  .students-section-header {
+    width: 90%;
+    margin-left: max(4vw, 20px);
+  }
+}
 .students-title {
   margin-top: 50px;
 }
