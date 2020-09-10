@@ -1479,7 +1479,7 @@ a.mobile-footer-page {
 }
 
 @media (max-width: 1200px) {
-	.team-bio-heading {
+    .team-bio-heading {
         width: 90%;
         margin-left: max(4vw, 20px);
     }
@@ -1530,13 +1530,13 @@ a.mobile-footer-page {
 }
 
 .bio-card-subtitle {
-    font-family: 'Circular Std Book';
+    font-family: "Circular Std Book";
     color: $light-purple;
     font-size: 0.8rem;
 }
 
 .bio-card-name {
-    font-family: 'Circular Std Bold';
+    font-family: "Circular Std Bold";
     font-size: 1rem;
     margin-bottom: 0rem;
 }
@@ -1576,8 +1576,10 @@ a.mobile-footer-page {
     margin-top: 100px;
     z-index: 1000;
     display: block;
-	@extend %section-header;
-	margin-bottom: 50px;
+    @extend %section-header;
+    font-size: 5rem;
+    line-height: 5.5rem;
+    margin-bottom: 50px;
 }
 
 .construction-header-text {
@@ -1589,19 +1591,19 @@ a.mobile-footer-page {
 }
 
 .construction-subsection-text {
-	margin-top: 10px;
-	@extend %normal-text;
-	font-size: 20px;
+    margin-top: 30px;
+    @extend %normal-text;
+    font-size: 2rem;
 }
 
-.construction-white-space{
-	margin-top: 50px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	background-color: white;
-	height: 60px;
+.construction-white-space {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    background-color: white;
+    height: 60px;
 }
-
 
 @media (max-width: 1200px) {
     .construction-white-space {
@@ -1610,15 +1612,16 @@ a.mobile-footer-page {
     }
 }
 
-.construction-time-space{
-	width: max-content;
+.construction-time-space {
+    width: max-content;
     text-align: center;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
+
 #construction-time-text {
-	@extend %section-description-serif;
+    @extend %normal-text;
+    font-size: 2rem;
 }
 
 
@@ -1706,14 +1709,4 @@ a.mobile-footer-page {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-}
-.text-card-text-subtitle {
-    @extend %normal-text;
-    font-family: "Circular Std Bold";
-}
-
-.text-card-text-description {
-    @extend %normal-text;
-    font-size: 1rem;
-    margin-top: 6px;
 }
