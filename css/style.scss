@@ -1655,6 +1655,19 @@ a.mobile-footer-page {
     color: #736a75;
 }
 
+.recruiting-section-header {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+@media (max-width: 1200px) {
+    .recruiting-section-header {
+        width: 90%;
+		margin-left: max(4vw, 20px);
+		text-align: center;
+    }
+}
+
 .recruiting-title {
     font-family: "Platform Medium";
     font-size: 3.2rem;
@@ -1702,7 +1715,8 @@ a.mobile-footer-page {
     @extend %normal-text;
     font-size: 2rem;
     font-family: "Circular Std Bold";
-    margin-bottom: 3rem;
+	margin-bottom: 3rem;
+	color: $purple;
 }
 
 .jobs-card-text-description {
