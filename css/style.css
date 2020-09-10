@@ -16,7 +16,7 @@ hr {
   margin-bottom: 0;
 }
 
-a.footer-page, .footer-headpage, .join-text, .img-card-text-description, .img-card-text-title, .img-card-item-type, .text-card-text-description, .text-card-text-subtitle, .spotlight-description {
+.jobs-card-text-description, .jobs-card-text-subtitle, #construction-time-text, .construction-subsection-text, a.footer-page, .footer-headpage, .join-text, .img-card-text-description, .img-card-text-title, .img-card-item-type, .text-card-text-description, .text-card-text-subtitle, .spotlight-description {
   font-family: "Circular Std Book";
   font-size: 1.1rem;
   letter-spacing: -0.5px;
@@ -30,7 +30,7 @@ a.footer-page, .footer-headpage, .join-text, .img-card-text-description, .img-ca
   letter-spacing: -1.5px;
 }
 
-.team-bio-heading, .about-us-mission-heading, .story-title, #timeline-section-header {
+.students-title, .construction-section-header, .team-bio-heading, .about-us-mission-heading, .story-title, #timeline-section-header {
   font-family: "Platform Medium";
   font-size: 3.2rem;
   line-height: 3.7rem;
@@ -53,6 +53,12 @@ a.footer-page, .footer-headpage, .join-text, .img-card-text-description, .img-ca
 
 .img-card, .text-card {
   min-height: 500px;
+  background-color: white;
+  height: max-content;
+}
+
+.jobs-card {
+  min-height: max-content;
   background-color: white;
   height: max-content;
 }
@@ -1373,6 +1379,151 @@ a.mobile-footer-page {
     margin-left: auto;
     margin-right: auto;
   }
+}
+.construction-section-header {
+  margin-top: 100px;
+  z-index: 1000;
+  display: block;
+  font-size: 5rem;
+  line-height: 5.5rem;
+  margin-bottom: 50px;
+}
+
+.construction-header-text {
+  width: max-content;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.construction-subsection-text {
+  margin-top: 30px;
+  font-size: 2rem;
+}
+
+.construction-white-space {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 120px;
+  background-color: white;
+  height: 60px;
+}
+
+@media (max-width: 1200px) {
+  .construction-white-space {
+    width: 90%;
+    margin-left: max(4vw, 20px);
+  }
+}
+.construction-time-space {
+  width: max-content;
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+#construction-time-text {
+  font-size: 2rem;
+}
+
+.students-section-header {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+@media (max-width: 1200px) {
+  .students-section-header {
+    width: 90%;
+    margin-left: max(4vw, 20px);
+  }
+}
+.students-title {
+  margin-top: 50px;
+}
+
+.students-body {
+  margin-top: 25px;
+  font-family: "Crimson Text";
+  font-size: 1.4rem;
+  line-height: 1.65rem;
+  letter-spacing: -0.5px;
+  color: #736a75;
+}
+
+.recruiting-section-header {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+@media (max-width: 1200px) {
+  .recruiting-section-header {
+    width: 90%;
+    margin-left: max(4vw, 20px);
+    text-align: center;
+  }
+}
+.recruiting-title {
+  font-family: "Platform Medium";
+  font-size: 3.2rem;
+  line-height: 3.7rem;
+  display: block;
+  margin-bottom: 2rem;
+  padding-top: 100px;
+}
+
+.students-date-header {
+  font-family: "Circular Std Bold";
+  font-size: 2rem;
+}
+
+.students-date-body {
+  font-family: "Crimson Text";
+  font-size: 1.4rem;
+  line-height: 1.65rem;
+  letter-spacing: -0.5px;
+  color: #736a75;
+  margin-bottom: 1rem;
+}
+
+.jobs-grid {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: grid;
+  width: 100%;
+  row-gap: 20px;
+}
+
+.jobs-card {
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.jobs-card-text-wrapper {
+  margin: 50px;
+}
+
+.jobs-card-text-subtitle {
+  margin-top: 20px;
+  font-size: 2rem;
+  font-family: "Circular Std Bold";
+  margin-bottom: 3rem;
+  color: #26225a;
+}
+
+.jobs-card-text-description {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  line-height: 1.75rem;
+}
+
+.jobs-card-button-space {
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 /*# sourceMappingURL=style.css.map */
