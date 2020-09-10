@@ -1570,7 +1570,9 @@ a.mobile-footer-page {
     margin-top: 100px;
     z-index: 1000;
     display: block;
-	@extend %section-header;
+    @extend %section-header;
+    font-size: 5rem;
+    line-height: 5.5rem;
 	margin-bottom: 50px;
 }
 
@@ -1583,15 +1585,16 @@ a.mobile-footer-page {
 }
 
 .construction-subsection-text {
-	margin-top: 10px;
-	@extend %normal-text;
-	font-size: 20px;
+	margin-top: 30px;
+    @extend %normal-text;
+    font-size: 2rem;
 }
 
 .construction-white-space{
-	margin-top: 50px;
-	padding-top: 20px;
-	padding-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+	padding-top: 100px;
+	padding-bottom: 120px;
 	background-color: white;
 	height: 60px;
 }
@@ -1608,9 +1611,10 @@ a.mobile-footer-page {
 	width: max-content;
     text-align: center;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
+
 #construction-time-text {
-	@extend %section-description-serif;
+    @extend %normal-text;
+    font-size: 2rem;
 }
