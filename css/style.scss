@@ -69,6 +69,7 @@ hr {
 %bio-card-layout {
     background-color: white;
     height: max-content;
+    min-height: 260px;
 }
 
 // card interaction module, need shadow
@@ -1543,8 +1544,10 @@ a.mobile-footer-page {
 
 .bio-card-description {
     @extend %section-description-serif;
+    margin-top: 10px;
     font-style: italic;
     font-size: 1rem;
+    line-height: 1.2rem;
     margin-bottom: 15px;
 }
 
