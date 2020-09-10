@@ -60,6 +60,12 @@ hr {
     height: max-content;
 }
 
+%jobs-card-layout {
+    min-height: max-content;
+    background-color: white;
+    height: max-content;
+}
+
 %bio-card-layout {
     background-color: white;
     height: max-content;
@@ -1613,4 +1619,101 @@ a.mobile-footer-page {
 }
 #construction-time-text {
 	@extend %section-description-serif;
+}
+
+
+
+
+
+//FOR STUDENTS
+.students-section-header {
+    padding-bottom: 100px;
+}
+
+.students-title {
+    @extend %section-header;
+    margin-top: 100px;
+}
+
+.students-body {
+    margin-top: 25px;
+    font-family: "Crimson Text";
+    font-size: 1.4rem;
+    line-height: 1.65rem;
+    letter-spacing: -0.5px;
+    color: #736a75;
+}
+
+.recruiting-title {
+    font-family: "Platform Medium";
+    font-size: 3.2rem;
+    line-height: 3.7rem;
+    display: block;
+    margin-bottom: 2rem;
+    padding-top: 100px;
+}
+
+.students-date-header {
+    font-family: "Circular Std Bold";
+    font-size: 2rem;
+}
+
+.students-date-body {
+    font-family: "Crimson Text";
+    font-size: 1.4rem;
+    line-height: 1.65rem;
+    letter-spacing: -0.5px;
+    color: #736a75;
+    margin-bottom: 1rem;
+}
+
+.jobs-grid {
+    margin-top: 20px;
+    margin-bottom: 30px; // temporary
+    display: grid;
+    width: 100%;
+    row-gap: 20px;
+}
+
+.jobs-card {
+    @extend %jobs-card-layout;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.jobs-card-text-wrapper {
+    margin: 50px;
+}
+
+.jobs-card-text-subtitle {
+    margin-top: 20px;
+    @extend %normal-text;
+    font-size: 2rem;
+    font-family: "Circular Std Bold";
+    margin-bottom: 3rem;
+}
+
+.jobs-card-text-description {
+    @extend %normal-text;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    line-height: 1.75rem;
+}
+
+.jobs-card-button-space {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.text-card-text-subtitle {
+    @extend %normal-text;
+    font-family: "Circular Std Bold";
+}
+
+.text-card-text-description {
+    @extend %normal-text;
+    font-size: 1rem;
+    margin-top: 6px;
 }
