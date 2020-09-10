@@ -1473,7 +1473,7 @@ a.mobile-footer-page {
 }
 
 @media (max-width: 1200px) {
-	.team-bio-heading {
+    .team-bio-heading {
         width: 90%;
         margin-left: max(4vw, 20px);
     }
@@ -1524,13 +1524,13 @@ a.mobile-footer-page {
 }
 
 .bio-card-subtitle {
-    font-family: 'Circular Std Book';
+    font-family: "Circular Std Book";
     color: $light-purple;
     font-size: 0.8rem;
 }
 
 .bio-card-name {
-    font-family: 'Circular Std Bold';
+    font-family: "Circular Std Bold";
     font-size: 1rem;
     margin-bottom: 0rem;
 }
@@ -1573,7 +1573,7 @@ a.mobile-footer-page {
     @extend %section-header;
     font-size: 5rem;
     line-height: 5.5rem;
-	margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .construction-header-text {
@@ -1585,20 +1585,19 @@ a.mobile-footer-page {
 }
 
 .construction-subsection-text {
-	margin-top: 30px;
+    margin-top: 30px;
     @extend %normal-text;
     font-size: 2rem;
 }
 
-.construction-white-space{
+.construction-white-space {
     margin-top: 50px;
     margin-bottom: 100px;
-	padding-top: 100px;
-	padding-bottom: 120px;
-	background-color: white;
-	height: 60px;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    background-color: white;
+    height: 60px;
 }
-
 
 @media (max-width: 1200px) {
     .construction-white-space {
@@ -1607,8 +1606,8 @@ a.mobile-footer-page {
     }
 }
 
-.construction-time-space{
-	width: max-content;
+.construction-time-space {
+    width: max-content;
     text-align: center;
     display: block;
     margin: auto;
