@@ -16,7 +16,7 @@ hr {
   margin-bottom: 0;
 }
 
-.jobs-card-text-description, .jobs-card-text-subtitle, #construction-time-text, .construction-subsection-text, a.footer-page, .footer-headpage, .join-text, .img-card-text-description, .img-card-text-title, .img-card-item-type, .text-card-text-description, .text-card-text-subtitle, .spotlight-description {
+.jobs-card-text-description, .jobs-card-text-subtitle, .cont-scroll, #construction-time-text, .construction-subsection-text, a.footer-page, .footer-headpage, .join-text, .img-card-text-description, .img-card-text-title, .img-card-item-type, .text-card-text-description, .text-card-text-subtitle, .spotlight-description {
   font-family: "Circular Std Book";
   font-size: 1.1rem;
   letter-spacing: -0.5px;
@@ -37,7 +37,7 @@ hr {
   display: block;
 }
 
-.cont-scroll, .story-subtitle {
+.story-subtitle {
   font-family: "Platform Medium";
   font-size: 2.5rem;
   line-height: 2.7rem;
@@ -1460,9 +1460,8 @@ a.mobile-footer-page {
 }
 
 .cont-scroll {
-  color: #9958a6;
+  color: #26225a;
   margin-top: 50px;
-  font-size: 2rem;
 }
 
 @media (max-width: 1200px) {
