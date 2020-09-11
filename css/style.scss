@@ -1659,10 +1659,9 @@ a.mobile-footer-page {
 }
 
 .cont-scroll {
-	@extend %section-subheader;
-	color: $light-purple;
+	@extend %normal-text;
+	color: $purple;
 	margin-top: 50px;
-	font-size: 2rem;
 }
 
 @media (max-width: 1200px) {
