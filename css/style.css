@@ -1475,6 +1475,19 @@ a.mobile-footer-page {
   padding-top: 100px;
 }
 
+.recruiting-card-button-space {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+@media (max-width: 1200px) {
+  .recruiting-card-button-space {
+    justify-content: center;
+  }
+}
 .students-date-header {
   font-family: "Circular Std Bold";
   font-size: 2rem;
