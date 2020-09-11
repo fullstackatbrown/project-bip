@@ -1658,6 +1658,13 @@ a.mobile-footer-page {
     padding-bottom: 100px;
 }
 
+.cont-scroll {
+	@extend %section-subheader;
+	color: $light-purple;
+	margin-top: 50px;
+	font-size: 2rem;
+}
+
 @media (max-width: 1200px) {
     .recruiting-section-header {
         width: 90%;

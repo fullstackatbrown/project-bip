@@ -37,7 +37,7 @@ hr {
   display: block;
 }
 
-.story-subtitle {
+.cont-scroll, .story-subtitle {
   font-family: "Platform Medium";
   font-size: 2.5rem;
   line-height: 2.7rem;
@@ -1457,6 +1457,12 @@ a.mobile-footer-page {
 
 .recruiting-section-header {
   padding-bottom: 100px;
+}
+
+.cont-scroll {
+  color: #9958a6;
+  margin-top: 50px;
+  font-size: 2rem;
 }
 
 @media (max-width: 1200px) {
