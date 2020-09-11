@@ -1645,6 +1645,12 @@ a.mobile-footer-page {
     margin-top: 50px;
 }
 
+.students-cta-header {
+    @extend %section-header;
+    margin-top: 50px;
+    font-size: 2rem;
+}
+
 .students-body {
     margin-top: 25px;
     font-family: "Crimson Text";

@@ -30,7 +30,7 @@ hr {
   letter-spacing: -1.5px;
 }
 
-.students-title, .construction-section-header, .team-bio-heading, .about-us-mission-heading, .story-title, #timeline-section-header {
+.students-cta-header, .students-title, .construction-section-header, .team-bio-heading, .about-us-mission-heading, .story-title, #timeline-section-header {
   font-family: "Platform Medium";
   font-size: 3.2rem;
   line-height: 3.7rem;
@@ -1444,6 +1444,11 @@ a.mobile-footer-page {
 }
 .students-title {
   margin-top: 50px;
+}
+
+.students-cta-header {
+  margin-top: 50px;
+  font-size: 2rem;
 }
 
 .students-body {
