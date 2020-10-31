@@ -478,7 +478,7 @@ a {
 }
 
 .spotlight-image {
-    object-fit: fit;
+    object-fit: fill;
 }
 
 .spotlight-heading {
@@ -1805,5 +1805,5 @@ a.mobile-footer-page {
 
 .project-button-left-align:hover {
     background-color: black;
-    color: white;
+	color: white;
 }

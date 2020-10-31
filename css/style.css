@@ -393,7 +393,7 @@ a:hover::after {
 }
 
 .spotlight-image {
-  object-fit: fit;
+  object-fit: fill;
 }
 
 .spotlight-description {
