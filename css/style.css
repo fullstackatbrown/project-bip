@@ -19,7 +19,7 @@ hr {
 .jobs-card-text-description, .jobs-card-text-subtitle, .cont-scroll, #construction-time-text, .construction-subsection-text, a.footer-page, .footer-headpage, .join-text, .img-card-text-description, .img-card-text-title, .img-card-item-type, .text-card-text-description, .text-card-text-subtitle, .spotlight-description {
   font-family: "Circular Std Book";
   font-size: 1.1rem;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.2px;
   line-height: 1.4rem;
 }
 
@@ -30,21 +30,21 @@ hr {
   letter-spacing: -1.5px;
 }
 
-.students-cta-header, .students-title, .construction-section-header, .team-bio-heading, .about-us-mission-heading, .story-title, #timeline-section-header {
+.project-title, .students-cta-header, .students-title, .construction-section-header, .team-bio-heading, .about-us-mission-heading, .story-title, #timeline-section-header {
   font-family: "Platform Medium";
   font-size: 3.2rem;
   line-height: 3.7rem;
   display: block;
 }
 
-.story-subtitle {
+.project-subtitle, .story-subtitle {
   font-family: "Platform Medium";
   font-size: 2.5rem;
   line-height: 2.7rem;
   display: block;
 }
 
-.bio-card-description, .about-us-mission-description, .story-text {
+.project-text, .bio-card-description, .about-us-mission-description, .story-text {
   font-family: "Crimson Text";
   font-size: 1.4rem;
   line-height: 1.65rem;
@@ -1597,6 +1597,25 @@ a.mobile-footer-page {
 .project-button-left-align:hover {
   background-color: black;
   color: white;
+}
+
+.project-section-header {
+  width: 90%;
+}
+
+@media (max-width: 1200px) {
+  .project-section-header {
+    width: 90%;
+    margin-left: max(4vw, 20px);
+  }
+}
+.project-header-text {
+  text-align: left;
+  display: block;
+}
+
+.project-subtitle {
+  margin-bottom: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -22,7 +22,7 @@ hr {
 %normal-text {
     font-family: "Circular Std Book";
     font-size: 1.1rem;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.2px;
     line-height: 1.4rem;
 }
 
@@ -1806,4 +1806,33 @@ a.mobile-footer-page {
 .project-button-left-align:hover {
     background-color: black;
 	color: white;
+}
+
+.project-section-header {
+    width: 90%;
+}
+
+@media (max-width: 1200px) {
+    .project-section-header {
+        width: 90%;
+        margin-left: max(4vw, 20px);
+    }
+}
+
+.project-header-text {
+    text-align: left;
+    display: block;
+}
+
+.project-title {
+	@extend %section-header;
+}
+
+.project-subtitle {
+	@extend %section-subheader;
+	margin-bottom: 25px;
+}
+
+.project-text {
+    @extend %section-description-serif;
 }
