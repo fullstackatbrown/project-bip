@@ -70,10 +70,10 @@ hr {
   min-height: 260px;
 }
 
-.bio-card, .img-card, .project-main-lightbox-wrapper, .home-main-lightbox-wrapper {
+.bio-card, .img-card, .home-main-lightbox-wrapper {
   transition: transform 0.15s;
 }
-.bio-card:hover, .img-card:hover, .project-main-lightbox-wrapper:hover, .home-main-lightbox-wrapper:hover {
+.bio-card:hover, .img-card:hover, .home-main-lightbox-wrapper:hover {
   transform: translate(0px, -3px);
   -webkit-box-shadow: 0px 2px 7px 1px rgba(168, 168, 168, 0.23);
   -moz-box-shadow: 0px 2px 7px 1px rgba(168, 168, 168, 0.23);
@@ -1680,12 +1680,12 @@ a.mobile-footer-page {
 
 .project-button-left-align {
   padding: 10px 20px;
-  border: 1px solid black;
+  border: 1px solid #2E2B60;
   background-color: transparent;
   border-radius: 3px;
   box-sizing: border-box;
   text-transform: uppercase;
-  color: black;
+  color: #2E2B60;
   text-align: left;
   transition: all 0.2s;
   font-size: 0.8rem;
@@ -1695,7 +1695,7 @@ a.mobile-footer-page {
 }
 
 .project-button-left-align:hover {
-  background-color: black;
+  background-color: #2E2B60;
   color: white;
 }
 

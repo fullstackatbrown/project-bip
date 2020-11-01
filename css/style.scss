@@ -392,7 +392,6 @@ a {
     grid-template-columns: 3361.1fr 6638.9fr;
     grid-gap: 0px;
     margin-top: 50px;
-    @extend %card-interaction;
 }
 
 @media (max-width: 1220px) {
@@ -517,7 +516,6 @@ a {
         display: block;
         margin-top: 50px;
         height: max-content;
-        @extend %card-interaction;
 	}
 
     .spotlight-image-wrapper {
@@ -1895,12 +1893,12 @@ a.mobile-footer-page {
 
 .project-button-left-align {
 	padding: 10px 20px;
-    border: 1px solid black;
+    border: 1px solid #2E2B60;
     background-color: transparent;
     border-radius: 3px;
     box-sizing: border-box;
     text-transform: uppercase;
-    color: black;
+    color: #2E2B60;
     text-align: left;
     transition: all 0.2s;
     font-size: 0.8rem;
@@ -1910,7 +1908,7 @@ a.mobile-footer-page {
 }
 
 .project-button-left-align:hover {
-    background-color: black;
+    background-color: #2E2B60;
 	color: white;
 }
 
