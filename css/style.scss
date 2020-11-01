@@ -1613,6 +1613,11 @@ a.mobile-footer-page {
 		margin-top: 25px;
 		@extend %section-description-serif;
 	}
+.partner-text a{
+		text-decoration: none;
+		color: $light-purple;
+
+	}
 
 	#partner-section-header {
 		margin-top: 50px;
@@ -1624,6 +1629,18 @@ a.mobile-footer-page {
 		margin-bottom: 50px;
 		width: 80%;
 	}
+	.partner-csection-header {
+		margin-top: 20px;
+		margin-bottom: 50px;
+		width: 99%;
+	}
+
+	.partner-dsection-header {
+		margin-top: 20px;
+		margin-bottom: 50px;
+		width: 60%;
+	}
+	
 	
 	@media (max-width: 1200px) {
 		#partner-section-header {
@@ -1631,6 +1648,14 @@ a.mobile-footer-page {
 			margin-left: max(4vw, 20px);
 		}
 		.partner-bsection-header {
+			width: 90%;
+			margin-left: max(4vw, 20px);
+		}
+		.partner-csection-header {
+			width: 90%;
+			margin-left: max(4vw, 20px);
+		}
+		.partner-dsection-header {
 			width: 90%;
 			margin-left: max(4vw, 20px);
 		}
