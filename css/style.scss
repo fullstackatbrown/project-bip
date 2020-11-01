@@ -193,7 +193,7 @@ a {
 
 .full-width-white-background {
     width: 100%;
-    background-color: white;
+	background-color: white;
 }
 // font import from Online Web Fonts -> Circular
 @font-face {
@@ -1592,57 +1592,139 @@ a.mobile-footer-page {
     }
 }
 
-.construction-section-header {
-    margin-top: 100px;
-    z-index: 1000;
-    display: block;
-    @extend %section-header;
-    font-size: 5rem;
-    line-height: 5.5rem;
-    margin-bottom: 50px;
+//for partners
+.full-width-white-background-p {
+    width: 100%;
+	background-color: white;
+	position: relative;
 }
 
-.construction-header-text {
-    width: max-content;
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.image-partner{
+	width: 2vw
 }
 
-.construction-subsection-text {
+.partner-header-text {
+    text-align: left;
+	display: block;
+	
+}
+
+.partner-text {
+		margin-top: 25px;
+		@extend %section-description-serif;
+	}
+
+	#partner-section-header {
+		margin-top: 50px;
+		margin-bottom: 50px;
+		width: 80%;
+	}
+	.partner-bsection-header {
+		margin-top: 20px;
+		margin-bottom: 50px;
+		width: 80%;
+	}
+	
+	@media (max-width: 1200px) {
+		#partner-section-header {
+			width: 90%;
+			margin-left: max(4vw, 20px);
+		}
+		.partner-bsection-header {
+			width: 90%;
+			margin-left: max(4vw, 20px);
+		}
+	}
+	
+
+.partner-subsection-text {
     margin-top: 30px;
     @extend %normal-text;
     font-size: 2rem;
 }
 
-.construction-white-space {
-    margin-top: 50px;
-    margin-bottom: 100px;
-    padding-top: 100px;
-    padding-bottom: 120px;
-    background-color: white;
-    height: 60px;
+.partner-text-space {
+	@extend %normal-text;
 }
 
 @media (max-width: 1200px) {
-    .construction-white-space {
+    .partner-white-space {
         width: 90%;
         margin-left: max(4vw, 20px);
     }
 }
 
-.construction-time-space {
+.partner-small-title{
+	@extend %h1-heading;
+	font-size: 1.5rem;
+}
+
+.partner-time-space {
     width: max-content;
     text-align: center;
     display: block;
-    margin: auto;
+	margin: auto;
+	height: 50px;
 }
 
-#construction-time-text {
+#partner-time-text {
     @extend %normal-text;
     font-size: 2rem;
 }
+
+.accordion-space{
+	margin-bottom: 100px;
+}
+.accordion {
+  background-color:white;
+  color: $purple;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+}
+.accordion:after {
+	content: '\02795'; 
+	font-size: 10px;
+	color: $purple;
+	float: right;
+	margin-left: 5px;
+  }
+  
+  .active:after {
+	content: "\2796"; 
+  }
+
+
+.active, .accordion:hover {
+  background-color: $background;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: $background;
+  @extend %normal-text;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+@media (max-width: 1200px) {
+
+    .accordion {
+        width: 90%;
+        margin-left: max(4vw, 20px);
+	}
+	.panel {
+        width: 90%;
+        margin-left: max(4vw, 20px);
+	}
+
+}
+
 
 //FOR STUDENTS
 .students-section-header {

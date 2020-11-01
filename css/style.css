@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;1,300;1,400;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;1,300;1,400;1,500&family=Crimson+Text:ital@0;1&display=swap");
 body {
@@ -16,21 +17,21 @@ hr {
   margin-bottom: 0;
 }
 
-.jobs-card-text-description, .jobs-card-text-subtitle, .cont-scroll, #construction-time-text, .construction-subsection-text, a.footer-page, .footer-headpage, .join-text, .img-card-text-description, .img-card-text-title, .img-card-item-type, .text-card-text-description, .text-card-text-subtitle, .spotlight-description {
+.jobs-card-text-description, .jobs-card-text-subtitle, .cont-scroll, .panel, #partner-time-text, .partner-text-space, .partner-subsection-text, a.footer-page, .footer-headpage, .join-text, .img-card-text-description, .img-card-text-title, .img-card-item-type, .text-card-text-description, .text-card-text-subtitle, .spotlight-description {
   font-family: "Circular Std Book";
   font-size: 1.1rem;
   letter-spacing: -0.2px;
   line-height: 1.4rem;
 }
 
-.join-title, .about-text-title, .spotlight-heading {
+.partner-small-title, .join-title, .about-text-title, .spotlight-heading {
   font-family: "Circular Std Bold";
   font-size: 2.2rem;
   line-height: 2.4rem;
   letter-spacing: -1.5px;
 }
 
-.project-title, .students-cta-header, .students-title, .construction-section-header, .team-bio-heading, .about-us-mission-heading, .story-title, #timeline-section-header {
+.project-title, .students-cta-header, .students-title, .team-bio-heading, .about-us-mission-heading, .story-title, #timeline-section-header {
   font-family: "Platform Medium";
   font-size: 3.2rem;
   line-height: 3.7rem;
@@ -44,7 +45,7 @@ hr {
   display: block;
 }
 
-.project-text, .bio-card-description, .about-us-mission-description, .story-text {
+.project-text, .partner-text, .bio-card-description, .about-us-mission-description, .story-text {
   font-family: "Crimson Text";
   font-size: 1.4rem;
   line-height: 1.65rem;
@@ -1399,54 +1400,127 @@ a.mobile-footer-page {
     margin-right: auto;
   }
 }
-.construction-section-header {
-  margin-top: 100px;
-  z-index: 1000;
-  display: block;
-  font-size: 5rem;
-  line-height: 5.5rem;
-  margin-bottom: 50px;
-}
-
-.construction-header-text {
-  width: max-content;
-  text-align: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.construction-subsection-text {
-  margin-top: 30px;
-  font-size: 2rem;
-}
-
-.construction-white-space {
-  margin-top: 50px;
-  margin-bottom: 100px;
-  padding-top: 100px;
-  padding-bottom: 120px;
+.full-width-white-background-p {
+  width: 100%;
   background-color: white;
-  height: 60px;
+  position: relative;
+}
+
+.image-partner {
+  width: 2vw;
+}
+
+.partner-header-text {
+  text-align: left;
+  display: block;
+}
+
+.partner-text {
+  margin-top: 25px;
+}
+
+#partner-section-header {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 80%;
+}
+
+.partner-bsection-header {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  width: 80%;
 }
 
 @media (max-width: 1200px) {
-  .construction-white-space {
+  #partner-section-header {
+    width: 90%;
+    margin-left: max(4vw, 20px);
+  }
+
+  .partner-bsection-header {
     width: 90%;
     margin-left: max(4vw, 20px);
   }
 }
-.construction-time-space {
+.partner-subsection-text {
+  margin-top: 30px;
+  font-size: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .partner-white-space {
+    width: 90%;
+    margin-left: max(4vw, 20px);
+  }
+}
+.partner-small-title {
+  font-size: 1.5rem;
+}
+
+.partner-time-space {
   width: max-content;
   text-align: center;
   display: block;
   margin: auto;
+  height: 50px;
 }
 
-#construction-time-text {
+#partner-time-text {
   font-size: 2rem;
 }
 
+.accordion-space {
+  margin-bottom: 100px;
+}
+
+.accordion {
+  background-color: white;
+  color: #26225a;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+.accordion:after {
+  content: "➕";
+  font-size: 10px;
+  color: #26225a;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "➖";
+}
+
+.active, .accordion:hover {
+  background-color: #f9f4fb;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #f9f4fb;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+@media (max-width: 1200px) {
+  .accordion {
+    width: 90%;
+    margin-left: max(4vw, 20px);
+  }
+
+  .panel {
+    width: 90%;
+    margin-left: max(4vw, 20px);
+  }
+}
 .students-section-header {
   padding-top: 50px;
   padding-bottom: 100px;
