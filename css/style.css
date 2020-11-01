@@ -1521,11 +1521,11 @@ a.mobile-footer-page {
   margin-left: 5px;
 }
 
-.active:after {
+.accordion_active:after {
   content: "➖";
 }
 
-.active, .accordion:hover {
+.accordion_active, .accordion:hover {
   background-color: #f9f4fb;
 }
 
