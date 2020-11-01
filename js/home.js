@@ -77,5 +77,22 @@ function init() {
                 setTimeout(function(){ $("#timeline-textbox-4").addClass("animate__fadeInUp"); }, 525);
             }
         });
-    });
+	});
+	const preloader = document.querySelector('.preloader');
+		const fadeEffect = setInterval(() => {
+		if (!preloader.style.opacity) {
+			preloader.style.opacity = 1;
+		}
+		if (preloader.style.opacity > 0) {
+			preloader.style.opacity -= 0.4;
+		} else {
+			clearInterval(fadeEffect);
+		}
+		
+		}, 100);
+		const deleteLoader = setInterval(() => {
+			preloader.style.display = "none";
+		}, 500);
+		window.addEventListener('load', fadeEffect);
+		window.addEventListener('load', deleteLoader);
 }
