@@ -1750,8 +1750,8 @@ a.mobile-footer-page {
 
 //FOR STUDENTS
 .students-section-header {
-    padding-top: 50px;
-    padding-bottom: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 @media (max-width: 1200px) {
@@ -1761,24 +1761,76 @@ a.mobile-footer-page {
     }
 }
 
-.students-title {
-    @extend %section-header;
-    margin-top: 50px;
+.student-grid {
+    display: grid;
+    column-gap: 1vh;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
 }
 
-.students-cta-header {
-    @extend %section-header;
-    margin-top: 50px;
-    font-size: 2rem;
+.student-img {
+    width: 92%;
+    border-radius: 3px;
 }
 
-.students-body {
+@media (max-width: 656px) {
+    .student-img {
+        width: 96%;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        border-radius: 3px;
+    }
+
+    .student-text-wrapper {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+}
+
+.students-title-center {
+    font-family: "Circular Std Bold";
+    font-size: 3.2rem;
+    text-align: center;
+}
+
+.students-body-center {
     margin-top: 25px;
     font-family: "Crimson Text";
     font-size: 1.4rem;
     line-height: 1.65rem;
     letter-spacing: -0.5px;
     color: #736a75;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.students-title-right {
+    padding-top: 100px;
+    font-family: "Circular Std Bold";
+    font-size: 3.2rem;
+    text-align: right;
+}
+
+
+.students-cta-header {
+    @extend %section-header;
+    margin-top: 50px;
+    font-size: 2rem;
+
+}
+
+.students-body-right {
+    margin-top: 25px;
+    font-family: "Crimson Text";
+    font-size: 1.4rem;
+    line-height: 1.65rem;
+    letter-spacing: -0.5px;
+    color: #736a75;
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
+    padding-bottom: 100px;
 }
 
 .recruiting-section-header {
