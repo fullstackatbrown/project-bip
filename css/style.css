@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;1,300;1,400;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;1,300;1,400;1,500&family=Crimson+Text:ital@0;1&display=swap");
 body {
@@ -16,38 +17,38 @@ hr {
   margin-bottom: 0;
 }
 
-.jobs-card-text-description, .jobs-card-text-subtitle, .cont-scroll, #construction-time-text, .construction-subsection-text, a.footer-page, .footer-headpage, .join-text, .img-card-text-description, .img-card-text-title, .img-card-item-type, .text-card-text-description, .text-card-text-subtitle, .spotlight-description {
+.jobs-card-text-description, .jobs-card-text-subtitle, .cont-scroll, .panel, #partner-time-text, .partner-text-space, .partner-subsection-text, a.footer-page, .footer-headpage, .join-text, .img-card-text-description, .img-card-text-title, .img-card-item-type, .text-card-text-description, .text-card-text-subtitle, .spotlight-description {
   font-family: "Circular Std Book";
   font-size: 1.1rem;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.2px;
   line-height: 1.4rem;
 }
 
-.join-title, .about-text-title, .spotlight-heading {
+.partner-small-title, .join-title, .about-text-title, .spotlight-heading {
   font-family: "Circular Std Bold";
   font-size: 2.2rem;
   line-height: 2.4rem;
   letter-spacing: -1.5px;
 }
 
-.students-cta-header, .students-title, .construction-section-header, .team-bio-heading, .about-us-mission-heading, .story-title, #timeline-section-header {
+.project-title, .students-cta-header, .team-bio-heading, .about-us-mission-heading, .story-title, #timeline-section-header {
   font-family: "Platform Medium";
   font-size: 3.2rem;
   line-height: 3.7rem;
   display: block;
 }
 
-.story-subtitle {
+.project-subtitle, .story-subtitle {
   font-family: "Platform Medium";
   font-size: 2.5rem;
   line-height: 2.7rem;
   display: block;
 }
 
-.bio-card-description, .about-us-mission-description, .story-text {
+.project-spotlight-text, .project-text, .partner-text, .bio-card-description, .about-us-mission-description, .story-text {
   font-family: "Crimson Text";
   font-size: 1.4rem;
-  line-height: 1.65rem;
+  line-height: 1.8rem;
   letter-spacing: -0.5px;
 }
 
@@ -303,6 +304,15 @@ a:hover::after {
   margin-top: 10px;
 }
 
+.project-main-lightbox-wrapper {
+  height: 450px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 3361.1fr 6638.9fr;
+  grid-gap: 0px;
+  margin-top: 50px;
+}
+
 @media (max-width: 1220px) {
   .nav-custom {
     width: 98vw;
@@ -404,6 +414,13 @@ a:hover::after {
     background-color: white;
     display: block;
     margin-top: 10px;
+    height: max-content;
+  }
+
+  .project-main-lightbox-wrapper {
+    background-color: white;
+    display: block;
+    margin-top: 50px;
     height: max-content;
   }
 
@@ -982,7 +999,7 @@ hr.thick-white {
 }
 
 .partner-logo-wrapper {
-  margin-top: 100px;
+  margin-top: 70px;
   width: max-content;
   display: block;
   text-align: center;
@@ -1013,7 +1030,7 @@ hr.thick-white {
 }
 
 #join-section-header {
-  margin-top: 40px;
+  margin-top: 25px;
   z-index: 1000;
 }
 
@@ -1383,57 +1400,156 @@ a.mobile-footer-page {
     margin-right: auto;
   }
 }
-.construction-section-header {
-  margin-top: 100px;
-  z-index: 1000;
-  display: block;
-  font-size: 5rem;
-  line-height: 5.5rem;
-  margin-bottom: 50px;
-}
-
-.construction-header-text {
-  width: max-content;
-  text-align: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.construction-subsection-text {
-  margin-top: 30px;
-  font-size: 2rem;
-}
-
-.construction-white-space {
-  margin-top: 50px;
-  margin-bottom: 100px;
-  padding-top: 100px;
-  padding-bottom: 120px;
+.full-width-white-background-p {
+  width: 100%;
   background-color: white;
-  height: 60px;
+}
+
+.image-partner {
+  width: 2vw;
+}
+
+.partner-header-text {
+  text-align: left;
+  display: block;
+}
+
+.partner-text {
+  margin-top: 25px;
+}
+
+.partner-text a {
+  text-decoration: none;
+  color: #9958a6;
+}
+
+#partner-section-header {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 80%;
+}
+
+.partner-bsection-header {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  width: 80%;
+}
+
+.partner-csection-header {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  width: 99%;
+}
+
+.partner-dsection-header {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  width: 60%;
 }
 
 @media (max-width: 1200px) {
-  .construction-white-space {
+  #partner-section-header {
+    width: 90%;
+    margin-left: max(4vw, 20px);
+  }
+
+  .partner-bsection-header {
+    width: 90%;
+    margin-left: max(4vw, 20px);
+  }
+
+  .partner-csection-header {
+    width: 90%;
+    margin-left: max(4vw, 20px);
+  }
+
+  .partner-dsection-header {
     width: 90%;
     margin-left: max(4vw, 20px);
   }
 }
-.construction-time-space {
+.partner-subsection-text {
+  margin-top: 30px;
+  font-size: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .partner-white-space {
+    width: 90%;
+    margin-left: max(4vw, 20px);
+  }
+}
+.partner-small-title {
+  font-size: 1.5rem;
+}
+
+.partner-time-space {
   width: max-content;
   text-align: center;
   display: block;
   margin: auto;
+  height: 50px;
 }
 
-#construction-time-text {
+#partner-time-text {
   font-size: 2rem;
 }
 
+.accordion-space {
+  margin-bottom: 100px;
+}
+
+.accordion {
+  background-color: white;
+  color: #26225a;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+.accordion:after {
+  content: "➕";
+  font-size: 10px;
+  color: #26225a;
+  float: right;
+  margin-left: 5px;
+}
+
+.accordion_active:after {
+  content: "➖";
+}
+
+.accordion_active, .accordion:hover {
+  background-color: #f9f4fb;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #f9f4fb;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+@media (max-width: 1200px) {
+  .accordion {
+    width: 90%;
+    margin-left: max(4vw, 20px);
+  }
+
+  .panel {
+    width: 90%;
+    margin-left: max(4vw, 20px);
+  }
+}
 .students-section-header {
-  padding-top: 50px;
-  padding-bottom: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 @media (max-width: 1200px) {
@@ -1442,8 +1558,54 @@ a.mobile-footer-page {
     margin-left: max(4vw, 20px);
   }
 }
-.students-title {
-  margin-top: 50px;
+.student-grid {
+  display: grid;
+  column-gap: 1vh;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
+}
+
+.student-img {
+  width: 92%;
+  border-radius: 3px;
+}
+
+@media (max-width: 656px) {
+  .student-img {
+    width: 96%;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    border-radius: 3px;
+  }
+
+  .student-text-wrapper {
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+}
+.students-title-center {
+  font-family: "Circular Std Bold";
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+.students-body-center {
+  margin-top: 25px;
+  font-family: "Crimson Text";
+  font-size: 1.4rem;
+  line-height: 1.65rem;
+  letter-spacing: -0.5px;
+  color: #736a75;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.students-title-right {
+  padding-top: 100px;
+  font-family: "Circular Std Bold";
+  font-size: 3.2rem;
+  text-align: right;
 }
 
 .students-cta-header {
@@ -1451,13 +1613,17 @@ a.mobile-footer-page {
   font-size: 2rem;
 }
 
-.students-body {
+.students-body-right {
   margin-top: 25px;
   font-family: "Crimson Text";
   font-size: 1.4rem;
   line-height: 1.65rem;
   letter-spacing: -0.5px;
   color: #736a75;
+  margin-left: auto;
+  margin-right: 0;
+  text-align: right;
+  padding-bottom: 100px;
 }
 
 .recruiting-section-header {
@@ -1549,6 +1715,138 @@ a.mobile-footer-page {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
+}
+
+.project-spotlight-heading {
+  font-family: "Circular Std Bold";
+  font-size: 2.7rem;
+  line-height: 3rem;
+  letter-spacing: -1.5px;
+}
+
+.card-button-space {
+  margin-top: 50px;
+}
+
+.project-button-left-align {
+  padding: 10px 20px;
+  border: 1px solid #2E2B60;
+  background-color: transparent;
+  border-radius: 3px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  color: #2E2B60;
+  text-align: left;
+  transition: all 0.2s;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  font-family: "Circular Std Bold";
+  width: fit-content;
+}
+
+.project-button-left-align:hover {
+  background-color: #2E2B60;
+  color: white;
+}
+
+.project-section-header {
+  width: 90%;
+}
+
+@media (max-width: 1200px) {
+  .project-section-header {
+    width: 90%;
+    margin-left: max(4vw, 20px);
+  }
+}
+.project-header-text {
+  text-align: left;
+  display: block;
+}
+
+.project-subtitle {
+  margin-bottom: 25px;
+}
+
+.project-spotlight-text {
+  margin-top: 50px;
+  font-size: 1.2rem;
+}
+
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: #f9f4fb;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  transition: opacity 0.3s linear;
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #262259;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
