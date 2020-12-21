@@ -17,14 +17,14 @@ hr {
   margin-bottom: 0;
 }
 
-.jobs-card-text-description, .jobs-card-text-subtitle, .cont-scroll, .panel, #partner-time-text, .partner-text-space, .partner-subsection-text, a.footer-page, .footer-headpage, .join-text, .img-card-text-description, .img-card-text-title, .img-card-item-type, .text-card-text-description, .text-card-text-subtitle, .spotlight-description {
+.jobs-card-text-description, .jobs-card-text-subtitle, .cont-scroll, .panel, .accordion-space, #partner-time-text, .partner-text-space, .partner-subsection-text, a.footer-page, .footer-headpage, .join-text, .img-card-text-description, .img-card-text-title, .img-card-item-type, .text-card-text-description, .text-card-text-subtitle, .spotlight-description {
   font-family: "Circular Std Book";
   font-size: 1.1rem;
   letter-spacing: -0.2px;
   line-height: 1.4rem;
 }
 
-.partner-small-title, .join-title, .about-text-title, .spotlight-heading {
+.join-title, .about-text-title, .spotlight-heading {
   font-family: "Circular Std Bold";
   font-size: 2.2rem;
   line-height: 2.4rem;
@@ -1480,7 +1480,10 @@ a.mobile-footer-page {
   }
 }
 .partner-small-title {
-  font-size: 1.5rem;
+  font-family: "Platform Medium";
+  font-size: 2.2rem;
+  line-height: 2.4rem;
+  letter-spacing: 0px;
 }
 
 .partner-time-space {
@@ -1513,19 +1516,37 @@ a.mobile-footer-page {
 }
 
 .accordion:after {
-  content: "➕";
-  font-size: 10px;
+  content: "+";
+  font-size: 30px;
   color: #26225a;
   float: right;
   margin-left: 5px;
+  outline: none;
+  border: none;
+  font-weight: 500;
+}
+
+.accordion:focus {
+  outline: none;
+  border: none;
 }
 
 .accordion_active:after {
-  content: "➖";
+  content: "‒";
+  font-size: 30px;
+  color: #26225a;
+  float: right;
+  margin-left: 5px;
+  outline: none;
+  border: none;
+  font-weight: 1000;
 }
 
-.accordion_active, .accordion:hover {
+.accordion_active,
+.accordion:hover {
   background-color: #f9f4fb;
+  outline: none;
+  border: none;
 }
 
 .panel {
@@ -1730,12 +1751,12 @@ a.mobile-footer-page {
 
 .project-button-left-align {
   padding: 10px 20px;
-  border: 1px solid #2E2B60;
+  border: 1px solid #2e2b60;
   background-color: transparent;
   border-radius: 3px;
   box-sizing: border-box;
   text-transform: uppercase;
-  color: #2E2B60;
+  color: #2e2b60;
   text-align: left;
   transition: all 0.2s;
   font-size: 0.8rem;
@@ -1745,7 +1766,7 @@ a.mobile-footer-page {
 }
 
 .project-button-left-align:hover {
-  background-color: #2E2B60;
+  background-color: #2e2b60;
   color: white;
 }
 
