@@ -1606,7 +1606,6 @@ a.mobile-footer-page {
 .students-title-center {
   font-family: "Circular Std Bold";
   font-size: 3.2rem;
-  text-align: center;
 }
 
 .students-body-center {
@@ -1680,11 +1679,6 @@ a.mobile-footer-page {
   justify-content: flex-start;
 }
 
-@media (max-width: 1200px) {
-  .recruiting-card-button-space {
-    justify-content: center;
-  }
-}
 .students-date-header {
   font-family: "Circular Std Bold";
   font-size: 2rem;
@@ -1697,6 +1691,7 @@ a.mobile-footer-page {
   letter-spacing: -0.5px;
   color: #736a75;
   margin-bottom: 1rem;
+  max-width: 90vw;
 }
 
 .jobs-grid {
@@ -1867,6 +1862,21 @@ a.mobile-footer-page {
   }
   100% {
     transform: translate(24px, 0);
+  }
+}
+.student-timeline {
+  width: 50%;
+}
+
+@media (max-width: 1200px) {
+  .for-student-image {
+    display: none;
+  }
+
+  .student-timeline {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
