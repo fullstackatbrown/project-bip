@@ -1418,7 +1418,7 @@ a.mobile-footer-page {
   margin-top: 25px;
 }
 
-.partner-text a {
+.partner-text a, .story-text a {
   text-decoration: none;
   color: #9958a6;
 }
