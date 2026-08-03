@@ -66,8 +66,7 @@ hr {
 
 .bio-card {
   background-color: white;
-  height: max-content;
-  min-height: 260px;
+  height: 320px;
 }
 
 .bio-card, .img-card, .home-main-lightbox-wrapper {
