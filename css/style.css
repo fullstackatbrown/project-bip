@@ -1098,7 +1098,7 @@ hr.thick-white {
   background-color: white;
   display: grid;
   grid-gap: 0px;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
 }
 
 .footer-logo-area {
